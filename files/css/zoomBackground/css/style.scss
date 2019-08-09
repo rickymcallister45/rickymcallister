@@ -1,0 +1,35 @@
+.mainbox {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	height: 100vh;
+	justify-content: center;
+	color: aliceblue;
+}
+
+.mainbox:after {
+	left: 0;
+	bottom: 0;
+	content: '';
+	position: absolute;
+	z-index: -1;
+}
+.mainbox:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0) scale(1.0, 1.0);
+	-moz-transform: translateZ(0) scale(1.0, 1.0);
+	-ms-transform: translateZ(0) scale(1.0, 1.0);
+	-o-transform: translateZ(0) scale(1.0, 1.0);
+	transform: translateZ(0) scale(1.0, 1.0);
+	background-image: url('img/rainForest.jpeg');
+	background-size: cover;
+}
