@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/baseCSS.css">
+	<script   src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+</head>
+<title>
+	Ricky McAllister
+</title>
+<header>
+	<a href="http://www.rickymcallister.com/" class="header">rickyMcAllister</a>
+</header>
+<script>
+$(document).ready(function(){
+	$('button').click(function(){
+		$.get('https://www.twitch.tv/rickymcallister45', function(data,status){ 
+			
+			console.log(data);
+			alert(status);
+		})
+	});
+});
+
+</script>
+
+<body>
+	<button>Click to get Data</button>
+	<p id='test'></p>
+</body>
+
+
+<footer>
+		<script   src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+		
+</footer>
