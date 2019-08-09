@@ -1,0 +1,3 @@
+seige school
+fix error ( medium)
+make dropdown for different games

@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>rickyMcAllister</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/vanillaWeatherAlert.js"></script>
+	<script src="js/vanillaBackground.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div id="power" class="off"><i class="fa fa-power-off"></i></div>
+			<nav id="nav" class="hide-item">
+				<div class="menu">
+					<ul>
+						<li><a href="../computerScience/index.html" class="menu-item">computerScience</a></li>
+						<li><a href="../sales/index.html" class="menu-item">sales</a></li>
+						<li><a href="../services/index.html" class="menu-item">services</a></li>
+						<li><a id="contact" class="menu-item">contact</a></li>
+						<li><a href="../entertainment/index.html" class="menu-item">entertainment</a></li>
+						<li><a href="#" id="search"><i class="fas fa-search"></i></a></li>
+					</ul>
+		    		<div class="search-form"><form><input id="searchFocus" type="text" placeholder="Search google.com"></form>
+	    	    	</div>
+    			</div>
+			</nav>
+		</div>
+	    <div id="header2">
+			<div id="contacts">
+				<ul><a href="https://www.reddit.com/user/rickymcallister45/"><i class="fab fa-reddit"></i></a></ul>
+				<ul><a href="https://www.facebook.com/rickymcallister45"><i class="fab fa-facebook"></i></a></ul>
+				<ul><a href="440-265-5218"><i class="fa fa-phone"></i></a></ul>
+				<ul><a href="https://www.twitch.tv/rickymcallister45"><i class="fab fa-twitch"></i></a></ul>
+				<ul><a href="rickymcallister45@gmail.com"><i class="fa fa-envelope"></i></a></ul>
+				<ul><a href="https://www.paypal.com/mep/dashboard"><i class="fab fa-paypal"></i></a></ul>
+				<ul><a href="https://www.youtube.com/channel/UCHUrEa6E1l5vwzvXMGEPScg"><i class="fab fa-youtube"></i></a></ul>
+				<ul><a href="https://calendar.google.com/calendar/r"><i class="fa fa-calendar"></i></a></ul>
+			    <ul><a href="https://codepen.io/rickymcallister/"><i class="fab fa-codepen"></i></a></ul>
+			    <ul><a href="https://github.com/rickymcallister45"><i class="fab fa-github"></i></a></ul>
+				<ul><a href="https://www.indeed.com/"><i class="fa fa-info"></i></a></ul>
+				<ul><a href="https://www.linkedin.com/in/ricky-mcallister-91753b119/"><i class="fab fa-linkedin"></i></a></ul>
+				<ul><a href="https://app.quore.com/login.php?logout=1"><i class="fab fa-quora"></i></a></ul>
+				<ul><a href="https://daytonwebdevelopers.slack.com/"><i class="fab fa-slack"></i></a></ul>
+				<ul><a href="https://www.dominos.com/"><i class="fas fa-pizza-slice"></i></a></ul>
+				<ul><a href="https://www.pinterest.com/clintc0rder/"><i class="fab fa-pinterest"></i></a></ul>
+				<ul><a href="http://tiny.cc/03jy3y"><i class="fa fa-hotel"></i></a></ul>
+				<ul><a href="https://www.ebay.com/"><i class="fab fa-ebay"></i></a></ul>
+				<ul><a href="#" onclick="alert('coming Soon')"><i class="fas fa-golf-ball"></i></a></ul>
+				<ul><a href="http://tiny.cc/x6jy3y"><i class="fab fa-amazon"></i></a></ul>
+				<ul><a href="#" onclick="alert('coming Soon')"><i class="fa fa-bullseye"></i></a></ul>
+				<ul><a href="#" onclick="alert('coming Soon')"><i class="fas fa-dumbbell"></i></a></ul>
+				<ul><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></ul>
+				<ul><a href="https://www.dropbox.com/h"><i class="fab fa-dropbox"></i></a></ul>
+				<ul><a href="https://www.meetup.com/dayton-web-developers/"><i class="fab fa-meetup"></i></a></ul>
+				<ul><a href="https://www.lyft.com/"><i class="fab fa-lyft"></i></a></ul>
+				<ul><a href="http://rickymcallister.com/computerScience/microController/microController.html"><i class="fab fa-raspberry-pi"></i></a></ul>
+				<ul><a href="https://my.playstation.com/profile/rickymcallister"><i class="fab fa-playstation"></i></a></ul>
+				<ul><a href="https://www.uber.com/"><i class="fab fa-uber"></i></a></ul>
+				<ul><a href="https://wagwalking.com/"><i class="fas fa-dog"></i></a></ul>
+				<ul><a href="#" onclick="alert('coming Soon')"><i class="fas fa-fingerprint"></i></a></ul>
+				<ul><a href="#"  onclick="alert('coming Soon')"><i class="fa fa-heartbeat"></i></a></ul>
+				<ul><a href="#" onclick="alert('coming Soon')"><i class="fas fa-hdd"></i></a></ul>
+				<ul><a href="https://rickymcallister.imgur.com/all"><i class="fas fa-images"></i></a></ul>
+				
+				
+			</div>
+		</div>
+		<div id="left-panel" class="hide-item">
+			<ul><a href="#" id="clock" onclick="gifBackground();"><i class="fa fa-hourglass-start"></i></a></ul>
+			<ul><a href="https://ibx.key.com/ibxolb/olb/index.html#/login" id="bank"><i class="fa fa-university"></i></a></ul>
+			<ul><a href="#" id="bookmark"><i class="fa fa-bookmark"></i></a></ul>
+			<ul><a href="../../app/soundboard/index.html" id="soundboard"><i class="fa fa-volume-off"></i></a></ul>
+            <ul><a href="../../app/finance/index.html" id='stocks'><i class="fas fa-chart-line"></i></a></ul>
+            <ul><a id="ticker" onclick="new p5(tickerApi);"><i class="fa fa-th"></i></a></ul>
+		</div>
+		<div id="center">
+			<ul id="podcasts">
+				<ul><a href="https://adamcarolla.com/">adamCorolla</a></ul>
+				<ul><a href="https://www.youtube.com/user/PowerfulJRE/videos">joeRogan</a></ul>
+				<ul><a href="https://www.youtube.com/channel/UC6AbsTfBMQ_dHjtipwh3bZg/videos">fighterandtheKid</a></ul>
+			</ul>
+			<ul id="bookmarks">
+				<ul><a href="http://www.sportstream.tv/">ppv</a></ul>
+				<ul><a href="https://www.youtube.com/watch?v=iu6xIdAdJwo">aquarium</a></ul>
+				<ul><a href="https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=1">horoscope</a></ul>
+				<ul><a href="https://thepiratebay.org/top">TPB</a></ul>
+				<ul><a href="https://grampshouse.neocities.org/">Gramps</a></ul>
+				<ul><a href="http://boards.4chan.org/pol/catalog">/POL/</a></ul>
+				<ul><a href="https://www.reddit.com/r/The_Donald/">T_D</a></ul>
+				<ul><a href="https://www.perfumery.com.au/1-million-by-paco-rabanne.html">perfumeCheatSheet</a></ul>
+				<ul><a href="https://qanon.pub/">qAnon</a></ul>
+				<ul><a href="https://radar.weather.gov/Conus/centgrtlakes_loop.php">radar</a></ul>
+				<ul><a href="../../app/memes/index.html">dankMemes</a></ul>
+				<ul><a href="../../app/recipeAPI/index.html">dankMemes</a></ul>
+				<ul><a href="https://cincinnatifoodtruckassociation.org/">foodTruck</a></ul>
+			</ul>
+			<ul id="bills">
+				<ul><a href="https://myaccounts.capitalone.com/accountSummary">capital one</a></ul>
+				<ul><a href="https://www.progressive.com">progressive</a></ul>
+				<ul><a href="https://www.bridgecrest.com/">bridgecrest</a></ul>
+				<ul><a href="https://www.spectrum.net/login/?ReferringPartner=TWC">spectrum</a></ul>
+				<ul><a href="https://www.duke-energy.com/home/billing/credit-card-debit-card-or-electronic-check-payments">dukeEnergy</a></ul>
+				<ul><a href="https://ting.com/">ting</a></ul>
+				<ul><a href="http://www.10thplanetjj.com/">10thplanet</a></ul>
+				<ul><a href="https://www.planetfitness.com/">planetFitness</a></ul>
+				<ul><a href="https://www.amazon.com">amazonMusic</a></ul>
+				<ul><a href="https://jgmma.com/">jgmma</a></ul>
+				<ul><a href="https://www.godaddy.com/">goDaddy</a></ul>
+			</ul>
+			<ul id="events">
+				<ul><a href="http://events.cincinnati.com/">cincinatti</a></ul>
+				<ul><a href="https://www.daytonlocal.com/events.asp">dayton</a></ul>
+				<ul><a href="https://www.dayton.com/what-to-do/">dayton2</a></ul>
+				<ul><a href="https://m.ticketmaster.com/ticket/events.do?articles=tmus&region=4">ticketMaster</a></ul>
+				<ul><a href="https://cincinnati.craigslist.org/d/activity-partners/search/act">craigslistActivities</a></ul>
+				<ul><a href="https://cincinnati.craigslist.org/d/events/search/eve">craigslistEvents</a></ul>
+				<ul><a href="https://cincinnati.craigslist.org/d/classes/search/cls">craigslistClasses</a></ul>
+				<ul><a href="https://www.groupon.com/">groupon</a></ul>
+			</ul>
+		</div>
+		<div id="right-panel" class="hide-item">
+			<ul><a href="#" id="bill"><i class="fa fa-credit-card"></i></a></ul>
+			<ul><a href="#" id="podcast"><i class="fa fa-podcast"></i></a></ul>
+			<ul><a href="#" id="event"><i class="fa fa-bullhorn"></i></a></ul>
+			<ul><a href="https://radar.weather.gov/Conus/centgrtlakes_loop.php" id="weather"><i class="fa fa-certificate"></i></a></ul>
+            <ul><a href="https://global.adsbexchange.com/VirtualRadar/desktop.html#" id="plane"><i class="fa fa-plane"></i></a></ul>
+            <ul><a onclick="lightsOn()" ondblclick="lightsOff()" id="ships"><i class="fas fa-lightbulb"></i>
+                </a></ul>
+		</div>
+	<div id="gcpDot">
+		<iframe src="http://global-mind.org/gcpdot/gcp.html" height="48" width="48" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
+	</div>	
+</body>
+<footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+
+	<script src="js/searchBar.js"></script>
+	<script src="js/powerButton.js"></script>
+	<script src="js/gifBackground.js"></script>
+	<script src="js/ticker.js"></script>
+	<script src="js/hue.js"></script>
+	
+	
+	<script src="js/keyBindings.js"></script>
+	<script src="js/hotKeys.js"></script>
+	<script src="js/weatherOutlook.js"></script>
+</footer>
+</html>

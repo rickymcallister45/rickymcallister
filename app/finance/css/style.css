@@ -1,0 +1,31 @@
+html {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: gray;
+}
+#header {
+    font-size: 48px;
+    height: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+div.stockSymbol {
+	width: 200px;
+	height: 200px;
+	background-color: #000000; 
+	float: top;
+	float: left;
+	margin: 18px;
+}
+p{
+	font-size: 24pt;
+	text-align: center;
+	padding-top: 20px;
+}
+.price{
+	padding-top: 100px;
+
+}

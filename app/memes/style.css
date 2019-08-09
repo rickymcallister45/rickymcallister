@@ -1,0 +1,89 @@
+html {
+	height: 100vh;
+	width: 100vw;
+}
+a, a:visited, a:hover a:link, a:active {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+ 	background-color: #1b1b1b;
+ }
+ header {
+ 	background-color: gray;
+ 	width: 100vw;
+ 	height: 350px;
+ }
+#header {
+ 	overflow: hidden;
+ 	font-size: 48px;
+ 	height: 10%;
+ 	position: fixed;
+	text-align: center;
+ }
+#dirt {
+	height: 100px;
+}
+#thread {
+	position: fixed;
+	top: 9%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+#dropdown{
+	position: fixed;
+	top: 9%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+#button{
+	position: fixed;
+	top: 9%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#dank {
+	top: 4%;
+	left: 10%;
+}
+#reddit {
+	top: 4%;
+	left: 90%;
+}
+
+#memeEcon {
+	top: 4%;
+	left: 70%;
+}
+
+#memeInsider {
+	top: 4%;
+	left: 30%;
+}
+
+#catolog {
+	top: 4%;
+	left: 20%;
+}
+#imgur {
+	top: 4%;
+	left: 80%;
+}
+#pixlr {
+	top: 4%;
+	left: 0%;
+}
+.trigger {
+	position: fixed;
+	width: 7%;
+	height: 50px;
+}

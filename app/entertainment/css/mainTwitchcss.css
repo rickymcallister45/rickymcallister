@@ -1,0 +1,22 @@
+/* main.css */
+
+html, head, body, h1, h2, h3, h4, p, div {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font: inherit;
+	font-size: 100%;
+}
+body{
+	background-image: url("../img/r6.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 0;
+}
+
+#target {
+	position: fixed;
+    	left: 425px;
+	top:  100px;
+
+}

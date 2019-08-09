@@ -1,0 +1,29 @@
+https://www.codecademy.com/courses/learn-alexa-lambda/lessons/understand-lambda-code/exercises/include-alexa-sdk?action=resume_content_item&course_redirect=learn-alexa
+https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/myCodecademySkill?tab=graph
+https://developer.amazon.com/alexa/console/ask/test/amzn1.ask.skill.b589dad3-8515-4f76-a28e-0af9909c6cbc/development/en_US/
+
+
+Node.JS Alexa SDK library
+https://developer.amazon.com/alexa-voice-service/sdk
+
+https://www.codecademy.com/courses/learn-alexa-speak-slots/projects/speak-slots?action=resume_content_item&course_redirect=learn-alexa
+
+
+this.event.request.intent.slots.answer.value
+
+
+this.response.listen('Hello, ' +
+     this.attributes['name'] + 
+     '. What is your favorite language?');
+
+var name = this.attributes['name'];
+
+
+
+alexa.dynamoDBTableName = 'YourTableName';
+this.emit(':saveState', true)
+
+
+
+
+

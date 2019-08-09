@@ -1,0 +1,218 @@
+{
+  "sounds": [
+    {
+      "name": "suspense02",
+      "key": "A",
+      "keycode": 65
+    },
+    {
+      "name": "sKidaDdle",
+      "key": "B",
+      "keycode": 66
+    },
+    {
+      "name": "priceIsWrong",
+      "key": "C",
+      "keycode": 67
+    },
+    {
+      "name": "suspense00",
+      "key": "D",
+      "keycode": 68
+    },
+    {
+      "name": "suspense01",
+      "key": "E",
+      "keycode": 69
+    },
+    {
+      "name": "lawAndOrder",
+      "key": "F",
+      "keycode": 70
+    },
+    {
+      "name": "leeroyJenins",
+      "key": "G",
+      "keycode": 71
+    },
+    {
+      "name": "Complain",
+      "key": "H",
+      "keycode": 72
+    },
+    {
+      "name": "DefLeppardPourSomeSugarOnMe",
+      "key": "I",
+      "keycode": 73
+    },
+    {
+      "name": "ElectricSlide",
+      "key": "J",
+      "keycode": 74
+    },
+    {
+      "name": "GeorgeBushDoesntCareAboutBlackPeople",
+      "key": "K",
+      "keycode": 75
+    },
+    {
+      "name": "HeNeedSomeMilk",
+      "key": "L",
+      "keycode": 76
+    },
+    {
+      "name": "HellNah",
+      "key": "M",
+      "keycode": 77
+    },
+    {
+      "name": "JebBush",
+      "key": "N",
+      "keycode": 78
+    },
+    {
+      "name": "KeeptheChangeYouFilthyAnimal",
+      "key": "O",
+      "keycode": 79
+    },
+    {
+      "name": "suspense02",
+      "key": "P",
+      "keycode": 80
+    },
+    {
+      "name": "MyMan",
+      "key": "Q",
+      "keycode": 81
+    },
+    {
+      "name": "gunCock",
+      "key": "R",
+      "keycode": 82
+    },
+    {
+      "name": "gospel",
+      "key": "S",
+      "keycode": 83
+    },
+    {
+      "name": "ReallyNibba",
+      "key": "T",
+      "keycode": 84
+    },
+    {
+      "name": "RiffRaff",
+      "key": "U",
+      "keycode": 85
+    },
+    {
+      "name": "wasted",
+      "key": "V",
+      "keycode": 86
+    },
+    {
+      "name": "TaylorSwiftLookWhatYouMadeMeDo",
+      "key": "W",
+      "keycode": 87
+    },
+    {
+      "name": "WompWompWomp",
+      "key": "X",
+      "keycode": 88
+    },
+    {
+      "name": "Worldstar",
+      "key": "Y",
+      "keycode": 89
+    },
+    {
+      "name": "suspense03",
+      "key": "Z",
+      "keycode": 90
+    },
+    {
+      "name": "RobloxDeathSoundEffect",
+      "key": "num0",
+      "keycode": 96
+    },
+    {
+      "name": "everyFuckingDayMP3",
+      "key": "num1",
+      "keycode": 97
+    },
+    {
+      "name": "BecauseYoudBeInJail",
+      "key": "num2",
+      "keycode": 98
+    },
+    {
+      "name": "Podesta",
+      "key": "num3",
+      "keycode": 99
+    },
+    {
+      "name": "BisonYes",
+      "key": "num4",
+      "keycode": 100
+    },
+    {
+      "name": "Brah",
+      "key": "num5",
+      "keycode": 101
+    },
+    {
+      "name": "AirhornSoundEffect",
+      "key": "num6",
+      "keycode": 102
+    },
+    {
+      "name": "AwkwardCricketSoundEffect",
+      "key": "num7",
+      "keycode": 103
+    },
+    {
+      "name": "MyNameIsJeffSoundEffect",
+      "key": "num8",
+      "keycode": 104
+    },
+    {
+      "name": "xFiles",
+      "key": "starSign",
+      "keycode": 106
+    },
+    {
+      "name": "MetalGearSolidAlert",
+      "key": "plusSign",
+      "keycode": 107
+    },
+    {
+      "name": "smokeDetector",
+      "key": "num9",
+      "keycode": 108
+    },
+    {
+      "name": "birdMan",
+      "key": "minusSign",
+      "keycode": 109
+    },
+    {
+      "name": "CashMeOutside",
+      "key": "period",
+      "keycode": 110
+    },
+    {
+      "name": "TaylorSwiftLookWhatYouMadeMeDo",
+      "key": "period",
+      "keycode": 111
+    },
+    {
+      "name": "Ahhhh",
+      "key": "period",
+      "keycode": 144
+    },
+    {
+      "name": "sKidaDdle"
+    }    
+  ]
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1 id="title">PedoBingo</h1>
+
+<table>
+	
+	<tr id="bingo">
+		<td>B</td>
+		<td>I</td>
+		<td>N</td>
+		<td>G</td>
+		<td>O</td>
+	</tr>
+	<tr class="cells">
+		<td>Chris Tucker</td>
+		<td>Bill Clinton</td>
+		<td>Alan Dershowitz</td>
+		<td>Samuel L. Jackson</td>
+		<td>Rob Reiner</td>
+	</tr>
+	<tr class="cells">
+		<td>Micheal Moore</td>
+		<td>Ashton Kutcher</td>
+		<td>Hugh Jackman</td>
+		<td>Lady GaGa</td>
+		<td>Alec Baldwin</td>
+	</tr>
+	<tr class="cells">
+		<td>Jimmy Kimmel</td>
+		<td>Chrissy Teigen</td>
+		<td class="busted">Jeffrey Epstien</td>
+		<td>George Clooney</td>
+		<td>Chelsea Handler</td>
+	</tr>
+	<tr class="cells">
+		<td>John Legend</td>
+		<td>Sarah Silverman</td>
+		<td>J.K. Rowling</td>
+		<td>John Oliver</td>
+		<td>Anderson Cooper</td>
+	</tr>
+	<tr class="cells">
+		<td>Robert De Niro</td>
+		<td>Stephen Colbert</td>
+		<td>Madonna</td>
+		<td>Stephen King</td>
+		<td>Ben Stiller</td>
+	</tr>
+</table>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+  			$("td").click(function(){
+   			 $(this).addClass("busted");
+  });
+});
+</script>
+</html>
