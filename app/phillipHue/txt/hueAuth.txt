@@ -1,0 +1,3 @@
+ClientID: JcbK9LhxHuZZVE6Q3VXPmG0AGTaVrDZJ
+ClientSecret: I4WFyLeBZg9Wp4wH
+Callback URL: http://www.rickymcallister.com/desktop.html

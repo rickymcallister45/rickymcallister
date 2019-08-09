@@ -1,0 +1,59 @@
+html {
+	height: 100vh;
+	width: 100vw;
+}
+a, a:visited, a:hover a:link, a:active {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+ 	background-color: gray;
+ }
+#header {
+ 	
+ 	font-size: 48px;
+ 	height: 10%;
+ 	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+ }
+
+ .objects {
+ 	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	width: 60%;
+	height: 20%;
+ 	background-color: orange;
+ 	font-size: 32px;
+ 	font-family: Georgia, serif;
+ }
+ .objects:hover {
+ 	font-size: 450%;
+ 	text-align: center;
+ 	line-height: 170px;
+ 	
+ }
+ #dickTees {
+ 	top: 10%;
+ }
+ #beauty {
+ 	top: 35%;
+ }
+ #vapeOil {
+ 	top: 60%;
+ }
+ #mushroomSubstrate {
+ 	top: 85%;
+ }
+#chocolate {
+	top: 110%;
+} 
+#baskets {
+	top: 135%;
+}

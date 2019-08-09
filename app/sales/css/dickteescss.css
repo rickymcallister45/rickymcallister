@@ -1,0 +1,29 @@
+/* main.css */
+
+header {
+	padding-left: 10px;
+	padding-bottom: 20px;
+	background-color: black;
+	outline-color: black;
+	text-align: center;
+	font-size: 40px;
+	font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
+  	color: #2b2b2b;
+  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+}
+body{
+	background-image: url("img/bloodsplatterJPG.jpg");
+}
+img{
+	max-height: 500px;
+}
+.card-body {
+	height: 200px;
+	text-align: center;
+}
+.card-title {
+	position: absolute;
+	left: 35%;
+	bottom: 0;
+
+}

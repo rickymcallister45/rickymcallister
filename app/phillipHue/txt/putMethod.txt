@@ -1,0 +1,18 @@
+$.ajax({
+  url: 'http://192.168.0.7/api/{{user}}/lights',
+  type: 'PUT',
+  success: function(data) {
+    {"on":true, "sat":254, "bri":254,"hue":10000}
+  }
+});
+
+
+//*p5
+
+httpDo(
+    url,
+    {
+      method: 'GET',
+      // Other Request options, like special headers for apis
+      headers: { authorization: 'Bearer secretKey' }
+    },
