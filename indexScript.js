@@ -5,6 +5,6 @@ $(document).ready(function() {
     }), $(".menu-icon").click(function() {
         $(".sidebar").toggleClass("active")
     }), $("html").keydown(function(c) {
-        9 == c.keyCode && window.open("http://rickymcallister.com/apps/desktop.html", "rickymcallister")
+        9 == c.keyCode && window.open("http://rickymcallister.com/app/desktop.html", "rickymcallister")
     })
 });
