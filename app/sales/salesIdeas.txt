@@ -1,0 +1,57 @@
+<!doctype html>
+
+<head><link rel="stylesheet" type="text/css" href="css/baseCSS.css"></head>
+<title>mainSales</title>
+<header>rickyMcallister</header>
+<body>
+	<ul><a href="beautyHTML.html">Beauty</a></ul>
+	<ul><a href="dickteeshtml.html">Dicktees.org</a></ul>
+	<ul><a href="vapeOil.html">vapeOil</a></ul>
+	<ul><a href="mushroom.html">mushroom/substraight</a></ul>
+	<ul><a href="ice.html">ice</a></ul>
+	<ul><a href="vanillaExtract.html">vanillaExtract</a></ul>
+	<ul><a href="chocolate.html">chocolate</a></ul>
+	<ul><a href="baskets.html">Baskets</a></ul>
+	<ul><a href="Herbs.html">Dried Herbs</a></ul>
+	<ul><a href="reedDiffuser.html">diffusers</a></ul>
+	<ul>Car Sales</ul>
+	<ul>Cigars</ul>
+	<ul>Crystals</ul>
+	<ul>ebay</ul>
+	<ul>electronics</ul>
+	<ul>flower design</ul>
+	<ul>fountains</ul>
+	<ul>glass blowing</ul>
+	<ul>insurance</ul>
+	<ul>jewery</ul>
+	<ul>real estate</ul>
+	<ul>screen door repair</ul>
+	<ul>screen print</ul>
+	<ul>soap</ul>
+	<ul>water anaylist</ul>
+	<ul>woodworking</ul>
+	<ul>worms</ul>
+	<ul>bracelets</ul>
+	<ul>dog collars</ul>
+	<ul>20 dollar box{{month, season, holiday}}</ul>
+	<ul>pillowcases</ul>
+	<ul>lipstick/balm</ul>
+	<ul>bandana</ul>
+	<ul>pins, stickers</ul>
+	<ul>coffee</ul>
+	<ul>notebook/pencils</ul>
+	<ul>drawstringBackpack</ul>
+	<ul>Crystal Soap</ul>
+	<ul>Beekeeping</ul>
+	<ul>vases/planters</ul>
+	<ul>fragrenceLocket</ul>
+	<ul>bubbleBath</ul>
+	<ul>snackMix</ul>
+	<ul>sleepMask</ul>
+	<ul>towels</ul>
+	<ul>robes</ul>
+	<ul>coasters</ul>
+	<ul>bookSafe</ul>
+	<ul>modgePodgeJars</ul>
+</body>
+<footer></footer>
