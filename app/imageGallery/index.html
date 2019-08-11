@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>rickyMcAllister.com</title>
+		<meta name="viewport" content="width=device-width. initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="home"><a href="http://rickymcallister.com/desktop">rickyMcAllister</a></h1>
+				<div class="gallery-upload">
+					<form id="inputForm" action="php/gallery_upload.php" method="POST" enctype="multipart/form-data">
+							<button id="inputButton" type="submit" name="submit">UPLOAD</button>
+							<input type="text" name="filename" placeholder="File name...">
+							<input type="text" name="filename" placeholder="Image title...">
+							<input type="text" name="filename" placeholder="tag">
+							<input type="file" name="file">
+							<select name="folder">
+								<option value="memes">memes</option>
+  								<option value="graphs">graphs</option>
+  								<option value="random">random</option>
+  								<option value="cringe">cringe</option>
+						</select>
+					</form>
+				</div>
+		<body>
+			<div id="folders">
+			</div>
+			<div id="gallery">				
+			</div>	
+		</body>
+		<footer id="dropzone">
+			DROPZONE
+		</footer>
+	</body>
