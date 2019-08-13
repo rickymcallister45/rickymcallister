@@ -53,5 +53,7 @@
 	<ul>coasters</ul>
 	<ul>bookSafe</ul>
 	<ul>modgePodgeJars</ul>
+	drawstring backpack
+	drawstringbackpack/beach towel
 </body>
 <footer></footer>
