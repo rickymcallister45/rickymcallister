@@ -1,8 +1,4 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next 
 
-app/desktop //added alerts
-app/imageGallery  //added to app folder
-app/todo  // added index.php
-app/sales   // added other things
-index   // added alerts
-indexScript.js //fixed broken desktop url
+app/desktop //added filesFolder
+
