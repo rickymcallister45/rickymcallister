@@ -13,6 +13,7 @@ if (isset($_POST['submit'])) {
 	if(empty($_POST['title'])) {
 		$errors = "You must fill in task";
 	} else {
+		$ipTracker = $_SERVER[REMOTE_ADDR];
 		$title = $_POST['title'];
 		$sqlInsert = "INSERT INTO todo (title) VALUES ('$title');";
 		mysqli_query($conn, $sqlInsert);		
@@ -55,8 +56,8 @@ if(isset($_GET['del_task'])) {
 	$sqlDisplay = "SELECT * FROM todo;";
 
 	$result = mysqli_query($conn, $sqlDisplay);
-
-	$i = 1; while($row = mysqli_fetch_array($result)) { ?>
+	$i = 1;
+	while($row = mysqli_fetch_array($result)) { 
 		<tr>
 			<td> <?php echo $i ?> </td>
 			<td class="todoList"> <?php echo $row['title']; ?> </td>
@@ -64,7 +65,8 @@ if(isset($_GET['del_task'])) {
 				<a href="index.php?del_task=<?php echo $row['id'] ?>">Done</a>
 			</td>
 		</tr>
-		<?php $i++; } 
+		$i++; 
+	} 
 ?>
 
 
@@ -96,7 +98,4 @@ if(isset($_GET['del_task'])) {
 			</tbody>
 		</table>
 </body>
-<?php
-	include ="php/footer.php";
-?>
-			
+		
