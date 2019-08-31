@@ -71,7 +71,7 @@ $("body").append('<ul id="soundboard"></ul>')
             }
 $('.sounds').click(function() {
         var name = $(this).text();
-        var audio = new Audio('http://rickymcallister.com/mp3/' + name + ".mp3");
+        var audio = new Audio('../../files/mp3/' + name + ".mp3");
         console.log(name);
         audio.play();
         
