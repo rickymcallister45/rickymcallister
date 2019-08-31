@@ -67,7 +67,7 @@ function draw() {
 	push();
 	let secondAngle = map(sc, 0, 60, 0, 360);
 	rotate(secondAngle);
-	stroke(255, 0, 0);
+	stroke(27, 228, 242);
 	line(0 , 0, windowWidth * .2, 0);
 	pop();
 
