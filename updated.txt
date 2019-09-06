@@ -1,4 +1,5 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next 
 
+fixed broken paths on cs page
 corrected soundboard mp3 path
 
