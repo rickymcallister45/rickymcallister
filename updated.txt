@@ -1,8 +1,4 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next 
 
-git/test2
-git/test
-app/soundboard //changed mp3 file path
-index //changed soundboard path
-app/desktop //added filesFolder
+
 
