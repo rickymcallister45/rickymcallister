@@ -4,3 +4,12 @@ reddits related
 youtube playlist
 remake askSebby photo into a table
 make a nav bar that shows stock prices
+
+
+cardBreakdown stratgy 
+
+discoverIt = gasStation
+capitalOnePlatnum = grocery
+Chase Freedom = wishlist
+citiSecured = date night
+Bank of America Cash Rewards Card = emergency 
