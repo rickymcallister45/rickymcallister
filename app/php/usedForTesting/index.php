@@ -1,13 +1,10 @@
 <?php
-
   // check if folder exist
   
-  if(file_exists("../../../files/img/memes")){
+  if(folder_exists("test")){
     echo "File Exists";
   }else{
-  
-  // create folder
-  mkdir("../../../files/img/memes");
+    mkdir("test");
     echo "Folder Created";
   }
 ?>
