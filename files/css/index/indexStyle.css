@@ -6,10 +6,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 body {
     margin: 0;
     padding: 0;
-    background: rgb(34,99,195);
-    background: -moz-linear-gradient(0deg, rgba(34,99,195,1) 1%, rgba(6,9,189,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(34,99,195,1) 1%, rgba(6,9,189,1) 100%);
-    background: linear-gradient(0deg, rgba(34,99,195,1) 1%, rgba(6,9,189,1) 100%);
+    background-image: rgb(34,99,195);
+    background-image: -moz-linear-gradient(0deg, rgba(34,99,195,1) 1%, rgba(6,9,189,1) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgba(34,99,195,1) 1%, rgba(6,9,189,1) 100%);
+    background-image: linear-gradient(0deg, rgba(34,99,195,1) 1%, rgba(6,9,189,1) 100%);
 }
 .menu-icon {
     position: fixed;
