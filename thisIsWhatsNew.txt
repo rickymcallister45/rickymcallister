@@ -1,5 +1,6 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next 
 
+added gradient to index
 created app/githubAPI using angular.js
 created a temp 500 error page
 created a temp 404 error page
