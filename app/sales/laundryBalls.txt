@@ -1,0 +1,14 @@
+lemon
+orange
+rosemary
+thyme
+oregano
+geranium
+perpermint
+lemongrass
+
+eucalptus
+tea tree
+lavender
+chamomile
+lemongrass
