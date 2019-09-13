@@ -1,19 +1,16 @@
 <?php 
 
 if(!empty($_POST['submit'])){
-	//
-	var_dump($_FILES);
 	// error 1 check
 	$folderNameValue = $_POST['folderName'];
 	$renameFileValue = $_POST['renameFile'];
 	
-	
 	if ($_FILES['upload']['error']==0) {
 		switch ($_FILES['upload']['type']) {
-			case 'image/jpeg':
-				echo "file type accepted"
+			case 'image/jpeg';
+				echo "file type accepted";
 				break;
-				case 'image/png':
+				case 'image/png';
 					echo "file type accepted";
 				break;
 				exit('wrong file type');
