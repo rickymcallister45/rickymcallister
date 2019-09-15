@@ -1,6 +1,7 @@
-# to whom it may concern this is a list of things i have finished and will update my website with next 
+# to whom it may concern this is a list of things i have finished and will update my website with next
 
-began develepment of app/imageUploader   //phpDevelopment
+began development for app/mp3Uploader
+began development for app/imageUploader   //phpDevelopment
 began development on adding calender to index.html
 added app/radar
 added gradient to index
