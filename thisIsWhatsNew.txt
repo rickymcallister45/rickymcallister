@@ -1,5 +1,6 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
+added imageUploader link to app/desktop
 added app/php/fileChecker //tool for figuring out how files types are classified when uploading
 began development for app/mp3Uploader
 began development for app/imageUploader   //phpDevelopment
