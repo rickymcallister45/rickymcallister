@@ -1,3 +1,7 @@
 https://stackoverflow.com/questions/5246114/php-mkdir-permission-denied-problem
 chown -R www-data:www-data /path/to/webserver/www
 chmod -R g+rw /path/to/webserver/www  
+
+
+php.ini
+upload_max_filesize
