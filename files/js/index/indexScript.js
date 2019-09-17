@@ -7,4 +7,15 @@ $(document).ready(function() {
     }), $("html").keydown(function(c) {
         9 == c.keyCode && window.open("http://rickymcallister.com/app/desktop/index.html", "rickymcallister")
     })
+    
+    $(".leftArrow").click(function() {
+        $("#calenderContainer").toggleClass("calanderActive");
+        $("#clock").toggleClass("ClockActive");
+    });
+
+    $("#backArrowDiv").click(function() {
+        $("#calenderContainer").removeClass("calanderActive");
+        $("#clock").toggleClass("ClockActive");
+    });
+    
 });
