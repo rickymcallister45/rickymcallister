@@ -198,7 +198,52 @@ a#logo:before {
 a#logo:hover:before {
     transform: scale(2);
 }
-
+#calenderContainer {
+    position: fixed;
+    transition: .5s;
+    top: 0;
+    z-index: 1;
+	width:100vw;
+	height:100vh;
+    
+}
+#calender {
+    height: 100%;
+    width: 100%;
+}
+.calanderDeactivated {
+    left: -2000px;
+}
+.calanderActive{
+    left: 0;
+}
+.leftArrow {
+    font-size: 84px;
+    height: 100%;
+    width: 40%;
+    float: left;
+    color: white;
+    z-index: 1;
+    position: fixed;
+    cursor: pointer;
+}
+.leftArrow i {
+    padding-top: 45%;
+}
+#backArrowDiv {
+    top: 0;
+    color: black;
+    font-size: 84px;
+    height: 100%;
+    width: 40%;
+    float: left;
+    z-index: 2;
+    position: fixed;
+    cursor: pointer;
+}
+#backArrowDiv i {
+    padding-top: 45%;
+}
 @media only screen and (max-width: 800px){
 
 .sidebar .menu li {
