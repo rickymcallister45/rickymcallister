@@ -2,6 +2,8 @@
 
 added calender to index.html
 deleted app/calander
+remove mkdir from mp3upload.php
+fix php/readDirectory path...i think
 created app/upload + add jQuery for loop to elimate redundency on previous upload files
 deleted mp3Upload + imageUpload
 added readDirectory to app/php //phpDevelopment //future plan to read files/mp3 for soundboard
