@@ -16,7 +16,7 @@ if(!empty($_POST['submit'])){
 		}
 		$array=explode(".", $_FILES['upload']['name']);
 		$fileNameExtension=array_pop($array);
-		$finalFileName=$renameFileValue.$fileNameExtension;
+		$finalFileName=$renameFileValue.'.'.$fileNameExtension;
 		$finalDestination = "../../files/img/".$folderNameValue;
 		if(!is_dir($finalDestination)){
 			mkdir($finalDestination,0777,true);
