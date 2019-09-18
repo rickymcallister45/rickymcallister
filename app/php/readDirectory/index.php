@@ -5,7 +5,7 @@ $files = scandir($path);
 
 $files = array_diff(scandir($path), array('.', '..'));
 
-var_dump($files);
+print_r($files);
 
 
 ?>
