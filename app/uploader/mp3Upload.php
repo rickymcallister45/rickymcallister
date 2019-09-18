@@ -13,7 +13,7 @@ if(!empty($_POST['submit'])){
 		}
 		$array=explode(".", $_FILES['upload']['name']);
 		$fileNameExtension=array_pop($array);
-		$finalFileName=$renameFileValue.$fileNameExtension;
+		$finalFileName=$renameFileValue.'.'.$fileNameExtension;
 		$finalDestination = "../../files/mp3/";
 		if(!is_dir($finalDestination)){
 			$destination=$finalDestination."/".$finalFileName;
