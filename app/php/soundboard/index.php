@@ -4,7 +4,7 @@ $files = scandir($path);
 $files = array_diff(scandir($path), array('.', '..'));
 
 print_r($files);
-
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,11 +16,11 @@ print_r($files);
 <body>
   <h1>rickyMcAllister</h1>
 <div id="soundboard">
-  
+  <php
   foreach($sound as $files){
   echo "<ul class='sounds'>.$sound.</ul>";
 }
-  
+  ?>
   
   
   
