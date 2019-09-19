@@ -19,7 +19,7 @@ print_r($files.</br>);
   
   <?php
   foreach($sound as $files){
-  echo "'<ul class='sounds'>'.$sound.'</ul>'";
+  echo "<ul class='sounds'>".$sound."</ul>";
 }
   ?>
   
