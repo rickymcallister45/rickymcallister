@@ -30,14 +30,7 @@ print_r($files);
 </body>
 <footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
-      $('.sounds').click(function() {
-        var name = $(this).text();
-        var audio = new Audio('../../../files/mp3/' + name + ".mp3"');
-        console.log(name);
-        audio.play();
-        
-            });
+      <script src="soundboard.js"></script>
     
     </script>
 </footer>
