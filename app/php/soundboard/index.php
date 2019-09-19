@@ -18,7 +18,7 @@ print_r($files);
 <div id="soundboard">
   
   <?php
-  for($i=2; $i< $files; $i++){
+  for($i=2; $i< count($files); $i++){
   echo "<ul class='sounds'>".$files[$i]."</ul>";
 }
   ?>
