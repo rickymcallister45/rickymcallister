@@ -3,7 +3,7 @@ $path    = '../../../files/mp3';
 $files = scandir($path);
 $files = array_diff(scandir($path), array('.', '..'));
 
-print_r($files);
+print_r($files.'</br>');
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,7 @@ print_r($files);
 <div id="soundboard">
   <php
   foreach($sound as $files){
-  echo "<ul class='sounds'>.$sound.</ul>";
+  echo "'<ul class='sounds'>'.$sound.'</ul>'";
 }
   ?>
   
@@ -41,13 +41,5 @@ print_r($files);
     </script>
 </footer>
 </html>
-
-
-
-
-
-
-
-
 
 ?>
