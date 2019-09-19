@@ -18,8 +18,8 @@ print_r($files);
 <div id="soundboard">
   
   <?php
-  foreach($sound as $files){
-  echo "<ul class='sounds'>".$sound."</ul>";
+  for($i=2; $i< $files; $i++){
+  echo "<ul class='sounds'>".$files[$i]."</ul>";
 }
   ?>
   
