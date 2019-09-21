@@ -2,8 +2,8 @@
 
 $dbServername ="localhost";
 $dbUsername = "username";
-$dbPassword = "Swordfish";
-$dbName = "loginsystem";
+$dbPassword = "password";
+$dbName = "test";
 
 $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 
