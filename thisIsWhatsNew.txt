@@ -2,7 +2,8 @@
 
 added input in app/php/readDirectory
 added more options to the vanillaBackground.js file in app/desktop
-redid server so mysql root had correct permisions 
+redid server so mysql root had correct permisions
+added 3 files to files/mp3  //serverSide not on github 
 updated app/soundboard to  php file
 started coverting app/soundboard to a php file
 added calender to index.html
