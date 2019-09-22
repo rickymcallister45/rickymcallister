@@ -3,7 +3,7 @@
 $dbServername ="localhost";
 $dbUsername = "newuser";
 $dbPassword = "password";
-$dbName = "testToDo";
+$dbName = "test";
 
 $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 
