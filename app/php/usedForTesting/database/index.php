@@ -18,6 +18,27 @@ if($db->error){
 
 /*
 
-  9:05
+  9:05 //delete lines 7 through here 
+
+if(!empty($_POST['submit'])) {
+    $sql = "INSERT INTO `toDo` SET `title`='{$_POST['title']}', `time`='{$dateAndTime}', `ip`='$IP_Adress'";
+
+$db->query($sql);
+if($db->error){
+  echo $db->error;
+}else{
+  echo "Submitted from  ".$IP_Adress;
+}
+
+
+}
+
+?>
+
+<form action="" method="POST">
+  TASK: <input name='title' type='text' value=''/><br/>
+  <input name='submit' type='submit' value='submit'/>
+</form>
+
 
 */
