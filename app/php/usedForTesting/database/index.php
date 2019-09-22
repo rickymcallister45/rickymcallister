@@ -1,6 +1,5 @@
 <?php 
-$IP_Adress = $_SERVER[REMOTE_ADDR];
-
+echo $IP_Adress = $_SERVER[REMOTE_ADDR];
 echo $dateAndTime = date('Y-m-d H:i:s');
 
 require_once('./connect.db.php');
