@@ -6,7 +6,7 @@
 		    $pathYouAreChecking = $_POST['input'];
 		    $files = scandir($pathYouAreChecking);
         $files = array_diff(scandir($path), array('.', '..'));
-        print_r($files);
+        print_r($files."\n");
 	}
 }
 ?>
