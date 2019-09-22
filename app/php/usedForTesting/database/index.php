@@ -1,6 +1,7 @@
 <?php 
-echo $IP_Adress = $_SERVER[REMOTE_ADDR];
-echo $dateAndTime = date('Y-m-d H:i:s');
+    $IP_Adress = $_SERVER[REMOTE_ADDR];
+    $dateAndTime = date('Y-m-d H:i:s');
+echo "Your IP Adress is ".$IP_Adress."     And the current Date Time IS".$dateAndTime;
 
 require_once('./connect.db.php');
 
@@ -16,11 +17,16 @@ if($db->error){
     }
 }
 
-
+?>
 <form action="" method="POST">
   TASK: <input name='title' type='text' value=''/><br/>
   <input name='submit' type='submit' value='submit'/>
 </form>
+      
+
+
+
+
       
 /*used for testing
 $sql = "INSERT INTO `toDo` SET `title`='testing todo insert',`time`='{$dateAndTime}',`ip`='{$IP_Adress}'";
