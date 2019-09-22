@@ -15,8 +15,8 @@ $files = array_diff(scandir($path), array('.', '..'));
     <div id="soundboard">
   
     <?php
-      for($i=2; $i< count($files); $i++){
-      echo "<ul class='sounds'>".$files[$i]."</ul>";
+      for($i=0; $i< count($files); $i++){
+      echo "<ul class='sounds'>".$files[$i + 2]."</ul>";
       }
     ?>
     
