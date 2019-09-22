@@ -5,7 +5,7 @@ echo $dateAndTime = date('Y-m-d H:i:s');
 
 require_once('./connect.php');
 
-$sql = "INSERT INTO `toDo` SET `Title`='testing todo insert',`time`='{$dateAndTime}',`ip`='{$IP_Adress}'";
+$sql = "INSERT INTO `toDo` SET `title`='testing todo insert',`time`='{$dateAndTime}',`ip`='{$IP_Adress}'";
 
 $db->query($sql);
 if($db->error){
