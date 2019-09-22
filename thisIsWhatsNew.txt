@@ -1,5 +1,8 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
+added input in app/php/readDirectory
+added more options to the vanillaBackground.js file in app/desktop
+redid server so mysql root had correct permisions 
 updated app/soundboard to  php file
 started coverting app/soundboard to a php file
 added calender to index.html
