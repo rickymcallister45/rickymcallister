@@ -3,7 +3,7 @@ $IP_Adress = $_SERVER[REMOTE_ADDR];
 
 echo $dateAndTime = date('Y-m-d H:i:s');
 
-require_once('./connect.dbh.php');
+require_once('./connect.db.php');
 
 $sql = "INSERT INTO `toDo` SET `title`='testing todo insert',`time`='{$dateAndTime}',`ip`='{$IP_Adress}'";
 
