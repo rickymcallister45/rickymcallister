@@ -35,8 +35,20 @@ if($db->error){
 
     if($displayCheck > 0) {
         while($row = mysqli_fetch_assoc($displayResult)) {
-            echo "<div class='".$row['status']." items'>".$row['title']."<input class='updateButton' name='done' type='submit' value='done'/><br>";   
+            echo "<div class='".$row['status']." items'>".$row['title']."<input class='updateButton' name='status' type='submit' value='done'/><br>";   
         }
     }
+
+    if(!empty($_POST['status'])) {
+        $sqlUpdate = "UPDATE INTO `{$sqlTableVariable}` SET `status`='done'";
+    
+        $db->query($sqlUpdate);
+
+        if($db->error){
+            echo $db->error;
+        }else{
+            echo "     Submitted from  ".$IP_Adress;
+        }
+}
 
 ?>
