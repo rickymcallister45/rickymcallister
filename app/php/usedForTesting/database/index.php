@@ -10,7 +10,7 @@ require_once('./connect.db.php');
 
 if(!empty($_POST['submit'])) {
     $_POST['title'] = addslashes($_POST['title']); 
-    $sql = "INSERT INTO `{$sqlTableVariable}` SET `title`='{$_POST['title']}', `time`='{$dateAndTime}', `ip`='$IP_Adress'";
+    $sql = "INSERT INTO `{$sqlTableVariable}` SET `title`='{$_POST['title']}', `time`='{$dateAndTime}', `ip`='$IP_Adress', `status`='open';";
 
 $db->query($sql);
 if($db->error){
@@ -22,9 +22,9 @@ if($db->error){
 
 ?>
 
-<form action="" method="POST">
-    <input name='title' type='text' value=''/>
-    <input name='submit' type='submit' value='submit'/>
+<form id='inputForm' action="" method="POST">
+    <input id='titleInput'name='title' type='text' value=''/>
+    <input id='submitButton'name='submit' type='submit' value='submit'/>
 </form>
   
 <?php
