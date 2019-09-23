@@ -47,7 +47,7 @@ if($db->error){
 
     if($displayCheck > 0) {
         while($row = mysqli_fetch_assoc($displayResult)) {
-            echo "<div class='".$row['status']." items'>".$row['title']."<form id='statusForm' action='' method='POST'><input class='updateButton' name='status' type='submit' value='done'/></form><br>";   
+            echo "<div class='".$row['status']." items'>".$row['title']."<form id='statusForm' action='' method='POST'><input class='updateButton' name='status' type='submit' value='done'/></form></div><br>";   
         }
     }
 
