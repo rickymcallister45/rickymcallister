@@ -21,8 +21,17 @@ if($db->error){
 }
 
 ?>
+<!doctype html>
 
-<form id='inputForm' action="" method="POST">
+<html>
+  <head>
+      <title>RickyMcAllister</title>
+      <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    <form id='inputForm' action="" method="POST">
     <input id='titleInput' name='title' type='text' value=''/>
     <input id='submitButton' name='submit' type='submit' value='submit'/>
 </form>
@@ -52,3 +61,6 @@ if($db->error){
 }
 
 ?>
+  </body>
+</html>
+
