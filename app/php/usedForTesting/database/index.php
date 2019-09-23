@@ -52,7 +52,7 @@ if($db->error){
     }
 
     if($_POST['status']) {
-        $sqlUpdate = "UPDATE INTO `{$sqlTableVariable}` SET `status`='done'";
+        $sqlUpdate = "UPDATE `{$sqlTableVariable}` SET `status`='done'";
     
         $db->query($sqlUpdate);
 
