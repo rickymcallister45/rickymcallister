@@ -3,7 +3,7 @@
 
     $IP_Adress = $_SERVER[REMOTE_ADDR];
     $dateAndTime = date('Y-m-d H:i:s');
-echo "Your IP Adress is ".$IP_Adress."     And the current Date Time IS".$dateAndTime;
+echo "<div id='info'>Your IP Adress is ".$IP_Adress."     And the current Date Time IS".$dateAndTime."</div>";
 
 require_once('./connect.db.php');
 
@@ -23,8 +23,8 @@ if($db->error){
 ?>
 
 <form action="" method="POST">
-  TASK: <input name='title' type='text' value=''/><br/>
-  <input name='submit' type='submit' value='submit'/>
+    <input name='title' type='text' value=''/>
+    <input name='submit' type='submit' value='submit'/>
 </form>
   
 <?php
@@ -35,7 +35,7 @@ if($db->error){
 
     if($displayCheck > 0) {
         while($row = mysqli_fetch_assoc($displayResult)) {
-            echo $row['title']."<br>";   
+            echo "<div class='".$row['status']." items'>".$row['title']."<input class='updateButton' name='done' type='submit' value='done'/><br>";   
         }
     }
 
