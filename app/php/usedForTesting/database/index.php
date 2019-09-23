@@ -23,8 +23,8 @@ if($db->error){
 ?>
 
 <form id='inputForm' action="" method="POST">
-    <input id='titleInput'name='title' type='text' value=''/>
-    <input id='submitButton'name='submit' type='submit' value='submit'/>
+    <input id='titleInput' name='title' type='text' value=''/>
+    <input id='submitButton' name='submit' type='submit' value='submit'/>
 </form>
   
 <?php
