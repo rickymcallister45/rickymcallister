@@ -3,7 +3,7 @@
 
     $IP_Adress = $_SERVER[REMOTE_ADDR];
     $dateAndTime = date('Y-m-d H:i:s');
-echo "<div id='info'>Your IP Adress is ".$IP_Adress."     And the current Date Time IS".$dateAndTime."</div>";
+echo "<div id='info'>Your IP Adress is ".$IP_Adress."     And the current Date Time IS  ".$dateAndTime."</div>";
 
 require_once('./connect.db.php');
 
@@ -59,7 +59,7 @@ if($db->error){
         if($db->error){
             echo $db->error;
         }else{
-            echo "     Submitted from  ".$IP_Adress;
+            echo "     Updated from  ".$IP_Adress;
         }
 }
 
