@@ -31,6 +31,9 @@ if($db->error){
   </head>
 
   <body>
+      <hr>
+      <h1 id="headerLink"><a href="http://rickymcallister.com/">RickyMcAllister.com</a></h1>
+      <hr>
     <form id='inputForm' action="" method="POST">
     <input id='titleInput' name='title' type='text' value=''/>
     <input id='submitButton' name='submit' type='submit' value='submit'/>
