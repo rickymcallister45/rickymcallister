@@ -47,9 +47,10 @@ body {
 }
 
 .items {
-   width: 100%;
-   font-size: 36px;
-   text-align: center;
+    height: 70px;
+    width: 70%;
+    font-size: 36px;
+    text-align: center;;
 }
 .open {
   
@@ -62,7 +63,7 @@ body {
 .updateButton {
   background-color: black;
   color: white;
-  float: left;
+  float: right;
   display: inline-block;
   height: 60px;
   width: 100px;
