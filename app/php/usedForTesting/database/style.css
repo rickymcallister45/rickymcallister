@@ -53,6 +53,9 @@ body {
     font-size: 36px;
     text-align: center;;
 }
+#task {
+ padding-top: 20px; 
+} 
 #statusForm {
   
 }
