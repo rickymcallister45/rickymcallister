@@ -33,6 +33,7 @@ body {
 }
 
 #titleInput {
+  padding-bottom: 20px;
   text-align: center;
   height: 100px;
   width: 700px;
@@ -52,6 +53,11 @@ body {
     font-size: 36px;
     text-align: center;;
 }
+#statusForm {
+   height: 70px;
+  width: 30%;
+}
+
 .open {
   
 }
