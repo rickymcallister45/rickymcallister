@@ -7,7 +7,9 @@ $('#textArea').keyup(function(event){
  });
 
 $('form').submit(function(){
-  alert('form is submitted using jquery');
+  $.post('handlers/messages.php?action=sendMessage&message='+ message, function(response) {
+    alert(response);
+  });
   
   return false;
 
