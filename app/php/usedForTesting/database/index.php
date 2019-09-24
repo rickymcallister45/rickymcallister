@@ -16,7 +16,7 @@ $db->query($sql);
 if($db->error){
   echo $db->error;
 }else{
-  echo "Submitted from  ".$IP_Adress;
+  echo "<script>alert('Submitted from '".$IP_Adress."');</script>";
     }
 }
 
@@ -47,12 +47,13 @@ if($db->error){
 
     if($displayCheck > 0) {
         while($row = mysqli_fetch_assoc($displayResult)) {
-            echo "<div class='".$row['status']." items'>".$row['title']."<form id='statusForm' action='' method='POST'><input class='updateButton' name='status' type='submit' value='done'/></form></div><br>";   
+            echo "<div class='".$row['status']." items'>".$row['title']."<form id='statusForm' action='' method='POST'><input type='hidden' name='id' value='".$row["id"]."'><input class='updateButton' name='status' type='submit' value='done'/></form></div><br>";   
         }
     }
 
     if($_POST['status']) {
-        $sqlUpdate = "UPDATE `{$sqlTableVariable}` SET `status`='done' WHERE `id`='".$row['id']."';";
+        $id = $_POST["id"];
+        $sqlUpdate = "UPDATE `{$sqlTableVariable}` SET `status`='done' WHERE `id`='".$id."';";
     
         $db->query($sqlUpdate);
 
