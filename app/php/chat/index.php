@@ -15,7 +15,7 @@
       <div id="chatWrapper">
         <div id-"chat></div>
                  <form method="POST">
-                                    <textarea name="message" cols="30" rows="10" class="textarea"></textarea>                  
+                                    <textarea name="message" cols="30" rows="7" id="textArea"></textarea>                  
                  </form>
        </div>
     </div>
