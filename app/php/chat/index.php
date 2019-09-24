@@ -11,7 +11,12 @@
   </head>
 
   <body>
-    <h1>Hello Plunker!</h1>
+    <div id="container">
+      <div id="chatWrapper">
+        <div id-"chat></div>
+                 <form method="POST"></form>
+       </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
