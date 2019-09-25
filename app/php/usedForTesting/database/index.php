@@ -41,7 +41,7 @@ if($db->error){
   
 <?php
 
-    $sqlDisplay = "SELECT * FROM {$sqlTableVariable}";
+    $sqlDisplay = "SELECT * FROM {$sqlTableVariable} ORDER BY status DESC";
     $displayResult = mysqli_query($db, $sqlDisplay);
     $displayCheck = mysqli_num_rows($displayResult);
 
