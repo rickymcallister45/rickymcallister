@@ -6,6 +6,7 @@ a, a:visited, a:hover a:link, a:active {
 }
 input[type=submit] {
     -webkit-border-radius:0px;
+	-webkit-appearance:none;
 }
 /* above == zero out all */
 html {
