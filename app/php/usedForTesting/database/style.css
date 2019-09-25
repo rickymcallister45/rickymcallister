@@ -8,6 +8,15 @@ input[type=submit] {
     -webkit-border-radius:0px;
 	-webkit-appearance:none;
 }
+input, textarea, button {
+    -webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+
+    -webkit-border-radius: 0; 
+}
 /* above == zero out all */
 html {
   height: 100vh;
