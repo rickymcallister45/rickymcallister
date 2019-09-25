@@ -14,8 +14,7 @@ body {
 }  
 
 #info {
-  width 100%;
-  positon: absolute;
+  width: 100%;
   top: 0;
   text-align: center;
   font-size: 36px;    
