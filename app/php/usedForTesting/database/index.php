@@ -16,7 +16,7 @@ $db->query($sql);
 if($db->error){
   echo $db->error;
 }else{
-  echo "<script>alert('Submitted from '".$IP_Adress."');</script>";
+   header("Location: ./index.php");
     }
 }
 
@@ -62,7 +62,7 @@ if($db->error){
         if($db->error){
             echo $db->error;
         }else{
-            echo "     Updated from  ".$IP_Adress;
+           header("Location: ./index.php");
         }
 }
 
