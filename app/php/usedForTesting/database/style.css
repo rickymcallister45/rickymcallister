@@ -55,13 +55,16 @@ body {
     height: 70px;
     width: 70%;
     font-size: 36px;
-    text-align: center;;
+    text-align: center;
 }
 #task {
  padding-top: 20px; 
 } 
 #statusForm {
-  
+  height: 70px;
+  width: 70%;
+  font-size: 36px;
+  text-align: center;
 }
 
 .open {
