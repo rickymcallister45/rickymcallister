@@ -2,7 +2,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 a, a:visited, a:hover a:link, a:active {
 	text-decoration: none;
 	color: black;
-
+}
 /* above == zero out all */
 html {
   height: 100vh;
