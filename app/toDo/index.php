@@ -1,101 +1,73 @@
-<?php
+<?php 
+    $sqlTableVariable = "toDo";
 
-$errors = "";
+    $IP_Adress = $_SERVER[REMOTE_ADDR];
+    $dateAndTime = date('Y-m-d H:i:s');
+echo "<div id='info'>Your IP Adress is ".$IP_Adress."     And the current Date Time IS  ".$dateAndTime."</div>";
 
-$servername = "localhost";
-$username = "username";
-$password = "Swordfish";
-$dbname = "todo";
+require_once('./connect.db.php');
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-if (isset($_POST['submit'])) {
-	if(empty($_POST['title'])) {
-		$errors = "You must fill in task";
-	} else {
-		$ipTracker = $_SERVER[REMOTE_ADDR];
-		$title = $_POST['title'];
-		$sqlInsert = "INSERT INTO todo (title) VALUES ('$title');";
-		mysqli_query($conn, $sqlInsert);		
-		header('location: index.php');
-	}
-}
+if(!empty($_POST['submit'])) {
+    $_POST['title'] = addslashes($_POST['title']); 
+    $sql = "INSERT INTO `{$sqlTableVariable}` SET `title`='{$_POST['title']}', `time`='{$dateAndTime}', `ip`='$IP_Adress', `status`='open';";
 
-if(isset($_GET['del_task'])) {
-	$id = $_GET['del_task'];
-
-	mysqli_querry($conn, "DELETE FROM `todo` WHERE id=".$id);
-	header('location: index.php');
+$db->query($sql);
+if($db->error){
+  echo $db->error;
+}else{
+   header("Location: ./index.php");
+    }
 }
 
 ?>
-<!DOCTYPE HTML>
+<!doctype html>
+
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>rickyMcAllister.com</title>
-		<meta name="viewport" content="width=device-width. initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-<body>
-		<div id="title">TODO</div>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>RickyMcAllister</title>
+      <link rel="stylesheet" href="style.css">
+    
+  </head>
 
-		<form method="POST" action="php/todo.insert.php">
-			<input type="text" name="title" placeholder="TODO" id="insertBox">
-			<button type="submit" name="submit" id="addButton">SUBMIT</button>
-		</form>
-			
-<?php if (isset($errors)) { ?>
-	<p><?php echo $errors; ?></p>
-<?php } ?>
-
-		<table>
-			<tbody>
+  <body>
+      <hr>
+      <h1 id="headerLink"><a href="http://rickymcallister.com/">RickyMcAllister.com</a></h1>
+      <hr>
+    <form id='inputForm' action="" method="POST">
+    <input id='titleInput' name='title' type='text' value=''/>
+    <input id='submitButton' name='submit' type='submit' value='submit'/>
+</form>
+  
 <?php
 
-	$sqlDisplay = "SELECT * FROM todo;";
+    $sqlDisplay = "SELECT * FROM {$sqlTableVariable} ORDER BY status DESC";
+    $displayResult = mysqli_query($db, $sqlDisplay);
+    $displayCheck = mysqli_num_rows($displayResult);
 
-	$result = mysqli_query($conn, $sqlDisplay);
-	$i = 1;
-	while($row = mysqli_fetch_array($result)) { 
-		<tr>
-			<td> <?php echo $i ?> </td>
-			<td class="todoList"> <?php echo $row['title']; ?> </td>
-			<td class="finished">
-				<a href="index.php?del_task=<?php echo $row['id'] ?>">Done</a>
-			</td>
-		</tr>
-		$i++; 
-	} 
+    if($displayCheck > 0) {
+        while($row = mysqli_fetch_assoc($displayResult)) {
+            echo "<div class='".$row['status']." items'><p id='task'>".$row['title']."</p></div>
+            <div id='statusForm'><form action='' method='POST'><input type='hidden' name='id' value='".$row["id"]."'>
+            <input class='updateButton' name='status' type='submit' value='done'/></form></div><br>";   
+        }
+    }
+
+    if($_POST['status']) {
+        $id = $_POST["id"];
+        $sqlUpdate = "UPDATE `{$sqlTableVariable}` SET `status`='done' WHERE `id`='".$id."';";
+    
+        $db->query($sqlUpdate);
+
+        if($db->error){
+            echo $db->error;
+        }else{
+           header("Location: ./index.php");
+        }
+}
+
 ?>
+  </body>
+</html>
 
-
-
-				<tr>
-					<td class="todoList">task</td>
-					<td class="finished"> 
-						<a href="index.php?del_task=<?php echo $row['id'] ?>">done</a> 
-					</td>
-				</tr>
-				<tr>
-					<td class="todoList">tasktasktasktask</td>
-					<td class="finished"> 
-						<a href="index.php?del_task=<?php echo $row['id'] ?>">done</a> 
-					</td>
-				</tr>
-				<tr>
-					<td class="todoList">tasktasktasktask</td>
-					<td class="finished"> 
-						<a href="index.php?del_task=<?php echo $row['id'] ?>">done</a> 
-					</td>
-				</tr>
-				<tr>
-					<td class="todoList">task</td>
-					<td class="finished"> 
-						<a href="index.php?del_task=<?php echo $row['id'] ?>">done</a> 
-					</td>
-				</tr>
-			</tbody>
-		</table>
-</body>
-		
