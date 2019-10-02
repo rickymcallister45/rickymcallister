@@ -1,5 +1,6 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
+started working on a store template //vue.js development
 darkend gradient on index to match brothers wall better
 added fallback color to index after discovering gradiant not working on all devices
 set app/toDO into deployment
