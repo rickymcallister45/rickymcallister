@@ -60,12 +60,12 @@ if($db->error){
     
         $db->query($sqlUpdate);
 
-        if($db->error){
+       if($db->error){
             echo $db->error;
-        }else{
-           header("Location: ./index.php");
+       }else{
+            header("Location: ./index.php");
         }
-}
+    }
 
 ?>
   </body>
