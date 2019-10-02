@@ -6,6 +6,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 body {
     margin: 0;
     padding: 0;
+    background-color: #0c034a;
     background-image: linear-gradient(#0c034a, #033640);
     height: 100%;
     background-repeat: no-repeat;
