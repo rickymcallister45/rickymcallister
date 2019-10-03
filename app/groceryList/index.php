@@ -1,5 +1,5 @@
 <?php 
-    $sqlTableVariable = "toDo";
+    $sqlTableVariable = "groceryList";
 
     $IP_Adress = $_SERVER[REMOTE_ADDR];
     $dateAndTime = date('Y-m-d H:i:s');
