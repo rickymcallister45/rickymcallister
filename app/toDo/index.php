@@ -3,7 +3,7 @@
 
     $IP_Adress = $_SERVER[REMOTE_ADDR];
     $dateAndTime = date('Y-m-d H:i:s');
-echo "<div id='info'>Your IP Adress is ".$IP_Adress."     And the current Date Time IS  ".$dateAndTime."</div>";
+echo "<div id='info'>Your IP Adress is ".$IP_Adress."</div>";
 
 require_once('./connect.db.php');
 
