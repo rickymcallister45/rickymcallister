@@ -1,5 +1,6 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
+added app/remote   // first time using an image sprite
 added app/groceryList
 started working on a store template //vue.js development
 darkend gradient on index to match brothers wall better
