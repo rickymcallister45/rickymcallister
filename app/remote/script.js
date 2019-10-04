@@ -86,7 +86,7 @@ let data = [{
     
 ];
 
-var url = 'https://www.watchnewslive.tv/';
+var url = 'http://watchnewslive.tv/';
 
 for(i=0;i<data.length;i++){
  
