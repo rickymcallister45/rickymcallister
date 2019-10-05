@@ -20,7 +20,7 @@ function lightsOff(){
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://192.168.07/api/ozUDQgb4XNqNmcLhkg9geZpURRVI7G9P7mXLNtZ3/groups/1/action",
+  "url": "http://192.168.06/api/ozUDQgb4XNqNmcLhkg9geZpURRVI7G9P7mXLNtZ3/groups/1/action",
   "method": "PUT",
   "headers": {
     "content-type": "application/json"
