@@ -1,0 +1,329 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* above == zero out all */
+
+
+html {
+  height: 100vh;
+	width: 100vw;
+  font-size: 48px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+	background-color: #0c034a;
+  background-image: linear-gradient(#0c034a, #033640);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed
+}
+
+#blueprint {
+  margin-top: 1%;
+  margin-left: 25%;
+  height: 80%;
+  width: 45%;
+}
+
+.light {
+  position: absolute;
+  border-width: 0;
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  background-color: #999999;
+}
+
+#leftLamp1 {
+  left: 35%;
+  top: 5%;
+}
+
+#rightLamp {
+  left: 60%;
+  top: 5%;
+}
+
+#kitchen  {
+  left: 29%;
+  top: 14%;
+}
+
+#bathroom {
+  left: 32%;
+  top: 73%;
+}
+
+#bed {
+  left: 54%;
+  top: 73%;
+}
+
+.button {
+  position: absolute;
+  margin-top: 3%;
+  width: 15%;
+  height: 11%;
+}
+
+#allOn {
+  left: 8%;
+}
+
+#allOff {
+  left: 72%;
+}
+
+.slidecontainer {
+ position: absolute;
+ width: 45%;
+ left: 25%;
+ top: 94%;
+}
+
+#dimmerSwitch {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#dimmerSwitch:hover {
+  opacity: 1;
+}
+
+.radioContainer {
+  position: absolute;
+  width: 45%;
+  left: 25%;
+  top: 83%;
+}
+
+.radioButtons {
+  margin-left: 15%;
+  -webkit-appearance: none;
+  border: 3px solid black;
+  box-sizing: border-box;
+  border-radius: 0;
+  height: 100px;
+  width: 100px;
+}
+
+input[type=radio]:checked {
+  background-color: black;
+  background-size: 10px 10px;
+}
+
+#radioWhite {
+  background-color: white;
+}
+
+#radioBlue {
+  background-color: lightblue;
+}
+
+#radioRed {
+  background-color: red;
+}
+
+
+@media only screen and (max-width: 1045px){
+
+#blueprint {
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 80%;
+  width: 90%;
+}
+
+.light {
+  height: 8em;
+  width: 8em;
+}
+
+#leftLamp1 {
+  left: 25%;
+}
+
+#rightLamp {
+  left: 75%;
+}
+
+#kitchen  {
+  left: 10%;
+  top: 15%;
+}
+
+#bathroom {
+  left: 20%;
+}
+
+#bed {
+  left: 60%;
+}
+
+.button {
+  top: 84%;
+}
+
+#allOn {
+  left: 5%;
+  top: 84%;
+}
+
+#allOff {
+  left: 80%;
+  top: 84%;
+  
+}
+
+.slidecontainer {
+ width: 45%;
+ left: 28%;
+ top: 94%;
+}
+
+.radioContainer {
+  left: 32%;
+  top: 87%;
+}
+
+.radioButtons {
+  height: 75px;
+  width: 75px;
+  margin-left: 7%
+  
+}
+
+  /*end max-width: 1045px */
+}
+
+
+@media only screen and (max-width: 800px){
+
+
+.light {
+  height: 6em;
+  width: 6em;
+}
+
+.slidecontainer {
+ top: 93%;
+}
+
+.radioContainer {
+  left: 28%;
+  top: 85%;
+}
+
+
+.button {
+  top: 84%;
+}
+  /*end max-width: 800px */
+}
+
+@media only screen and (max-width: 500px){
+
+#blueprint {
+  height: 75%;
+}
+
+.light {
+  height: 3em;
+  width: 3em;
+}
+
+#kitchen  {
+  top: 14%;
+}
+
+#bathroom {
+  top: 69%;
+}
+
+#bed {
+  top: 69%;
+}
+
+.slidecontainer {
+ top: 91%;
+}
+
+.radioContainer {
+  left: 32%;
+  top: 84%;
+}
+
+.radioButtons {
+  height: 40px;
+  width: 40px;
+  margin-left: 1%;
+  
+}
+
+  /*end max-width: 500px */
+}
+
+
+@media only screen and (max-width: 385px){
+
+#kitchen  {
+  top: 14%;
+}
+
+.radioContainer {
+  left: 30%;
+  top: 82%;
+}
+
+.radioButtons {
+  height: 42px;
+  width: 42px;
+  margin-left: 0;
+}
+
+ /*end max-width: 385px */
+}
+
+@media only screen and (max-width: 365px){
+
+.radioContainer {
+  left: 30%;
+  top: 82%;
+}
+
+.radioButtons {
+  height: 35px;
+  width: 35px;
+  margin-left: 5px;
+}
+
+ /*end max-width: 365px */
+}
+
+
+@media only screen and (max-width: 325px){
+ 
+#kitchen  {
+  top: 13%;
+}
+
+.radioContainer {
+  left: 30%;
+  top: 82%;
+}
+
+.radioButtons {
+  height: 35px;
+  width: 35px;
+  margin: 1px;
+}
+
+ /*end max-width: 325px */
+}
