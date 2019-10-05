@@ -2,7 +2,7 @@ const { Discovery } = require('magic-home');
  
 let discovery = new Discovery();
 discovery.scan(500).then(devices => {
-    //do something with the result
+   console.log(devices);
 });
 
 function lightsOn(){
