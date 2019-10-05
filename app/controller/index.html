@@ -1,4 +1,4 @@
-
+      
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,26 +8,33 @@
 	
 	<title>rickyMcAllister</title>
 		
-	<script type="text/javascript" src="js/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<button class="Light" id="leftLamp1"></button>
-	<button class="Light" id="rightLamp"></button>
-	<button class="Light" id="kitchen"></button>
-	<button class="Light" id="bathroom"></button>
-	<button class="Light" id="bathroom2"></button>
-	<button class="Light" id="cabinet"></button>
-	<button class="Light" id="bed"></button>
+  
+  <img id='blueprint' src='colonialRidgeStudio.jpg'/>
 
-	<img src="img/colonialRidgeStudio.jpg"></img>
+	<button class="light" id="leftLamp1"></button>
+	<button class="light" id="rightLamp"></button>
+	<button class="light" id="kitchen"></button>
+	<button class="light" id="bathroom"></button>
+	<button class="light" id="bed"></button>
+
+	<button class="button" id="allOn" onclick="lightsOn();">All ON</button>
+	<button class="button" id="allOff" onclick="lightsOff();">All OFF</button>
 	
+	<div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" id="dimmerSwitch">
+  </div>
 	
-	<button class="button" id="AON" onclick="lightsOn();">All ON</button>
-	<button class="button" id="AOFF" onclick="lightsOff();">All OFF</button>
+	<div class='radioContainer'>
+	  <input type="radio" name="white" id='radioWhite' class='radioButtons' value="white">
+    <input type="radio" name="blue" id='radioBlue' class='radioButtons' value="blue">
+    <input type="radio" name="red" id='radioRed' class='radioButtons' value="red">
+  </div>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
 </html>
