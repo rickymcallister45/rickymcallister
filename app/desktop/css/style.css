@@ -156,7 +156,7 @@ div .header {
 	margin-right: 65px;
 }
 #header2 #contacts ul:first-child {
-	padding-left: 50px;
+	padding-left: 40px;
 }
 #header2 #contacts ul i {
 	font-size: 36px;
@@ -266,4 +266,27 @@ i:hover {
 }
 ::-webkit-scrollbar { 
     display: none; 
+}
+.fa-info {
+    margin-left: 131%;
+}
+
+.fa-linkedin {
+    padding-left: 70%;
+}
+
+.fa-quora {
+    padding-left: 60%;
+}
+
+.fa-slack {
+    padding-left: 65%;
+}
+
+.fa-pizza-slice {
+    padding-left: 60%;
+}
+
+.fa-pinterest {
+    padding-left: 70%;
 }
