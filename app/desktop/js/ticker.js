@@ -36,6 +36,7 @@ let ajNews = [];
  ticker.setup = function() {
 	var footer = ticker.createCanvas(ticker.windowWidth, 100);
     footer.position(0, 850);
+    footer.id('pFiveTicker');	 
     footer.style('z-index','3');
 	ticker.build();
 	
