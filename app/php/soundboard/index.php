@@ -39,21 +39,20 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       }else{
         
       $path    = '../../../files/mp3';
-      $files = scandir($path);
+      /*$files = scandir($path);   deleteAfterTesting*/
       $files = array_diff(scandir($path), array('.', '..'));
-      
-      
+            
       for($i=0; $i< count($files); $i++){
-        $seperateFile = explode($files[$i +2]);
-        $file = array_shift($seperateFile);
+        $seperateTheFileAtTheDot = explode($files[$i +2]);
+        $file = array_shift($seperateTheFileAtTheDot);
       echo "<ul class='sounds'>".$file."</ul>";
         }
       }
       
       if($_POST['update']) {
         $id = $_POST["id"];
-        $timesPlayed = $_POST["timesPlayed"]++;
-        $sqlUpdate = "UPDATE `testSoundboard` SET `timesPlayed`='".$timesPlayed."' WHERE `id`='".$id."';";
+        $timesPlayedPlusOne = $_POST["timesPlayed"]++;
+        $sqlUpdate = "UPDATE `testSoundboard` SET `timesPlayed`='".$timesPlayedPlusOne."' WHERE `id`='".$id."';";
     
         $db->query($sqlUpdate);
       }
