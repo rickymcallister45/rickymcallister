@@ -1,8 +1,4 @@
-<?php
-$path    = '../../../files/mp3';
-$files = scandir($path);
-$files = array_diff(scandir($path), array('.', '..'));
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +11,11 @@ $files = array_diff(scandir($path), array('.', '..'));
     <div id="soundboard">
   
     <?php
+      
+      $path    = '../../../files/mp3';
+      $files = scandir($path);
+      $files = array_diff(scandir($path), array('.', '..'));
+      
       for($i=0; $i< count($files); $i++){
       echo "<ul class='sounds'>".$files[$i + 2]."</ul>";
       }
