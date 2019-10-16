@@ -26,7 +26,14 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       
       if($displayCheck > 0){
           while($row = mysqli_fetch_assoc($displayResult)) {
-            echo "<ul class='sounds'>".$row['name']."</ul>";
+            echo "<ul class='sounds'>
+                    <form action='' method='POST'>
+                      <input type='submit' name='update' value='".$row['name']."'>
+                      <input type='hidden' name='id' value='".$row['id']."'>
+                      <input type='hidden' name='playCount' value='".$row['timesPlayed']."'>
+                    </form>
+                  </ul>"; 
+                           
          }
         
       }else{
@@ -38,7 +45,14 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       for($i=0; $i< count($files); $i++){
       echo "<ul class='sounds'>".$files[$i + 2]."</ul>";
         }
-      }  
+      }
+      
+      if($_POST['update']) {
+        $id = $_POST["id"];
+        $sqlUpdate = "UPDATE `testSoundboard` SET `timesPlayed`='done' WHERE `id`='".$id."';";
+    
+        $db->query($sqlUpdate);
+      }
     ?>
     
   </div>
