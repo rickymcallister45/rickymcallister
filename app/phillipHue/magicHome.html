@@ -1,0 +1,22 @@
+<script>
+function discover(json_output) {
+	Discovery.scan(1000).then(devices => {
+		if (json_output) {
+			console.log(JSON.stringify(devices));
+		} else {
+			console.log("Discovered the following devices:");
+			console.log();
+			console.log("Address    \t| ID         \t| Model");
+			console.log("---------------------------------------");
+
+			for(let device of devices) {
+				console.log(`${device.address}\t| ${device.id}\t| ${device.model}`);
+			}
+		}
+		
+	}).catch(err => {
+		return console.log("Error:", err.message);
+	});
+}
+
+</script>
