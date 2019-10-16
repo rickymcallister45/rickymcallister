@@ -6,12 +6,6 @@ $dbName = "testSoundboard";
 
 $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 
-if($db->connect_error){
-  echo $db->connect_error;
-}
-echo "Connection Successful";
-
-
 ?>
 
 
@@ -27,7 +21,7 @@ echo "Connection Successful";
     <div id="soundboard">
   
     <?php
-        $sqlDisplay = "SELECT * FROM testSoundboard ORDER BY timesPlayed DESC";
+        $sqlDisplay = "SELECT * FROM testSoundboard ORDER BY timesPlayed DESC;";
         $displayResult = mysqli_query($db, $sqlDisplay);
         $displayCheck = mysqli_num_rows($displayResult);
       
