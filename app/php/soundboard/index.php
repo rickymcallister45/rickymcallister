@@ -42,8 +42,11 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       $files = scandir($path);
       $files = array_diff(scandir($path), array('.', '..'));
       
+      
       for($i=0; $i< count($files); $i++){
-      echo "<ul class='sounds'>".$files[$i + 2]."</ul>";
+        $seperateFile = explode($files[$i +2]);
+        $file = array_shift($seperateFile);
+      echo "<ul class='sounds'>".$file."</ul>";
         }
       }
       
