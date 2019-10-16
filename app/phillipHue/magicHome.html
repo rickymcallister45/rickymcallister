@@ -1,6 +1,20 @@
-<a href='https://www.npmjs.com/package/magic-home'>instuctions</a>
+<!doctype html>
+
+<html>
+  <head>
+    </head>
+
+  <body>
+    <a href='https://www.npmjs.com/package/magic-home'>instuctions</a>
 
 <script>
+const { Discovery } = require('magic-home');
+ 
+let discovery = new Discovery();
+discovery.scan(500).then(devices => {
+    // do something with the result
+});
+
 function discover(json_output) {
 	Discovery.scan(1000).then(devices => {
 		if (json_output) {
@@ -10,7 +24,6 @@ function discover(json_output) {
 			console.log();
 			console.log("Address    \t| ID         \t| Model");
 			console.log("---------------------------------------");
-
 			for(let device of devices) {
 				console.log(`${device.address}\t| ${device.id}\t| ${device.model}`);
 			}
@@ -20,5 +33,7 @@ function discover(json_output) {
 		return console.log("Error:", err.message);
 	});
 }
-
+discover();
 </script>
+  </body>
+</html>
