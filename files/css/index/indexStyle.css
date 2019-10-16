@@ -221,7 +221,7 @@ a#logo:hover:before {
 .leftArrow {
     font-size: 84px;
     height: 100%;
-    width: 40%;
+    width: 10%;
     float: left;
     color: white;
     z-index: 1;
