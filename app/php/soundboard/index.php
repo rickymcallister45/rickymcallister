@@ -40,7 +40,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       }else{
         
       $path    = '../../../files/mp3';
-      /*$files = scandir($path);   deleteAfterTesting*/
+      $files = scandir($path); 
       $files = array_diff(scandir($path), array('.', '..'));
             
       for($i=0; $i< count($files); $i++){
