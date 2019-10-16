@@ -27,7 +27,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       if($displayCheck > 0){
           while($row = mysqli_fetch_assoc($displayResult)) {
             echo "<ul class='sounds'>
-                    <form action='' method='POST'>
+                    <form action='' method='POST' target='dirtyTrick'>
                       <input type='submit' name='update' value='".$row['name']."'>
                       <input type='hidden' name='id' value='".$row['id']."'>
                       <input type='hidden' name='playCount' value='".$row['timesPlayed']."'>
@@ -49,13 +49,15 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       
       if($_POST['update']) {
         $id = $_POST["id"];
-        $sqlUpdate = "UPDATE `testSoundboard` SET `timesPlayed`='done' WHERE `id`='".$id."';";
+        $timesPlayed = $_POST["timesPlayed"]++;
+        $sqlUpdate = "UPDATE `testSoundboard` SET `timesPlayed`='".$timesPlayed."' WHERE `id`='".$id."';";
     
         $db->query($sqlUpdate);
       }
     ?>
     
   </div>
+  <iframe name="dirtyTrick" style="display:none;"></iframe>
 </body>
 <footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
