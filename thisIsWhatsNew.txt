@@ -1,5 +1,6 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
+changed leftarrow div width on index also switched twitter logo for github logo
 added sql call to app/php/soundboard to filter results... testing phase
 addded id to app/desktop ticker to restyle it
 straightened up app/desktop contact styling
