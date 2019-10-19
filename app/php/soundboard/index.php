@@ -45,7 +45,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
             
       for($i=0; $i< count($files); $i++){
         $seperateTheFileAtTheDot = explode($files[$i +2]);
-        $file = array_shift($seperateTheFileAtTheDot);
+        $file = array_pop($seperateTheFileAtTheDot);
       echo "<ul class='sounds'>".$file."</ul>";
         }
       }
