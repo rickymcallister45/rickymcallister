@@ -25,8 +25,18 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
         $displayResult = mysqli_query($db, $sqlDisplay);
         $displayCheck = mysqli_num_rows($displayResult);
       
-      if($displayCheck > 0){
-          while($row = mysqli_fetch_assoc($displayResult)) {
+      if($displayCheck == 0){
+          $path    = '../../../files/mp3';
+          $files = scandir($path); 
+          $files = array_diff(scandir($path), array('.', '..'));
+            
+           for($i=0; $i< count($files); $i++){
+            $seperateTheFileAtTheDot = explode($files[$i +2]);
+            $file = array_pop($seperateTheFileAtTheDot);
+            echo "<ul class='sounds'>".$file."</ul>";
+            }
+      }else{
+        while($row = mysqli_fetch_assoc($displayResult)) {
             echo "<ul class='sounds'>
                     <form action='' method='POST' target='dirtyTrick'>
                       <input type='submit' name='update' value='".$row['name']."'>
@@ -34,22 +44,8 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
                       <input type='hidden' name='playCount' value='".$row['timesPlayed']."'>
                     </form>
                   </ul>"; 
-                           
-         }
-        
-      }else{
-        
-      $path    = '../../../files/mp3';
-      $files = scandir($path); 
-      $files = array_diff(scandir($path), array('.', '..'));
-            
-      for($i=0; $i< count($files); $i++){
-        $seperateTheFileAtTheDot = explode($files[$i +2]);
-        $file = array_pop($seperateTheFileAtTheDot);
-      echo "<ul class='sounds'>".$file."</ul>";
-        }
       }
-      
+      }
       if($_POST['update']) {
         $id = $_POST["id"];
         $timesPlayedPlusOne = $_POST["timesPlayed"]++;
