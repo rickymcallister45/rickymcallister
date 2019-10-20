@@ -1,1 +1,5 @@
 https://stackoverflow.com/questions/10668311/use-a-php-variable-in-jquery
+
+convert to Vue.js
+add filter by tag
+add upload icon
