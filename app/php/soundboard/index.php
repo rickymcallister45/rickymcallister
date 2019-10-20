@@ -24,7 +24,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
         $sqlDisplay = "SELECT * FROM testSoundboard ORDER BY timesPlayed DESC;";
         $displayResult = mysqli_query($db, $sqlDisplay);
         $displayCheck = mysqli_num_rows($displayResult);
-      
+      /*
       if($displayCheck > 0){
           $path    = '../../../files/mp3';
           $files = scandir($path); 
@@ -36,7 +36,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
             $file = $seperateTheFileAtTheDot;
             echo "<ul class='sounds'>".$file."</ul>";
             }
-      }else{
+      }else{*/
         while($row = mysqli_fetch_assoc($displayResult)) {
             echo "<ul class='sounds'>
                     <form action='' method='POST' target='dirtyTrick'>
@@ -46,7 +46,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
                     </form>
                   </ul>"; 
       }
-      }
+     /* } */
       if($_POST['update']) {
         $id = $_POST["id"];
         $timesPlayedPlusOne = $_POST["timesPlayed"]++;
