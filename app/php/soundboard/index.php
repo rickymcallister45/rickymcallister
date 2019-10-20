@@ -38,6 +38,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
             }
       }else{*/
         while($row = mysqli_fetch_assoc($displayResult)) {
+          echo "$row['name']";
             echo "<ul class='sounds'>
                     <form action='' method='POST' target='dirtyTrick'>
                       <input type='submit' name='update' value='".$row['name']."'>
