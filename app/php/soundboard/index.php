@@ -24,6 +24,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
         $sqlDisplay = "SELECT * FROM main ORDER BY timesPlayed DESC;";
         $displayResult = mysqli_query($db, $sqlDisplay);
         $displayCheck = mysqli_num_rows($displayResult);
+        echo "$displayCheck";
       
       if($displayCheck > 0){
           $path    = '../../../files/mp3';
