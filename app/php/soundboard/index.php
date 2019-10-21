@@ -41,9 +41,9 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 
             echo "<ul class='sounds'>
                     <form action='' method='POST' target='dirtyTrick'>
-                      <input type='submit' name='update' value='".$row['name']."'>
                       <input type='hidden' name='id' value='".$row['id']."'>
                       <input type='hidden' name='playCount' value='".$row['timesPlayed']."'>
+                      <input type='submit' name='update' value='".$row['name']."'>
                     </form>
                   </ul>"; 
       }
