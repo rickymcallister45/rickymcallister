@@ -26,7 +26,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
         $displayCheck = mysqli_num_rows($displayResult);
         
       
-      if($displayCheck > 0){
+      if($displayCheck == 0){
           $path    = '../../../files/mp3';
           $files = scandir($path); 
           $files = array_diff(scandir($path), array('.', '..'));
