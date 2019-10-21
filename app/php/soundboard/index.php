@@ -31,11 +31,9 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
           $files = scandir($path); 
           $files = array_diff(scandir($path), array('.', '..'));
             
-           for($i=0; $i< count($files); $i++){
-            $seperateTheFileAtTheDot = explode($files[$i +2]);
-            array_pop($seperateTheFileAtTheDot);
-             echo "$seperateTheFileAtTheDot";
-            $file = $seperateTheFileAtTheDot;
+           for($i=2; $i< count($files); $i++){
+            $seperateTheFileAtTheDot = explode('.', $files[$i]);
+            $file = $seperateTheFileAtTheDot[0];
             echo "<ul class='sounds'>".$file."</ul>";
             }
       }else{
