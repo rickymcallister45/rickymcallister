@@ -24,9 +24,9 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
         $sqlDisplay = "SELECT * FROM main ORDER BY timesPlayed DESC;";
         $displayResult = mysqli_query($db, $sqlDisplay);
         $displayCheck = mysqli_num_rows($displayResult);
-        echo "$displayCheck";
+        
       
-      if($displayCheck > 0){
+      if($displayCheck == 0){
           $path    = '../../../files/mp3';
           $files = scandir($path); 
           $files = array_diff(scandir($path), array('.', '..'));
@@ -34,6 +34,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
            for($i=0; $i< count($files); $i++){
             $seperateTheFileAtTheDot = explode($files[$i +2]);
             array_pop($seperateTheFileAtTheDot);
+             echo "$seperateTheFileAtTheDot";
             $file = $seperateTheFileAtTheDot;
             echo "<ul class='sounds'>".$file."</ul>";
             }
