@@ -15,6 +15,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
   <meta charset="utf-8">
   <title>rickyMcAllister</title>
     <link rel="stylesheet" type="text/css" href="soundboard.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
   <h1>rickyMcAllister</h1>
@@ -84,6 +85,6 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
   <iframe name="dirtyTrick" style="display:none;"></iframe>
 </body>
 <footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </footer>
 </html>
