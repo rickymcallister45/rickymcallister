@@ -27,7 +27,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
         $displayCheck = mysqli_num_rows($displayResult);
         
       
-      if($displayCheck > 0){
+      if($displayCheck == 0){
           $path    = '../../../files/mp3';
           $files = scandir($path); 
           $files = array_diff(scandir($path), array('.', '..'));
@@ -45,7 +45,8 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
                     audio.play();
                 });</script>";
       }else{
-        while($row = mysqli_fetch_assoc($displayResult)) {
+        $row = mysqli_fetch_assoc($displayResult);
+        while($row) {
 
             echo "<ul class='sounds'>
                     <form action='' method='POST' target='dirtyTrick'>
@@ -57,7 +58,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       }
         echo "<script type='text/javascript'>
                 $('.sounds').click(function() {
-                  var name = $(this).attr('value');
+                  var name = $("."."[name='update']".".").attr('value');
                   var audio = new Audio('../../../files/mp3/' + name + '.mp3');
                   console.log(name);
                     audio.play();
