@@ -32,6 +32,11 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
           $files = scandir($path); 
           $files = array_diff(scandir($path), array('.', '..'));
         
+                  for($i=2; $i< count($files); $i++){
+            $seperateTheFileAtTheDot = explode('.', $files[$i]);
+            $file = $seperateTheFileAtTheDot[0];
+            echo "<ul class='sounds'>".$file."</ul>";
+            }
         echo "<script>
                 $('.sounds').click(function() {
                   var name = $(this).text();
@@ -39,12 +44,6 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
                   console.log(name);
                     audio.play();
                 });</script>";
-            
-           for($i=2; $i< count($files); $i++){
-            $seperateTheFileAtTheDot = explode('.', $files[$i]);
-            $file = $seperateTheFileAtTheDot[0];
-            echo "<ul class='sounds'>".$file."</ul>";
-            }
       }else{
         while($row = mysqli_fetch_assoc($displayResult)) {
 
