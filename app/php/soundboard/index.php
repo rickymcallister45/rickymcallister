@@ -58,7 +58,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       }
         echo "<script type='text/javascript'>
                 $('.sounds').click(function() {
-                  var name = $("."[name='update']".").this.value;
+                  var name = $("."[name='update']".").this.attr('{$row['name']}');
                   var audio = new Audio('../../../files/mp3/' + name + '.mp3');
                   console.log(name);
                     audio.play();
