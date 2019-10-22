@@ -47,7 +47,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       }else{
         
         while($row = mysqli_fetch_assoc($displayResult)) {
-
+            $title = $row['name'];
             echo "<ul class='sounds'>
                     <form action='' method='POST' target='dirtyTrick'>
                       <input type='hidden' name='id' value='".$row['id']."'>
@@ -58,7 +58,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
       }
         echo "<script type='text/javascript'>
                 $('.sounds').click(function() {
-                  var name = $("."[name='update']".").this.attr('{$row['name']}');
+                  var name = $("."[name='update']".").this.attr('{$title}');
                   var audio = new Audio('../../../files/mp3/' + name + '.mp3');
                   console.log(name);
                     audio.play();
