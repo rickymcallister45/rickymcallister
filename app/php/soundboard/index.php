@@ -45,8 +45,8 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
                     audio.play();
                 });</script>";
       }else{
-        $row = mysqli_fetch_assoc($displayResult);
-        while($row) {
+        
+        while($row = mysqli_fetch_assoc($displayResult)) {
 
             echo "<ul class='sounds'>
                     <form action='' method='POST' target='dirtyTrick'>
