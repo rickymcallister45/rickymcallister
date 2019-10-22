@@ -48,14 +48,20 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
                   </ul>"; 
       }
      } 
-      if($_POST['update']) {
-        echo "statement fired";
+      if(!empty($_POST['update'])) {
+        
         $id = $_POST["id"];
         $timesPlayedPlusOne = $_POST["timesPlayed"]++;
         $sqlUpdate = "UPDATE `testSoundboard` SET `timesPlayed`='".$timesPlayedPlusOne."' WHERE `id`='".$id."';";
         
         $db->query($sqlUpdate);
+         if($db->error){
+            echo $db->error;
+        }else{
+            echo "statement fired";
+        }
       }
+         
     ?>
     
   </div>
