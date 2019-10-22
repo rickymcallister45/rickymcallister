@@ -30,6 +30,14 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
           $path    = '../../../files/mp3';
           $files = scandir($path); 
           $files = array_diff(scandir($path), array('.', '..'));
+        
+        echo "<script type='text/javascript'>
+                $('.sounds').click(function() {
+                  var name = $(this).text();
+                  var audio = new Audio('../../../files/mp3/' + name + '.mp3');
+                  console.log(name);
+                    audio.play();
+                });</script>";
             
            for($i=2; $i< count($files); $i++){
             $seperateTheFileAtTheDot = explode('.', $files[$i]);
@@ -47,7 +55,15 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
                     </form>
                   </ul>"; 
       }
+        echo "<script type='text/javascript'>
+                $('.sounds').click(function() {
+                  var name = $(this).attr('value');
+                  var audio = new Audio('../../../files/mp3/' + name + '.mp3');
+                  console.log(name);
+                    audio.play();
+                });</script>";
      } 
+      
       if(!empty($_POST['update'])) {
         
         $id = $_POST["id"];
@@ -69,6 +85,5 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 </body>
 <footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="soundboard.js"></script>
 </footer>
 </html>
