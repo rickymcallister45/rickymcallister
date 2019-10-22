@@ -32,7 +32,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
           $files = scandir($path); 
           $files = array_diff(scandir($path), array('.', '..'));
         
-        echo "<script type='text/javascript'>
+        echo "<script>
                 $('.sounds').click(function() {
                   var name = $(this).text();
                   var audio = new Audio('../../../files/mp3/' + name + '.mp3');
