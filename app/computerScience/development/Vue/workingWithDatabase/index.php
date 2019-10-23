@@ -4,7 +4,7 @@
   
   <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
   <body>
-    <p>335</p>
+    <p>336</p>
     <div id='app'>
       <ul id='list' v-if='car_info_set.length'>
         <li v-for='element in car_info_set'>
