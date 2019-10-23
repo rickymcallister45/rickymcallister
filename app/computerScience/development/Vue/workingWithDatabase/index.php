@@ -14,7 +14,7 @@
       <p id='err_msg' v-else>{{err_msg}}</p>
     </div>
 
-  <script type='text/javascript'></script>
+  <script type='text/javascript' src='js/app.js'></script>
   
   </body>
 </html>
