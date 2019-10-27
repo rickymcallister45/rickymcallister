@@ -12,7 +12,7 @@ $db = @new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 <head>
   <meta charset="utf-8">
   <title>rickyMcAllister</title>
-    <link rel="stylesheet" type="text/css" href="soundboard.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
