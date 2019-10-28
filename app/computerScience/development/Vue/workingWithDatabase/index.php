@@ -22,11 +22,11 @@
 	<ul id='create_item'>
 		<li>
 			<span>Brand: </span>
-			<input placeholder='please enter brand' v-model='new_item.brand' v-model.trim='new_item.model'/>
+			<input placeholder='please enter brand' v-model='new_item.brand' v-model.trim='new_item.brand'/>
 		</li>
 		<li>
 			<span>Model: </span>
-			<input  placeholder='please enter model' v-model='new_item.model' v-model.trim='new_item.brand'/>
+			<input  placeholder='please enter model' v-model='new_item.model' v-model.trim='new_item.model'/>
 		</li>
 		<li>
 			<span>Engine: </span>
