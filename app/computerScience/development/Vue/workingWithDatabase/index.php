@@ -2,10 +2,12 @@
 <html>
   <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+  	<script type='text/javascript' src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   
-  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
-  <script type='text/javascript' src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
   <body>
     <p>339</p>
     <div id='app'>
