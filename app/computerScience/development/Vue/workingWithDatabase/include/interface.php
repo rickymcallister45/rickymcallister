@@ -35,6 +35,60 @@ if(!empty($_POST['action'])) {
 			echo json_encode([false, 'need car id to delete...']);
 		}
 		$db -> close(); 
+	}elseif($_POST['action'] == 'create_item'){
+		if(!empty($_POST['new_item'])){
+			if(!empty($_POST['new_item']['brand'])&&
+			   !empty($_POST['new_item']['model'])&&
+			   !empty($_POST['new_item']['engine'])&&
+			   !empty($_POST['new_item']['gearbox'])){
+				$brand = $db -> real_escape_string($_POST['new_item']['brand']);
+				$model = $db -> real_escape_string($_POST['new_item']['model']);
+				$engine = $db -> real_escape_string($_POST['new_item']['engine']);
+				$gearbox = $db -> real_escape_string($_POST['new_item']['gearbox']);
+				switch($engine){
+					case 1:
+						$engine = 'petrol';
+					break;
+					case 2:
+						$engine = 'diesel';
+					break;
+					case 3:
+						$engine = 'electric';
+					break;
+					case 4:
+						$engine = 'hybrid';
+					break;
+					case 5:
+						$engine ='hydrogen';
+					break;
+				}
+				if($gearbox == 1){
+					$gearbox = 'automatic';
+				}elseif($gearbox == 2){
+					$gearbox = 'manual';
+				}else{
+					$gearbox = false;
+				}
+				if($engine == false || $gearbox == false){
+					echo json_encode([false, 'illegal data']);
+				}else{
+					$sql = "INSERT INTO `car` SET `brand` = '{$brand}',
+						`model` = `{$model}`,
+						`engine` = `{$engine}`,
+						`gearbox` = `{$gearbox}`  ";
+					$result = $db -> query($sql);
+					if($result){
+						echo json_encode([true, 'new row created']);
+					}else{
+						echo json_encode([false, 'Sql error']);
+					}
+				}
+			}else{
+				echo json_encode([false, 'insufficient data, cannot create new row..']);
+			}
+		}else{
+			echo json_encode([false, 'no data sent, cannot create new row....']);
+		}
 	}
 }
 ?>
