@@ -1,35 +1,43 @@
 var vm = new Vue({
   el: '#app',
   data: {
-    car_info_set: [
-      {brand: 'Toyota', model: 'Camry', engine: 'petrol', gearbox: 'automatic'},
-      {brand: 'Nissan', model: 'GT-R', engine: 'petrol', gearbox: 'automatic'},
-      {brand: 'Honda', model: 'NSX', engine: 'petrol', gearbox: 'automatic'},
-      {brand: 'Honda', model: 'CR-V', engine: 'petrol', gearbox: 'automatic'},
-      {brand: 'Honda', model: 'Civic', engine: 'petrol', gearbox: 'automatic'},           
-    ],
+    car_info_set: [],
     err_msg: 'Sorry, no car in record',
-    ajax: null,
     url: 'php/interface.php', 
   },
   created: function(){
-	this.ajax = new XMLHttpRequest()
-	this.request()
-	
+	this.retrieve_all();
 },
   methods: {
-	request: function(){
-		this.ajax.onreadystatechange = this.response
-		this.ajax.open('POST', this.url, true)
-		this.ajax.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-		this.ajax.send('range-all')
- },
-	response: function(){
-		if(this.ajax.readyState == 4) {
-			if(this.ajax.status == 200) {
- 				this.err_msg = JSON.parse(this.ajax.responseText)
-   }
-  }
- },	
-  }	
-})
+	retrieve_all: function(){
+		var self = this;
+		$.ajax({
+			url: self.url,
+			method: 'POST',
+			data: {
+				action: 'retrieve_all'
+				}	
+			})
+		.always(function(data){
+			self.car_info_set = '';
+			self.err_msg = '';
+		})
+		.done(function(data){
+			var result = JSON.parse(data);
+		if(result[0]){
+			self.car_info_set = result[1];
+		}else{
+			self.err_msg = result[1];
+		}
+		})
+		.fail(function(data){
+			self.err_msg = data.statusText;
+		})
+	},
+	delete_item: function(car_id){
+		console.log(car_id);
+	}
+},	
+		
+});
+setInterval(function(){vm.retrieve_all()}, 1000);
