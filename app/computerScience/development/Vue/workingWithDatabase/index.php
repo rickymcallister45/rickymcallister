@@ -42,7 +42,7 @@
 			<span>Automatic: </span>
 			<input type='radio' value='1' v-model='new_item.gearbox'/>
 			<span>Manual: </span>
-			<input type'radio' value='2' v-model='new_item.gearbox'/>
+			<input type='radio' value='2' v-model='new_item.gearbox'/>
 		</li>
 		<li>
 			<button v-bind:disabled = 'btn_switch'>Create</button>
