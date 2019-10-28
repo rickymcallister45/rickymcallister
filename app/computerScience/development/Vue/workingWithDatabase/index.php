@@ -7,7 +7,7 @@
   </head>
     
   <body>
-    <p>341</p>
+    <p>343</p>
     <div id='app'>
       <ul id='list' v-if='car_info_set.length'>
         <li v-for='element in car_info_set'>
