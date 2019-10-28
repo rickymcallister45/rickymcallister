@@ -34,7 +34,7 @@ var vm = new Vue({
 			}
 		})
 		.always(function(data){
-			self.car.info_set = [];
+			self.car_info_set = [];
 			self.err_msg = '';
 		})
 		.done(function(data){
