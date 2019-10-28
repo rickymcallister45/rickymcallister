@@ -35,9 +35,29 @@ var vm = new Vue({
 		})
 	},
 	delete_item: function(car_id){
-		console.log(car_id);
+		var self = this;
+		$.post({
+			url: self.url,
+			data: {
+				action: 'delete_item',
+				car_id: car_id
+			}
+		})
+		.always(function(data){
+			self.car_info_set = '';
+			self.err_msg = '';
+		})
+		.done(function(data){
+			var result = JSON.parse(data);
+			if(result[0]){
+				self.retrieve_all();
+			}
+		})
+		.fail(function(data){
+			self.err_msg = data.statusText;
+		})
 	}
 },	
 		
 });
-setInterval(function(){vm.retrieve_all()}, 1000);
+
