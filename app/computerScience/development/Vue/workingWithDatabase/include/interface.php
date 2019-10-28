@@ -1,10 +1,10 @@
 <?php
-if(!empty($_POST['range'])) {
-	if($_POST['range'] == 'all') {
-		$db = @new MySQLI('localhost','root','','vue');
+if(!empty($_POST['action'])) {
+	$db = @new MySQLI('localhost','username','password','vue');
 		if($db -> connect_error) {
 			exit(json_encode([false,$db->connect_error]));
 		}
+	if($_POST['action'] == 'retrieve_all'){
 		$sql = "SELECT `car_id`, `brand`, `model`, `engine`, `gearbox`, FROM `car`;";
 		$result = $db->query($sql);
 		if($result) {
@@ -21,6 +21,20 @@ if(!empty($_POST['range'])) {
 			echo json_encode([false, 'SQL Query Error']);
 		}
 		$db -> close();
+	}elseif($_POST['action'] == 'delete_item'){
+		if(!empty($_POST['car_id'])){
+			$_POST['car_id'] == $db -> real_escape_string($_POST['car_id']);
+			$sql = "DELETE FROM `cars` WHERE `car_id` = `{$_POST['car_id']}` LIMIT 1";
+			$result = $db -> query($sql);
+			if($result){
+				echo json_encode([true, 'delete successful']);
+			}else{
+				echo json_encode([false, 'delete failure']);
+			}
+		}else{
+			echo json_encode([false, 'need car id to delete...']);
+		}
+		$db -> close(); 
 	}
 }
 ?>
