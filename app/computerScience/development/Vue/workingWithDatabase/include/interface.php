@@ -16,7 +16,7 @@ if(!empty($_POST['action'])) {
 				}
 			echo json_encode([true, $all_rows]);
 			}
-			$result -> free();
+			$result -> close();
 		}else{
 			echo json_encode([false, 'SQL Query Error']);
 		}
