@@ -24,7 +24,7 @@ if(!empty($_POST['action'])) {
 	}elseif($_POST['action'] == 'delete_item'){
 		if(!empty($_POST['car_id'])){
 			$_POST['car_id'] == $db -> real_escape_string($_POST['car_id']);
-			$sql = "DELETE FROM `car` WHERE `car_id` = `{$_POST['car_id']}` LIMIT 1";
+			$sql = "DELETE FROM `car` WHERE `car_id` = '{$_POST['car_id']}' LIMIT 1";
 			$result = $db -> query($sql);
 			if($result){
 				echo json_encode([true, 'delete successful']);
