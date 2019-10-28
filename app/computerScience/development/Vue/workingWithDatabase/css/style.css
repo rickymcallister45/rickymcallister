@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: 0;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: arial;
+}
+
+#list li {
+	margin: 5px;
+	padding: 5px;
+	background: #ccffff;
+	border-radius: 5px;
+	color: white;
+}
+
+#list li b {
+	color: #0000ff;
+}
+
+#err_msg {
+	margin: 5px;
+	padding: 5px;
+	background: #ff0033;
+	border-radius: 5px;
+	color: white;
+}
+
+#delete_item {
+	font-size: 16px;
+}
+
+#edit_item {
+	font-size: 16px;
+}
+
+#delete_item:hover {
+	font-size: 18px;
+}
+
+#edit_item:hover {
+	font-size: 18px;
+}
