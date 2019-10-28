@@ -73,9 +73,9 @@ if(!empty($_POST['action'])) {
 					echo json_encode([false, 'illegal data']);
 				}else{
 					$sql = "INSERT INTO `car` SET `brand` = '{$brand}',
-						`model` = `{$model}`,
-						`engine` = `{$engine}`,
-						`gearbox` = `{$gearbox}`  ";
+						`model` = '{$model}',
+						`engine` = '{$engine}',
+						`gearbox` = '{$gearbox}'  ";
 					$result = $db -> query($sql);
 					if($result){
 						echo json_encode([true, 'new row created']);
