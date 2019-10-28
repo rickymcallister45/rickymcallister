@@ -42,3 +42,15 @@
 #edit_item:hover {
 	font-size: 18px;
 }
+
+#create_item {
+	margin: 5px;
+	padding: 5px;
+	background: #ff0033;
+	border-radius: 5px;
+	color: white;
+}
+
+#create_item li {
+	margin: 10px;
+}
