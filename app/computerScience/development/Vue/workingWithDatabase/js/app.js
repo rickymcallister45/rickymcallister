@@ -3,7 +3,7 @@ var vm = new Vue({
   data: {
     car_info_set: [],
     err_msg: 'Sorry, no car in record',
-    url: 'php/interface.php', 
+    url: 'include/interface.php', 
   },
   created: function(){
 	this.retrieve_all();
