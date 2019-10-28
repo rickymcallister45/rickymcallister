@@ -5,7 +5,7 @@ if(!empty($_POST['action'])) {
 			exit(json_encode([false,$db->connect_error]));
 		}
 	if($_POST['action'] == 'retrieve_all'){
-		$sql = "SELECT `car_id`, `brand`, `model`, `engine`, `gearbox`, FROM `car`";
+		$sql = "SELECT `car_id`, `brand`, `model`, `engine`, `gearbox` FROM `car`";
 		$result = $db->query($sql);
 		if($result) {
 			if($result -> num_rows == 0) {
