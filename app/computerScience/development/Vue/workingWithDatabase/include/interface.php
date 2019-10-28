@@ -1,6 +1,6 @@
 <?php
 if(!empty($_POST['action'])) {
-	$db = @new MySQLI('localhost','username','password','vue');
+	$db = @new MySQLI('localhost','root','','vue');
 		if($db -> connect_error) {
 			exit(json_encode([false,$db->connect_error]));
 		}
