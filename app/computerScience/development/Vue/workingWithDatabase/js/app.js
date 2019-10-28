@@ -34,15 +34,15 @@ var vm = new Vue({
 			}
 		})
 		.always(function(data){
-			self.car_info_set = [];
-			self.err_msg = '';
+			self.car_info_set = []
+			self.err_msg = ''
 		})
 		.done(function(data){
-			var result = JSON.parse(data);
+			var result = JSON.parse(data)
 			if(result[0]){
-				self.retrieve_all();
+				self.retrieve_all()
 			}else{
-				self.err_msg = result[1];
+				self.err_msg = result[1]
 			}
 		})
 		.fail(function(data){
@@ -59,8 +59,8 @@ var vm = new Vue({
 				}	
 			})
 		.always(function(data){
-			self.car_info_set = '';
-			self.err_msg = '';
+			self.car_info_set = ''
+			self.err_msg = ''
 		})
 		.done(function(data){
 			var result = JSON.parse(data);
@@ -84,8 +84,8 @@ var vm = new Vue({
 			}
 		})
 		.always(function(data){
-			self.car_info_set = '';
-			self.err_msg = '';
+			self.car_info_set = ''
+			self.err_msg = ''
 		})
 		.done(function(data){
 			var result = JSON.parse(data);
