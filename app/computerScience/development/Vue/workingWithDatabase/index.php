@@ -1,5 +1,6 @@
 <!DOCTYPE html>
   <head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   
   <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
