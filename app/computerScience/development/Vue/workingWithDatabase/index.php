@@ -45,7 +45,7 @@
 			<input type='radio' value='2' v-model='new_item.gearbox'/>
 		</li>
 		<li>
-			<button v-bind:disabled = 'btn_switch'>Create</button>
+			<button v-bind:disabled = 'btn_switch' @click='create_item()'>Create</button>
 		</li>
 	</ul>
     </div>
