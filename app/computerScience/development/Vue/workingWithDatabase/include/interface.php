@@ -34,7 +34,7 @@ if(!empty($_POST['action'])) {
 		}else{
 			echo json_encode([false, 'need car id to delete...']);
 		}
-		$db -> close(); 
+		$db -> close();
 	}elseif($_POST['action'] == 'create_item'){
 		if(!empty($_POST['new_item'])){
 			if(!empty($_POST['new_item']['brand'])&&
@@ -89,6 +89,40 @@ if(!empty($_POST['action'])) {
 		}else{
 			echo json_encode([false, 'no data sent, cannot create new row....']);
 		}
-	}
+		$db -> close();
+	}elseif($_POST['action'] == 'update_item'){
+	  
+	  
+	  
+	  if(!empty($_POST['edited_item'])){
+	    if(!empty($_POST['edited_item']['car_id'])&&
+	       !empty($_POST['edited_item']['brand'])&&
+	       !empty($_POST['edited_item']['model'])&&
+	       !empty($_POST['edited_item']['engine'])&&
+	       !empty($_POST['edited_item']['gearbox'])){
+	            $car_id = $db -> real_escape_string($_POST['edited_item']['car_id']);
+	           	$brand = $db -> real_escape_string($_POST['edited_item']['brand']);
+				      $model = $db -> real_escape_string($_POST['edited_item']['model']);
+				      $engine = $db -> real_escape_string($_POST['edited_item']['engine']);
+				      $gearbox = $db -> real_escape_string($_POST['edited_item']['gearbox']);
+	      $sql = "UPDATE `car` SET `brand` = '{$brand}',
+						`model` = '{$model}',
+						`engine` = '{$engine}',
+						`gearbox` = '{$gearbox}'
+						 WHERE `car_id` = '{car_id}' LIMIT 1 ";
+					$result = $db -> query($sql);
+	        if($result){
+	          	echo json_encode([true, 'row updated']);
+	        }else{
+	          echo json_encode([false, 'Sql error']);
+	        }
+    }else{
+	    echo json_encode([false, 'no data sent, cannot update database']);
+	  }
+	 }else{
+	   echo json_encode([false, 'no data sent, cannot update database']);
+	 }
+	 $db -> close();
+  }
 }
 ?>
