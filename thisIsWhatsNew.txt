@@ -1,6 +1,10 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
 
+started cleaning up app/computerScience
+
+// November 2019
+
 worked on computerScience/development/Vue/WorkingWithDatabase app  //Vue development
 redid array_pop on soundboard... i was putitng into a variable incorrectly 
 changed leftarrow div width on index also switched twitter logo for github logo
