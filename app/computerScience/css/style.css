@@ -8,10 +8,7 @@ html, head, body, h1, h2, h3, h4, p, div {
 	font-size: 100%;
 	
 }
-header {
-	padding-left: 10px;
-	padding-bottom: 20px;
-}
+
 body {
 	padding-left: 10px;
 	background-color: gray;
@@ -22,18 +19,18 @@ body {
 a.header:visited, a.header:hover, a.header:active, a.header:link {
 	text-decoration: none;
 	color: #cdd2d8;
-	}	
+	}
 a:visited, a:hover, a:active, a:link {
 	color: black;
 	text-decoration: none;
 }
 
 h1 {
-	color: black; 
+	color: black;
 	font-size: 48px;
 }
 
-li {	
+li {
 	font-style: none;
 	list-style: none;
 	text-decoration: none;
@@ -44,23 +41,17 @@ ul {
 	color: #777777;
 }
 
-footer {
-	max-width: 0px
-	margin: 0;
-	padding-bottom: 0;
-}
-
 .nav{
 	background-color: white;
-	margin-left: 175px;	
+	width: 100%;
 	
 }
 
 .navbar .nav-tabs {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-left: 12%;
+	
 		
 }
 
