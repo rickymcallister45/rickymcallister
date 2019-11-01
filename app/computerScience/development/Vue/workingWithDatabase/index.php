@@ -23,18 +23,18 @@
 		        <li>
 			        <span>Engine: </span>
 			        <select v-model='edited_item.engine'>
-				        <option value='Petrol'>Petrol</option>
-				        <option value='Diesel'>Diesel</option>
-				        <option value='Electric'>Electric</option>
-				        <option value='Hybrid'>Hybrid</option>
-				        <option value='Hydrogen'>Hydrogen</option>
+				        <option value='petrol'>Petrol</option>
+				        <option value='diesel'>Diesel</option>
+				        <option value='electric'>Electric</option>
+				        <option value='hybrid'>Hybrid</option>
+				        <option value='hydrogen'>Hydrogen</option>
 			        </select>
 		        </li>
 		        <li>
 			        <span>Automatic: </span>
-			        <input type='radio' value='1' v-model='edited_item.gearbox'/>
+			        <input type='radio' value='automatic' v-model='edited_item.gearbox'/>
 			        <span>Manual: </span>
-			        <input type='radio' value='2' v-model='edited_item.gearbox'/>
+			        <input type='radio' value='manual' v-model='edited_item.gearbox'/>
 		        </li>
 		        <li>
             <li><button v-bind:disabled='save_switch' @click='save_edit'>Save</button></li>
