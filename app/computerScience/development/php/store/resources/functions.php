@@ -1,7 +1,7 @@
 <?php
 
 function redirect() {
-  header("Location: $location ")
+  header("Location: $location ");
 }
 
 function query($sql) {
@@ -22,6 +22,6 @@ function escape_string($string) {
 
 function fetch_array($result) {
   
-  return myswli_fetch_array($send_query)
+  return myswli_fetch_array($send_query);
 }
 ?>
