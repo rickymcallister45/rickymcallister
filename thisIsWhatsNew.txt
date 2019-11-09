@@ -1,5 +1,6 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
+started working on app/computerScience/development/php/store
 cleaned up files/js
 started cleaning up app/computerScience
 
