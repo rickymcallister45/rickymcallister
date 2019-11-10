@@ -1,13 +1,13 @@
 <?php require_once('../resources/config.php'); ?>
 
-<?php include('../resources/header.php'); ?>
+<?php include('../resources/templates/front/header.php'); ?>
 
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
 
-           <?php include('../resources/side_nav.php'); ?>
+           <?php include('../resources/templates/front/side_nav.php'); ?>
 
             <div class="col-md-9">
 
@@ -15,7 +15,7 @@
 
                     <div class="col-md-12">
                       
-                        <?php include('../resources/slider.php'); ?>
+                        <?php include('../resources/templates/front/slider.php'); ?>
                         
                     </div>
 
@@ -42,4 +42,4 @@
     <!-- /.container -->
 
 
-<?php include('../resources/footer.php'); ?>
+<?php include('../resources/templates/front/footer.php'); ?>
