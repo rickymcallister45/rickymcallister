@@ -128,6 +128,34 @@ DELIMETER;
   }
 }
 
+function get_products_shop_page() {
+  
+  $query = query('SELECT * FROM products');
+  confrim($query);
+  
+  while($row = fetch_array($query)) {
+    
+   $product = <<<DELIMETER
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <a href='item.php?id={$row['product_id']}'><img src="{$row['product_image']}" alt="{$row['product_title']}"></a>
+            <div class="caption">
+                <h3>{$row['product_title']}</h3>
+                <p>{$row['product_short_description']}</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+DELIMETER;
+    
+ echo $product;
+    
+    
+  }
+}
+
 /********************BACK END FUNCTIONS*******************/
 
 
