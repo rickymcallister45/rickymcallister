@@ -10,10 +10,6 @@
             
           <?php get_categories_title(); ?>  
             
-            
-            
-            
-            
         </header>
 
         <hr>
