@@ -22,5 +22,5 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-       <?php include('../resources/top_nav.php'); ?>
+       <?php include('../resources/templates/front/top_nav.php'); ?>
     </nav>
