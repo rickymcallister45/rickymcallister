@@ -14,6 +14,7 @@
     <link rel='icon' href='./favicon.ico' type='image/x-icon'>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -21,5 +22,5 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-       <?php include(TEMPLATE_FRONT . DS . 'top_nav.php'); ?>
+       <?php include('../resources/top_nav.php'); ?>
     </nav>
