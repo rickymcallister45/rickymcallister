@@ -2,6 +2,22 @@
 
 // helper functions
 
+function set_message($msg) {
+  
+  if(!empty($msg)) {
+    $_SESSION['message'] = $msg;
+  }else{
+   $msg = '';
+  }
+}
+
+function dislay_message() {
+  if(isset($_SESSION['messgae'])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+  }
+}
+
 function redirect() {
   header("Location: $location ");
 }
@@ -151,8 +167,48 @@ function get_products_shop_page() {
 DELIMETER;
     
  echo $product;
+  }
+}
+
+function login_user() {
+  
+  if(isset($_POST['submit'])) {
+    $username = escape_string($_POST['username']);
+    $password = escape_string($_POST['']);
     
+    $query = query("SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}'");
+    confirm($query);
     
+    if(mysqli_num_rows($query) == 0) {
+    set_message('Your entered something wrong idiot');
+    redirect('login.php');
+    }else{
+      set_message('Welcome to Admin {$username}');
+      redirect('admin');
+    }
+  }
+}
+
+function send_message() {
+  
+  if(isset($_POST['submit'])) {
+   $to = 'rickymcallister45@gmail.com';
+   $from_name = escape_string($_POST['name']);
+   $subject = escape_string($_POST['subject']);
+   $email = escape_string($_POST['email']);
+   $message = escape_string($_POST['message']);
+   
+   $headers = 'From: {$from_name} {$email}';
+   
+   $result = mail($to, $subject, $message, $headers);
+   
+   if(!result) {
+     echo "error";
+     redirect('./contact.php');
+   }else {
+     echo "sent";
+     redirect('./contact.php');
+   }
   }
 }
 
