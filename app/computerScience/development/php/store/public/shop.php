@@ -1,6 +1,6 @@
 <?php require_once('../resources/config.php'); ?>
 
-<?php include('../resources/header.php'); ?>
+<?php include('../resourses/templates/front/header.php'); ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -17,4 +17,4 @@
         
         <hr>
         
-<?php include('../resources/footer.php'); ?>
+<?php include('../resourses/templates/front/footer.php'); ?>
