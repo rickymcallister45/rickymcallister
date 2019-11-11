@@ -40,6 +40,6 @@
 
     </div>
     <!-- /.container -->
-
+    <hr>
 
 <?php include('../resourses/templates/front/footer.php'); ?>
