@@ -14,7 +14,7 @@
     <div class="container">
 
 
-<!-- /.row --> 
+<!-- /.row -->
 
 <div class="row">
       <h4 class="text-center bg-danger"><?php display_message(); ?></h4>
@@ -32,14 +32,9 @@
           </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>apple</td>
-                <td>$23</td>
-                <td>3</td>
-                <td>2</td>
-                <td><a href='./cart.php?remove=1'>Remove</a></td>
-                <td><a href='./cart.php?delete=1'>Delete</a></td>
-            </tr>
+          
+            <?php cart(); ?>
+          
         </tbody>
     </table>
 </form>
@@ -64,7 +59,12 @@
 
 <tr class="order-total">
 <th>Order Total</th>
-<td><strong><span class="amount">$3444</span></strong> </td>
+<td><strong>
+  <span class="amount">&#36;
+    
+    <?php echo isset( $_SESSION['item_total']) ? $_SESSION['item_total'] : $_SESSION['item_total'] = ""; ?>
+  
+  </span></strong> </td>
 </tr>
 
 
