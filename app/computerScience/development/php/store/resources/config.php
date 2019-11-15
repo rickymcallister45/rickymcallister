@@ -20,7 +20,7 @@ defined("DB_NAME") ? null : define("DB_NAME", "ecom_db_test");
 
 $connection = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
 
-//require_once("../resourses/functions.php");
+require_once("./functions.php");
 
 
 ?>
