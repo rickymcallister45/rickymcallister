@@ -3,7 +3,6 @@
 <?php include('../resources/templates/front/header.php'); ?>
 
 <body>
-
     <!-- Navigation -->
     <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
        <?php include('../resourses/templates/front/top_nav.php'); ?>
