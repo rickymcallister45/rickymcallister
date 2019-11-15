@@ -24,3 +24,4 @@ echo "<div id='carousel-example-generic' class='carousel slide' data-ride='carou
             <span class='glyphicon glyphicon-chevron-right'></span>
           </a>
       </div>";
+?>
