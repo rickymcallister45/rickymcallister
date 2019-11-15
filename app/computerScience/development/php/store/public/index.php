@@ -23,7 +23,7 @@
 
                     <div class="col-md-12">
                       
-                        <?php include('../resourses/templates/front/slider.php'); ?>
+                        <?php include('../resources/templates/front/slider.php'); ?>
                         
                     </div>
 
@@ -50,4 +50,4 @@
     <!-- /.container -->
     <hr>
 
-<?php include('../resourses/templates/front/footer.php'); ?>
+<?php include('../resources/templates/front/footer.php'); ?>
