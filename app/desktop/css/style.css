@@ -264,8 +264,8 @@ i:hover {
     position: relative;
     transform: translate(-100%, 50%);
 }
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 .fa-info {
     margin-left: 131%;
@@ -297,4 +297,40 @@ i:hover {
 
 #pFiveTicker {
 	color: blue;
+}
+
+#entertainmentDropdown {
+  color: white;
+  height: 110px;
+  width: 130px;
+  position: absolute;
+  left: 67%;
+  background-color: black;
+  z-index: 75;
+  
+}
+
+
+#entertainmentDropdown ul {
+   margin: 0;
+  padding: 5px;
+}
+
+
+#entertainmentDropdown ul a {
+  height: 200px;
+  width: 100%;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.entertainmentActive {
+   top: 80px;
+}
+
+.entertainmentHide {
+ top: -180px;
+    
 }
