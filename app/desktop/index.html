@@ -21,13 +21,17 @@
 						<li><a href="../sales/index.html" class="menu-item" onclick="alert('this site is just a placeholder currently')">sales</a></li>
 						<li><a href="../services/index.html" class="menu-item" onclick="alert('this site is just a placeholder currently')">services</a></li>
 						<li><a id="contact" class="menu-item">contact</a></li>
-						<li><a href="../entertainment/index.html" class="menu-item">entertainment</a></li>
+						<li><a id="entertainment" class="menu-item">entertainment</a></li>
 						
 					</ul>
-		    		<div class="search-form"><form><input id="searchFocus" type="text" placeholder="Search google.com"></form>
-	    	    	</div>
-    			</div>
+		    		</div>
 			</nav>
+			<div id="entertainmentDropdown" class="entertainmentHide">
+		    		  <ul><a href="../entertainment/index.html">Rainbow6</a></ul>
+		    		  <hr>
+		    		  <ul><a href="#">ghostRecon</a></ul>
+	    	    </div>
+    			
 		</div>
 	    <div id="header2">
 			<div id="contacts">
@@ -137,7 +141,7 @@
 		</div>
 	<div id="gcpDot">
 		<iframe src="http://global-mind.org/gcpdot/gcp.html" height="48" width="48" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
-	</div>	
+	</div>
 </body>
 <footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -145,6 +149,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
 
 	<script src="js/searchBar.js"></script>
+	<script src="js/dropdown.js"></script>
 	<script src="js/powerButton.js"></script>
 	<script src="js/gifBackground.js"></script>
 	<script src="js/ticker.js"></script>
