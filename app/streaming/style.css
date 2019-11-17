@@ -1,0 +1,53 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+
+#sponsers {
+  background-color: #b6c0c7;
+  position: absolute;
+  height: 6%;
+  font-size: 38px;
+  width: 23%;
+  left: 55%;
+  top: 3%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#socialMedia {
+  background-color: #b6c0c7;
+  position: absolute;
+  height: 6%;
+  width: 23%;
+  top: 90%;
+  font-size: 38px;
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+i {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+#twitch {
+  color: purple;
+}
+
+#youtube {
+  color: red;
+}
+
+#watermark img{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 87%;
+  left: 73%;
+  z-index: 5;
+}
