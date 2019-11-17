@@ -1,1 +1,3 @@
 google olymipc archery stats
+
+on click/touch place x on a target
