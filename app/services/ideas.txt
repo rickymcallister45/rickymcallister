@@ -1,1 +1,7 @@
 botany
+lyft
+uber
+doordash
+patreon
+locksmith
+custom emails
