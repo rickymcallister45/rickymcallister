@@ -1,3 +1,17 @@
 google olymipc archery stats
 
 on click/touch place x on a target
+
+
+sql {
+
+distance
+
+ 15 arrows
+ 
+ if within a distance get certain score
+ calculate average
+ 
+
+
+}
