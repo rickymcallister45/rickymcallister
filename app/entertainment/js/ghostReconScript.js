@@ -4,7 +4,7 @@ $(document).ready(function(){
 	
 	
 	var key = 'AIzaSyATpzdfvkMW6jt9rRpj99Dp57LwW77nxMA';
-	var playlistID = 'PL3Rb7VW4urJd-46ZScwJvex5WMDnbN1-R';
+	var playlistID = 'PL3Rb7VW4urJcpcdiRFRI6BadY8jzySKBJ';
 	var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
 	var options = {
 		part: 'snippet',
