@@ -4,3 +4,26 @@ holes
 swings
 puts
 google pga stats
+
+createCourse {
+  holes
+  par strokes
+  
+
+}
+
+
+
+form {
+
+
+
+
+
+
+
+
+
+
+
+}
