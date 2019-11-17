@@ -1,0 +1,5 @@
+wine lable
+craft beer label
+cigar label
+candel label
+vadka label
