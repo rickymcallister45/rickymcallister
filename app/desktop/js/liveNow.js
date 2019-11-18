@@ -13,8 +13,10 @@ var snippet = 'part=snippet&channelId=UCHUrEa6E1l5vwzvXMGEPScg&type=video&eventT
             liveNowJsonData = 'offline';
             console.log(liveNowJsonData);
           }else{
+            document.getElementById("liveNow").style.visibility = "visible";
             liveNowJsonData = data.items.snippet.liveBroadcastContent;
             console.log(liveNowJsonData);
+            
           }
       }
     request.send();
