@@ -334,3 +334,10 @@ i:hover {
  top: -180px;
     
 }
+
+#liveNow {
+  position: absolute;
+  left: 80%;
+  top: 1%;
+  visibility: hidden;
+}
