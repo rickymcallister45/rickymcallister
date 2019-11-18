@@ -9,7 +9,7 @@ var snippet = 'part=snippet&channelId=UCHUrEa6E1l5vwzvXMGEPScg&type=video&eventT
     request.open('GET', url + snippet , true);
     request.onload = function() {
           var data = JSON.parse(request.responseText);
-            conosle.log(data);
+            console.log(data);
           if(data.pageInfo.totalResults === 0){
             liveNowJsonData = 'offline';
             console.log(liveNowJsonData);
