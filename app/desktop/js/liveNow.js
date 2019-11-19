@@ -44,11 +44,10 @@ function liveNow() {
 		if(match2 === currentDate){
 		  if(dateH + 5 >= hourTest){
       document.getElementById("liveNow").style.visibility = "visible";
-		  }
 		  }else{
       console.log('offline');
     }
-		
+		}
 	});
 }});
 
