@@ -1,5 +1,14 @@
-seige school
-fix error ( medium)
-make dropdown for different games
+$.getJSON('https://api.twitch.tv/kraken/streams/rickymcallister45', function(channel) {
 
-ghosRecon= PL3Rb7VW4urJcpcdiRFRI6BadY8jzySKBJ
+    if (channel["stream"] == null) { 
+        //THEY ARE OFFLINE DO WHATEVER HERE
+
+    } else {
+
+        //THEY ARE ONLINE DO WHATEVER HERE
+    
+    }
+
+
+
+});
