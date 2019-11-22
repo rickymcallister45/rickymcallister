@@ -2,7 +2,7 @@
 var p5;
 var weatherOutlook = function(o){
 
-var api = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/45005";
+var api = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/16401";
 var apiKey = "?apikey=8exy0XLiJkY7t8Y0t51FKw7MQ5JIYtSE%20";
 
 let iconPath = 'https://developer.accuweather.com/sites/default/files/';
