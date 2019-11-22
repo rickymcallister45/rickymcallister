@@ -1,6 +1,6 @@
 <?php
 
-<!DOCTYPE html>
+echo "<!DOCTYPE html>
 <html lang='en'>
 
 <head>
@@ -13,6 +13,8 @@
 
     <title>rickyMcAllister</title>
 
+    <link rel='icon' href='../../resources/favicon/favicon.ico' type='image/x-icon'>
+    
     <!-- Bootstrap Core CSS -->
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
 
@@ -21,6 +23,6 @@
 
   
 
-</head>
+</head>";
 
 ?>
