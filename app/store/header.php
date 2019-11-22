@@ -23,6 +23,10 @@ echo "<!DOCTYPE html>
 
   
 
-</head>";
+</head>
+<body>
+    <h1>header connected 
+    </h1>
+</body>";
 
 ?>
