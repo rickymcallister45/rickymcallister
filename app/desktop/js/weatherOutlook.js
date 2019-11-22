@@ -17,7 +17,7 @@ o.setup =function () {
 }
 
 o.gotWeather = function(weather) {
-	console.log(weather);
+	console.log('weatherOutlook: ' + weather);
 	
 	minTemp = weather.DailyForecasts[0].Temperature.Minimum.Value;
 	maxTemp = weather.DailyForecasts[0].Temperature.Maximum.Value;
