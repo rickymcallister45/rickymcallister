@@ -11,7 +11,7 @@ echo "<body>
               <!-- Slider -->";
                 include_once 'frontEnd/slider.php';
                   echo "<!-- Products -->";
-                include_once 'frontEnd/sideNav.php';
+                include_once 'frontEnd/products.php';
                   echo "</div>
           </div>
     </div>
