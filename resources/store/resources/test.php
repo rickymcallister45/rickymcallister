@@ -1,6 +1,0 @@
-  <?php
-  
-  echo "resource connected";
-  
-  ?>
-  
