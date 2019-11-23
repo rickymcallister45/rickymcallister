@@ -1,6 +1,6 @@
  <?php
   
-  echo "resource connected";
+  echo "<script>console.log('running');</script>";
   
   ?>
   
