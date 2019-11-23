@@ -1,7 +1,5 @@
 <?php
-echo "<h1>FOOTER WORKING</h1>
-    
-      <div class='container'>
+echo "<div class='container'>
         <hr>
         <footer>
           <div class='row'>
