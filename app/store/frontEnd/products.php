@@ -20,7 +20,7 @@ echo "<div class='row'>
                                     <span class='glyphicon glyphicon-star'></span>
                                     <span class='glyphicon glyphicon-star'></span>
                                 </p>
-                            </div>
+                            
                         </div>
                     </div>
 
