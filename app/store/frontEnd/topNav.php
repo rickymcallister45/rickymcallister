@@ -23,10 +23,10 @@ echo "<nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
                 <a href='admin'>Admin</a>
               </li>
               <li>
-                <a href='checkout.html'>Checkout</a>
+                <a href='./checkout.php'>Checkout</a>
               </li>
               <li>
-                <a href='contact.html'>Contact</a>
+                <a href='./contact.php'>Contact</a>
               </li>
             </ul>
           </div>
