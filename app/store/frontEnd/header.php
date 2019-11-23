@@ -13,7 +13,7 @@ echo "<!DOCTYPE html>
     <!-- Bootstrap Core CSS -->
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
     <!-- Custom CSS -->
-    <link href='css/style.css' rel='stylesheet'>
+    <link href='../css/style.css' rel='stylesheet'>
   
 </head>
 <body>
