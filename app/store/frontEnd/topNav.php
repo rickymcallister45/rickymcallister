@@ -17,10 +17,10 @@ echo "<nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
                 <a href='#'>Shop</a>
               </li>
               <li>
-                <a href='#'>Login</a>
+                <a href='./login.php'>Login</a>
               </li>
               <li>
-                <a href='admin'>Admin</a>
+                <a href='admin/'>Admin</a>
               </li>
               <li>
                 <a href='./checkout.php'>Checkout</a>
