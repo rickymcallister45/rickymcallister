@@ -13,9 +13,5 @@ echo "<!DOCTYPE html>
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
     <link href='./css/style.css' rel='stylesheet'>
   
-</head>
-<body>
-    <h1>header connected 
-    </h1>
-</body>";
+</head>";
 ?>
