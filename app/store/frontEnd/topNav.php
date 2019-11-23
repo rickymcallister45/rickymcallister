@@ -9,7 +9,7 @@ echo "<nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
               <span class='icon-bar'></span>
               <span class='icon-bar'></span>
             </button>
-              <a class='navbar-brand' href='index.html'>Start Bootstrap</a>
+              <a class='navbar-brand' href='index.html'></a>
           </div>
           <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
             <ul class='nav navbar-nav'>
