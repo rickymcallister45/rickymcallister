@@ -8,7 +8,7 @@ echo "<!DOCTYPE html>
     <meta name='description' content='rickyMcAllisterStore'>
     <meta name='author' content='rickyMcAllister'>
     <title>rickyMcAllister</title>
-    <link rel='icon' href='../../resources/favicon/favicon.ico' type='image/x-icon'>
+    <link rel='icon' href='../resources/favicon/favicon.ico' type='image/x-icon'>
     
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
     <link href='./css/style.css' rel='stylesheet'>
