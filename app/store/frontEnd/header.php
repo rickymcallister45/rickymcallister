@@ -11,7 +11,7 @@ echo "<!DOCTYPE html>
     <link rel='icon' href='../../resources/favicon/favicon.ico' type='image/x-icon'>
     
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='../css/style.css' rel='stylesheet'>
+    <link href='./css/style.css' rel='stylesheet'>
   
 </head>
 <body>
