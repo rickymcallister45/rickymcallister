@@ -10,9 +10,7 @@ echo "<!DOCTYPE html>
     <title>rickyMcAllister</title>
     <link rel='icon' href='../../../resources/favicon/favicon.ico' type='image/x-icon'>
     
-    <!-- Bootstrap Core CSS -->
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-    <!-- Custom CSS -->
     <link href='../css/style.css' rel='stylesheet'>
   
 </head>
