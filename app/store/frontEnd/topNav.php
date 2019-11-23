@@ -14,13 +14,13 @@ echo "<nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
           <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
             <ul class='nav navbar-nav'>
               <li>
-                <a href='#'>Shop</a>
+                <a href='./index.php'>Home</a>
               </li>
               <li>
                 <a href='./login.php'>Login</a>
               </li>
               <li>
-                <a href='admin/'>Admin</a>
+                <a href='./admin/index.php'>Admin</a>
               </li>
               <li>
                 <a href='./checkout.php'>Checkout</a>
