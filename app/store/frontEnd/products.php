@@ -42,7 +42,7 @@ echo "<div class='row'>
                                     <span class='glyphicon glyphicon-star'></span>
                                     <span class='glyphicon glyphicon-star-empty'></span>
                                 </p>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ echo "<div class='row'>
                                     <span class='glyphicon glyphicon-star'></span>
                                     <span class='glyphicon glyphicon-star-empty'></span>
                                 </p>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -86,7 +86,7 @@ echo "<div class='row'>
                                     <span class='glyphicon glyphicon-star-empty'></span>
                                     <span class='glyphicon glyphicon-star-empty'></span>
                                 </p>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@ echo "<div class='row'>
                                     <span class='glyphicon glyphicon-star'></span>
                                     <span class='glyphicon glyphicon-star-empty'></span>
                                 </p>
-                            </div>
+                            
                         </div>
                     </div>
 
