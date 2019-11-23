@@ -1,5 +1,5 @@
 <?php
-include_once '../../../resources/store/test.php';
+include_once '../../resources/store/test.php';
 include_once 'frontEnd/header.php';
 
 echo "<body>
