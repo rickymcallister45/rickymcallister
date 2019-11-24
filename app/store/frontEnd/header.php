@@ -1,6 +1,7 @@
 <?php
 
 include '../../resources/store/config.php';
+include '../../resources/store/functions.php'';
 
 echo "<!DOCTYPE html>
 <html lang='en'>
