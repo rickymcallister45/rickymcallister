@@ -1,14 +1,13 @@
-airTraffic
-shipTraffic
-ffa Registry
-licensePlate
-deathRecord
-live Ua Map
-travelAdvisory
-cdc advice
-fema
-isp lookup
-ip info
-interpol most wanted
-missing kids
-fbi most wanted
+airTraffic = 'https://global.adsbexchange.com/VirtualRadar/desktop.html',
+shipTraffic = 'https://www.marinevesseltraffic.com/2013/02/military-ship-track.html',
+ffa Registry = 'https://registry.faa.gov/aircraftinquiry/',
+licensePlate = '',
+deathRecord = '',
+live Ua Map = '',
+travelAdvisory = '',
+cdc advice = '',
+fema = '',
+ip info = 'https://whatismyipaddress.com/ip-lookup', 
+interpol most wanted = 'https://www.interpol.int/en/How-we-work/Notices/View-Red-Notices',
+missing kids = '',
+fbi most wanted = 'https://www.fbi.gov/wanted/topten',
