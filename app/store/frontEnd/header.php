@@ -1,4 +1,7 @@
 <?php
+
+include '../../resources/store/config.php';
+
 echo "<!DOCTYPE html>
 <html lang='en'>
 <head>
