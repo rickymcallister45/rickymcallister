@@ -1,0 +1,323 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* above == zero out all */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c034a;
+    background-image: linear-gradient(#0c034a, #033640);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 70px;
+    padding: 4px 8px;
+    background: #262626;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-icon span {
+    width: 100%;
+    height: 8px;
+    display: block;
+    background: #fff;
+    margin: 10px 0;
+    transition: .5s;
+}
+.sidebar {
+    position: fixed;
+    top: -2000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transition: .5s;
+    padding: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sidebar.active {
+    top: 0;
+}
+.sidebar img {
+    height: 100px;
+    width: 100px;
+}
+.sidebar .menu {
+    margin: 20px;
+    padding: 20px 0;
+}
+.sidebar .menu li {
+    list-style: none;
+    font-family: sans-serif;
+    width: 30%;
+   
+}
+.sidebar .menu li a {
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.menu li {
+    padding-left: 34vw;
+}
+.sidebar .menu li a:hover {
+    background: #fc2827;
+    color: #fff;
+}
+.menu-icon.active span {
+    position: absolute;
+    width: calc(100% - 20px);
+    top: calc(50% - 13px);
+}
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.menu-icon.active span:nth-child(2) {
+    display: none;
+}
+.social-icon {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 60px;
+    left: 13vw;
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+}
+.social-icon li {
+    width: 20%;
+    text-align: center;
+    list-style: none;
+
+}
+.social-icon li a {
+    display: block;
+    font-size: 2em;
+    color: #fff;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    transition: .5s;
+    margin-top: 10px;
+    padding-top: 30px;
+    margin-left: 3vw;
+    
+}
+.navbar .nav li a:hover, .social-icon li a:hover {
+    background: #fc2827;
+}
+.navbar {
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+ul.nav {
+    list-style: none;
+    text-align: center;
+}
+.navbar .nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+.bottom-cheveron {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 50px;
+    left: 40%}
+.bottom-cheveron i {
+    display: block;
+    font-size: 1em;
+    color: #g8fff9;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.ClockActive {
+    z-index: -3;
+}
+a#logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 650%);
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    transition: .5s;
+}
+a#logo:hover {
+    color: #fff;
+}
+a#logo:before {
+    content: '';
+    position: absolute;
+    left: -1%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s;
+}
+a#logo:hover:before {
+    transform: scale(2);
+}
+#calenderContainer {
+    position: fixed;
+    transition: .5s;
+    top: 0;
+    z-index: 1;
+	width:100vw;
+	height:100vh;
+    
+}
+#calender {
+    height: 100%;
+    width: 100%;
+}
+.calanderDeactivated {
+    left: -2000px;
+}
+.calanderActive{
+    left: 0;
+}
+.leftArrow {
+    font-size: 84px;
+    height: 100%;
+    width: 10%;
+    float: left;
+    color: white;
+    z-index: 1;
+    position: fixed;
+    cursor: pointer;
+}
+.leftArrow i {
+    padding-top: 45%;
+}
+#backArrowDiv {
+    top: 0;
+    color: black;
+    font-size: 84px;
+    height: 100%;
+    width: 40%;
+    float: left;
+    z-index: 2;
+    position: fixed;
+    cursor: pointer;
+}
+#backArrowDiv i {
+    padding-top: 45%;
+}
+@media only screen and (max-width: 800px){
+
+.sidebar .menu li {
+    width: 100%;
+}
+.sidebar .menu li a {
+        ;
+        font-size: 1.5em;
+}
+.menu li {
+    padding-left: 0;
+    margin-left: 0;
+}
+.menu li a {
+    width: 100%;
+}
+.social-icon {
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    left: 0;
+}
+
+.social-icon li {
+    width: 20%;
+    text-align: center;
+    list-style: none;
+}
+
+.social-icon li a {
+    font-size: 2em;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+a#logo {
+    font-size: 1.3em;
+}
+/*end max-width: 700px */
+}
+
+@media only screen and (max-width: 400px){
+
+.sidebar .menu li a {
+   font-size: 1em;
+}
+
+a#logo {
+    top: 15%;
+    
+}
+.sidebar .menu {
+    margin: 10px;
+    padding: 20px 0;
+}
+.social-icon {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0px;
+}
+.social-icon li a {
+    font-size: 1.5em;
+}
+/*end max-width: 400px */
+}
+@media only screen and (max-width: 350px){
+.social-icon {
+    height: 60px;
+}
+a#logo {
+    top: 8%;
+    width: 100%;
+    font-size: 1em;
+}
+}
