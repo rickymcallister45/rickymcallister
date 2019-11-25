@@ -17,7 +17,7 @@ echo "<body>";
                 include_once 'frontEnd/products.php';
                   echo "</div>
           </div>
-    </div>
-</body>";
+    </div>";
 include_once 'frontEnd/footer.php';
+echo "</body>";
 ?>
