@@ -13,3 +13,14 @@ bartender
 courior
 animator
 seamstress 
+
+<div class="objects" id="hospitality"><a href="hospitality.html">hospitality</a></div>
+	<div class="objects" id="lockpicking"><a href="lockpicking.html">lockPicking</a></div>
+	<div class="objects" id="webDesign" onclick="alert('coming Soon')">webDesign</div>
+	<div class="objects" id="personalChef" onclick="alert('coming Soon')">personalChef</div>
+	<div class="objects" id="personalDriver" onclick="alert('coming Soon')">personalDriver</div>
+	<div class="objects" id="personalTrainer" onclick="alert('coming Soon')">personalTrainer</div>
+	<div class="objects" id="cardetailing" onclick="alert('coming Soon')">carDetailing</div>
+	<div class="objects" id="knifesharpening" onclick="alert('coming Soon')">knifeSharpening</div>
+	<div class="objects" id="drycleaning" onclick="alert('coming Soon')">dryCleaning</div>
+	<div class="objects" id="alterations" onclick="alert('coming Soon')">alterations</div>
