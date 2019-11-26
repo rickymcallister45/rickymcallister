@@ -1,18 +1,18 @@
 # to whom it may concern this is a list of things i have finished and will update my website with next
 
-moved index js+css files to /resourses/index
-added app/service bootstrap template
-cleaned up files/javascript
-cleaned up app/store
-added favicon to site
-added dynamic on air sign to desktop to alert users of livestreaming event
-added app/desktop/js/liveNow.js
-added app/streaming
-started working on app/computerScience/development/php/store
-cleaned up files/js
-started cleaning up app/computerScience
+moved index js+css files to /resourses/index\
+added app/service bootstrap template\
+cleaned up files/javascript\
+cleaned up app/store\
+added favicon to site\
+added dynamic on air sign to desktop to alert users of livestreaming event\
+added app/desktop/js/liveNow.js\
+added app/streaming\
+started working on app/computerScience/development/php/store\
+cleaned up files/js\
+started cleaning up app/computerScience\
 
-// November 2019
+# November 2019
 
 worked on computerScience/development/Vue/WorkingWithDatabase app  //Vue development
 redid array_pop on soundboard... i was putitng into a variable incorrectly 
