@@ -3,53 +3,50 @@ include_once '../../resources/store/test.php';
 include_once 'frontEnd/header.php';
 
 echo "<body>";
-include_once 'frontEnd/topNav.php';
+        include_once 'frontEnd/topNav.php';
         echo "<!-- Page Content -->
           <div class='container'>
             <div class='row'>
-              <!--Row For Image and Short Description-->";
-              
-              
+              <!-- Side Nav -->";
                 include_once 'frontEnd/sideNav.php';
-                  echo "<div class='col-md-9'>
-  <div class='row'>
-    
-    <div class='col-md-7'>
-     <img class='img-responsive' src='http://placehold.it/700x600' alt=''>
-    </div>
-  
-    <div class='col-md-5'>
-      <div class='thumbnail'>
-        <div class='caption-full'>
-          <h4><a href='#'>Javascript Course</a> </h4>
-          <hr>
-          <h4 class=''>$24.99</h4>
-      
-          <div class='ratings'>
-            <p>
-              <span class='glyphicon glyphicon-star'></span>
-              <span class='glyphicon glyphicon-star'></span>
-              <span class='glyphicon glyphicon-star'></span>
-              <span class='glyphicon glyphicon-star'></span>
-              <span class='glyphicon glyphicon-star-empty'></span>
-                4.0 stars
-            </p>
-          </div>
+
+$query = query("SELECT * FROM products WHERE product_id =" . escape_string($_GET['id']) . "");
+  confirm($query);
+  while($row = fetch_array($query)) {
+        echo "<div class='col-md-9'>
+                <div class='row'>
+                  <div class='col-md-7'>
+                    <img class='img-responsive' src='http://placehold.it/700x600' alt=''>
+                  </div>
+                  <div class='col-md-5'>
+                  <div class='thumbnail'>
+                  <div class='caption-full'>
+                  <h4><a href='#'>Javascript Course</a> </h4>
+                  <hr>
+                  <h4 class=''>$24.99</h4>
+                  <div class='ratings'>
+                  <p>
+                    <span class='glyphicon glyphicon-star'></span>
+                    <span class='glyphicon glyphicon-star'></span>
+                    <span class='glyphicon glyphicon-star'></span>
+                    <span class='glyphicon glyphicon-star'></span>
+                    <span class='glyphicon glyphicon-star-empty'></span>
+                     4.0 stars
+                  </p>
+                </div>
           
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-   
-          <form action=''>
-            <div class='form-group'>
-              <input type='submit' class='btn btn-primary' value='ADD TO CART'>
+                <form action=''>
+                  <div class='form-group'>
+                    <input type='submit' class='btn btn-primary' value='ADD TO CART'>
+                  </div>
+                </form>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <hr>
+<hr>
 
   <div class='row'>
     <div role='tabpanel'>
@@ -143,6 +140,7 @@ include_once 'frontEnd/topNav.php';
     </div>
   </div>
 </div>";
+  }
 
 include_once 'frontEnd/footer.php';
 ?>
