@@ -46,6 +46,14 @@ function get_products() {
   }
 }
 
+function get_categories() {
+  $query = query('SELECT * FROM categories');
+  confirm($query);
+  while($row = fetch_array($query)) {
+    echo "<a href='./category.php?id={$row['category_id']}' class='list-group-item'>{$row['category_title']}</a>";
+  }
+}
+
 
 // BACKEND FUNCTIONS
 
