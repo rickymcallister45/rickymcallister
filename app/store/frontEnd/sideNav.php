@@ -1,7 +1,7 @@
 <?php
 
 echo "<div class='col-md-3'>
-        <p class='lead'>Shop Name</p>
+        <p class='lead'>Ricky McAllister's Store</p>
           <div class='list-group'>";
         
         $query = "SELECT * FROM categories";
