@@ -1,9 +1,10 @@
 <?php
 include_once '../../resources/store/test.php';
 include_once 'frontEnd/header.php';
+
+echo "<body>";
 include_once 'frontEnd/topNav.php';
-echo "<body>
-        <!-- Page Content -->
+        echo "<!-- Page Content -->
           <div class='container'>
             <div class='row'>
               <!--Row For Image and Short Description-->";
