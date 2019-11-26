@@ -7,7 +7,7 @@ function redirect($location) {
 
 function query($sql) {
   global $connection;
-  return mysqli_query($conncection, $sql);
+  return mysqli_query($connection, $sql);
 }
 
 function confirm($result) {
