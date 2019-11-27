@@ -17,7 +17,7 @@ function display_message() {
 }
 
 function redirect($location) {
-  header('LocationL $location');
+  header('Location: $location');
 }
 
 function query($sql) {
