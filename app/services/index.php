@@ -11,6 +11,7 @@ echo "<!DOCTYPE html>
   <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
   <meta name='description' content='Ricky Mcallister's portfolio'>
   <meta name='author' content='Ricky Mcallister'>
+  <link rel='icon' href='../../resources/favicon/favicon.ico' type='image/x-icon'>
 
   <title>Serivce</title>
 
