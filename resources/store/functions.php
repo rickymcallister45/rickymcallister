@@ -71,8 +71,7 @@ function get_products_on_category_page() {
                     </p>
                   </div>
                 </div>
-            </div>
-          </div>";
+            </div>";
   }
 }
 
