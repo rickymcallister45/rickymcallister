@@ -89,11 +89,11 @@ echo "<!DOCTYPE html>
     </div>
     <!-- /.row -->
 
-    <div class='row' id='services'>
+    <div class='row' id='services'>";
     
+get_services();    
     
-    
-    
+/*
       <div class='col-md-4 mb-5'>
         <div class='card h-100'>
           <img class='card-img-top' src='http://placehold.it/300x200' alt=''>
@@ -145,8 +145,9 @@ echo "<!DOCTYPE html>
     
   </div>
   <!-- /.container -->
+*/
 
-  <!-- Footer -->
+echo  "<!-- Footer -->
   <footer class='py-5 bg-dark'>
     <div class='container'>
       <p class='m-0 text-center text-white'>Copyright &copy; Ricky McAllister 2019</p>
