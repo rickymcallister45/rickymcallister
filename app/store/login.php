@@ -8,7 +8,7 @@ echo "<body>
           <div class='container'>
             <header>
               <h1 class='text-center'>Login</h1>
-              <h2>";
+              <h2 class='text-center'>";
 display_message();
         echo  "</h2>
                 <div class='col-sm-4 col-sm-offset-5'>         
