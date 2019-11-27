@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+
+echo "<!DOCTYPE html>
 <html lang='en'>
 
 <head>
@@ -149,4 +151,6 @@
 
 </body>
 
-</html>
+</html>";
+
+?>
