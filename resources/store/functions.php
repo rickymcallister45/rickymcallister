@@ -1,6 +1,21 @@
 <?php
 // HELPER FUNCTIONS
 
+function set_message($message) {
+  if(!empty($message)) {
+    $_SESSION['message'] = $message;
+  }else{
+    $message = "";
+  }
+}
+
+function display_message() {
+  if(isset($_SESSION['message'])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+  }
+}
+
 function redirect($location) {
   header('LocationL $location');
 }
@@ -105,8 +120,10 @@ function login_user() {
     confrim($query);
     
     if(mysqli_num_rows($query) == 0) {
+      set_message('Your Password or Username was wrong');
       redirect('./login.php');
     }else{
+      set_message('Welcome to Admin {$username}');
       redirect('./admin/index.php');
     }
   }
