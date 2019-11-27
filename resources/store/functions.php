@@ -96,6 +96,22 @@ function get_products_on_shop_page() {
   }
 }
 
+function login_user() {
+  if(isset($_POST['submit'])) {
+    $username = escape_string($_POST['username']);
+    $password = escape_string($_POST['password']);
+    
+    $query = query("SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}'");
+    confrim($query);
+    
+    if(mysqli_num_rows($query) == 0) {
+      redirect('./login.php');
+    }else{
+      redirect('./admin/index.php');
+    }
+  }
+}
+
 
 // BACKEND FUNCTIONS
 
