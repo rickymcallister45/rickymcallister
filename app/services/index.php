@@ -9,7 +9,7 @@ echo "<!DOCTYPE html>
 
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-  <meta name='description' content=''>
+  <meta name='description' content='Ricky Mcallister's portfolio'>
   <meta name='author' content='Ricky Mcallister'>
 
   <title>Serivce</title>
@@ -63,11 +63,9 @@ echo "<!DOCTYPE html>
 
     <div class='row'>
       <div class='col-md-8 mb-5'>
-        <h2>What We Do</h2>
+        <h2>How can I help you?</h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-        <a class='btn btn-primary btn-lg' href='#'>Call to Action &raquo;</a>
+        <p>This is a portfolio showcasing proofs of what I can do.</p>
       </div>
       <div class='col-md-4 mb-5'>
         <h2>Contact Us</h2>
@@ -143,11 +141,11 @@ get_services();
     
     
     
-  </div>
-  <!-- /.container -->
+  
 */
 
-echo  "<!-- Footer -->
+echo  "</div>
+  <!-- /.container --><!-- Footer -->
   <footer class='py-5 bg-dark'>
     <div class='container'>
       <p class='m-0 text-center text-white'>Copyright &copy; Ricky McAllister 2019</p>
