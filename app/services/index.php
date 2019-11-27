@@ -22,25 +22,22 @@ echo "<!DOCTYPE html>
   <!-- Navigation -->
   <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
     <div class='container'>
-      <a class='navbar-brand' href='#'>Start Bootstrap</a>
+      <a class='navbar-brand' href='http://rickymcallister.com/'>ricky McAllister</a>
       <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
         <span class='navbar-toggler-icon'></span>
       </button>
       <div class='collapse navbar-collapse' id='navbarResponsive'>
         <ul class='navbar-nav ml-auto'>
           <li class='nav-item active'>
-            <a class='nav-link' href='#'>Home
+            <a class='nav-link' href='http://rickymcallister.com/'>Home
               <span class='sr-only'>(current)</span>
             </a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>About</a>
+            <a class='nav-link' href='#services'>Services</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Services</a>
-          </li>
-          <li class='nav-item'>
-            <a class='nav-link' href='#'>Contact</a>
+            <a class='nav-link' href='./contact.php'>Contact</a>
           </li>
         </ul>
       </div>
@@ -52,8 +49,8 @@ echo "<!DOCTYPE html>
     <div class='container h-100'>
       <div class='row h-100 align-items-center'>
         <div class='col-lg-12'>
-          <h1 class='display-4 text-white mt-5 mb-2'>Business Name or Tagline</h1>
-          <p class='lead mb-5 text-white-50'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus ab labore provident mollitia. Id assumenda voluptate earum corporis facere quibusdam quisquam iste ipsa cumque unde nisi, totam quas ipsam.</p>
+          <h1 class='display-4 text-white mt-5 mb-2'>My skills portfolio.</h1>
+          <p class='lead mb-5 text-white-50'</p>
         </div>
       </div>
     </div>
@@ -74,23 +71,27 @@ echo "<!DOCTYPE html>
         <h2>Contact Us</h2>
         <hr>
         <address>
-          <strong>Start Bootstrap</strong>
-          <br>3481 Melrose Place
-          <br>Beverly Hills, CA 90210
+          <strong>Ricky McAllister</strong>
+          <br>651 Moses Drive
+          <br>Carlisle, OH 45005
           <br>
         </address>
         <address>
           <abbr title='Phone'>P:</abbr>
-          (123) 456-7890
+          (440) 265-5218
           <br>
           <abbr title='Email'>E:</abbr>
-          <a href='mailto:#'>name@example.com</a>
+          <a href='mailto:#'>rickymcallister45@gmail.com</a>
         </address>
       </div>
     </div>
     <!-- /.row -->
 
-    <div class='row'>
+    <div class='row' id='services'>
+    
+    
+    
+    
       <div class='col-md-4 mb-5'>
         <div class='card h-100'>
           <img class='card-img-top' src='http://placehold.it/300x200' alt=''>
@@ -103,6 +104,12 @@ echo "<!DOCTYPE html>
           </div>
         </div>
       </div>
+      
+      
+      
+      
+      
+      
       <div class='col-md-4 mb-5'>
         <div class='card h-100'>
           <img class='card-img-top' src='http://placehold.it/300x200' alt=''>
@@ -140,7 +147,7 @@ echo "<!DOCTYPE html>
   <!-- Footer -->
   <footer class='py-5 bg-dark'>
     <div class='container'>
-      <p class='m-0 text-center text-white'>Copyright &copy; Your Website 2019</p>
+      <p class='m-0 text-center text-white'>Copyright &copy; Ricky McAllister 2019</p>
     </div>
     <!-- /.container -->
   </footer>
