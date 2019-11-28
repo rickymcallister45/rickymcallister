@@ -25,7 +25,7 @@ echo "<!DOCTYPE html>
   <!-- Navigation -->
   <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
     <div class='container'>
-      <a class='navbar-brand' href='http://rickymcallister.com/'>ricky McAllister</a>
+      <a class='navbar-brand' href='http://rickymcallister.com/'>RickyMcAllister.com</a>
       <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
         <span class='navbar-toggler-icon'></span>
       </button>
@@ -91,59 +91,6 @@ echo "<!DOCTYPE html>
     <div class='row' id='services'>";
     
 get_services();    
-    
-/*
-      <div class='col-md-4 mb-5'>
-        <div class='card h-100'>
-          <img class='card-img-top' src='http://placehold.it/300x200' alt=''>
-          <div class='card-body'>
-            <h4 class='card-title'>Card title</h4>
-            <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
-          </div>
-          <div class='card-footer'>
-            <a href='#' class='btn btn-primary'>Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
-      
-      
-      <div class='col-md-4 mb-5'>
-        <div class='card h-100'>
-          <img class='card-img-top' src='http://placehold.it/300x200' alt=''>
-          <div class='card-body'>
-            <h4 class='card-title'>Card title</h4>
-            <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-          </div>
-          <div class='card-footer'>
-            <a href='#' class='btn btn-primary'>Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      <div class='col-md-4 mb-5'>
-        <div class='card h-100'>
-          <img class='card-img-top' src='http://placehold.it/300x200' alt=''>
-          <div class='card-body'>
-            <h4 class='card-title'>Card title</h4>
-            <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class='card-footer'>
-            <a href='#' class='btn btn-primary'>Find Out More!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    
-    
-    
-    
-  
-*/
 
 echo  "</div>
   <!-- /.container --><!-- Footer -->
