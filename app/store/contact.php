@@ -20,7 +20,7 @@ echo "<body>
                 <div class='col-lg-12'>
                   <form name='sentMessage' id='contactForm' method='post'>";
 send_message();                  
-                echo  "<div class='row'>
+             echo  "<div class='row'>
                       <div class='col-md-6'>
                         <div class='form-group'>
                           <input type='text' class='form-control' placeholder='Your Name *' id='name' required data-validation-required-message='Please enter your name.'>
