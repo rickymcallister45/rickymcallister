@@ -129,6 +129,27 @@ function login_user() {
   }
 }
 
+function send_message() {
+  if(isset($_POST['submit']))
+    $to        = 'rickymcallister45@gmail.com';
+    $from_name = escape_string($_POST['name']);
+    $subject   = escape_string($_POST['subject']);
+    $email     = escape_string($_POST['email']);
+    $message   = escape_string($_POST['message']);
+  
+    $headers = "Fom: {$from_name} {$email}";
+  
+    $result = mail($to, $subject, $headers);
+    
+    if(!result) {
+      set_message("Error email not sent!!");
+      redirect('./contact.php');
+    }else{
+      set_message("Message sent");
+      redirect('./contact.php');
+    }
+}
+
 
 // BACKEND FUNCTIONS
 
