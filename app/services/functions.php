@@ -36,7 +36,7 @@ function get_services() {
                      <p class='card-text'>{$row['description']}</p>
                    </div>
                    <div class='card-footer'>
-                     <a href='{$row['service_link']}' class='btn btn-primary'>Find Out More!</a>
+                     <a href='{$row['link']}' class='btn btn-primary'>Find Out More!</a>
                    </div>
                  </div>
                </div>";
