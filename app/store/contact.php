@@ -13,15 +13,18 @@ echo "<body>
                 <div class='col-lg-12 text-center'>
                     <h2 class='section-heading'>Contact Us</h2>
                     <h3 class='section-subheading'>";
+
 display_message();                    
+
              echo  "</h3>
                 </div>
               </div>
-              
               <div class='row'>
                 <div class='col-lg-12'>
                   <form name='sentMessage' id='contactForm' method='post'>";
+
 send_message();                  
+
              echo  "<div class='row'>
                       <div class='col-md-6'>
                         <div class='form-group'>
@@ -52,9 +55,7 @@ send_message();
                   </form>
                 </div>
               </div>
-       
-          
-          </div>
+           </div>
         </body>";
       
 include_once 'frontEnd/footer.php';
