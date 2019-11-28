@@ -8,7 +8,6 @@ include_once 'frontEnd/topNav.php';
 echo "<body>
         <!-- Page Content -->
           <div class='container'>
-           
               <div class='row'>
                 <div class='col-lg-12 text-center'>
                     <h2 class='section-heading'>Contact Us</h2>
