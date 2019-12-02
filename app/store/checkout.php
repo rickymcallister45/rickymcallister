@@ -37,9 +37,6 @@ cart();
              echo "</tbody>
                   </table>
                 </form>
-                
-//CART TOTALS
-            
             <div class='col-xs-4 pull-right'>
               <h2>Cart Totals</h2>
                 <table class='table table-bordered' cellspacing='0'>
