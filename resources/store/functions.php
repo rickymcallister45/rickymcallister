@@ -129,7 +129,7 @@ function login_user() {
 }
 
 function send_message() {
-  if(isset($_POST['submit']))
+  if(isset($_POST['submit'])){
     $to        = 'rickymcallister45@gmail.com';
     $from_name = escape_string($_POST['name']);
     $subject   = escape_string($_POST['subject']);
@@ -147,6 +147,7 @@ function send_message() {
       set_message("Message sent");
       redirect('./contact.php');
     }
+  }  
 }
 
 
