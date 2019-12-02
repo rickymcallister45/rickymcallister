@@ -38,7 +38,7 @@ cart();
                   </table>
                 </form>
                 
-//          CART TOTALS
+//CART TOTALS
             
             <div class='col-xs-4 pull-right'>
               <h2>Cart Totals</h2>
