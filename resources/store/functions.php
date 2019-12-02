@@ -123,7 +123,6 @@ function login_user() {
       set_message('Your Password or Username was wrong');
       redirect('./login.php');
     }else{
-      set_message('Welcome to Admin {$username}');
       redirect('./admin/index.php');
     }
   }
