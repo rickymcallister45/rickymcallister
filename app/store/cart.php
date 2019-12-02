@@ -32,5 +32,21 @@ include_once "../../resources/store/config.php";
     $_SESSION['product_' . $_GET['delete']] == '0';
     redirect('./checkout.php');
   }
+
+function cart() {
+  $query = query("SELECT * FROM products");
+  confirm($query);
+  
+  while($row = fetch_array($query)) {
+    echo "<tr>
+          <td>{$row['product_title']}</td>
+          <td>{$row['product_price']}</td>
+          <td>{$row['product_quantity']}</td>
+          <td>2</td>
+          <td><a href='./cart.php?remove=1'>Remove</a></td>
+          <td><a href='./cart.php?delete=1'>Delete</a></td>
+          </tr>";
+  }
+}
   
 ?>
