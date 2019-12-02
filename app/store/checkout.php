@@ -9,8 +9,8 @@ echo "<body>
           <div class='container'>
            
             <div class='row'>
-              <h4 class='text-center bg-danger'>";
-        echo "</h4>  
+              <h4 class='text-center bg-danger'>
+        </h4>  
               <h1>Checkout</h1>
                 <form action=''>
                   <table class='table table-striped'>
