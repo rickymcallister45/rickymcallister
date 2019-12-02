@@ -117,7 +117,7 @@ function login_user() {
     $password = escape_string($_POST['password']);
     
     $query = query("SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}'");
-    confrim($query);
+    confirm($query);
     
     if(mysqli_num_rows($query) == 0) {
       set_message('Your Password or Username was wrong');
@@ -136,7 +136,7 @@ function send_message() {
     $email     = escape_string($_POST['email']);
     $message   = escape_string($_POST['message']);
   
-    $headers = "Fom: {$from_name} {$email}";
+    $headers = "From: {$from_name} {$email}";
   
     $result = mail($to, $subject, $headers);
     
