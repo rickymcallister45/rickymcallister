@@ -57,7 +57,7 @@ echo isset($_SESSION['item_quantity']) ? $_SESSION['item_quantity'] : $_SESSION[
                     <tr class='order-total'>
                       <th>Order Total</th>
                       <td><strong>
-                        <span class='amount'>$#36;";
+                        <span class='amount'>&#36;";
 
 echo isset($_SESSION['item_total']) ? $_SESSION['item_total'] : $_SESSION['item_total'] = "0";
 
