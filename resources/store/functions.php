@@ -120,7 +120,7 @@ function login_user() {
     confirm($query);
     
     if(mysqli_num_rows($query) == 0) {
-      set_message('Your Password or Username was wrong');
+      
       redirect('./login.php');
     }else{
       redirect('./admin/index.php');
