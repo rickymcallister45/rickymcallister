@@ -14,9 +14,6 @@ include_once "../../resources/store/config.php";
         redirect('./checkout.php');
       }
     }
-    
-    //$_SESSION['product_' . $_GET['add']] +=1;
-    //redirect('./index.php');
   }
   
   if(isset($_GET['remove'])) {
