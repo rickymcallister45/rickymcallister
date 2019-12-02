@@ -1,15 +1,21 @@
 <?php
-include_once '../../resources/store/test.php';
+include_once '../../resources/store/config.php';
+include_once './cart.php';
 include_once 'frontEnd/header.php';
 include_once 'frontEnd/topNav.php';
 
-
+if(isset($_SESSION['product_1'])) {
+        echo $_SESSION[product_1];
+}
 
 echo "<body>
         <!-- Page Content -->
           <div class='container'>
            
             <div class='row'>
+              <h4 class='text-center bg-danger'>";
+display_message();
+        echo "</h4>  
               <h1>Checkout</h1>
                 <form action=''>
                   <table class='table table-striped'>
@@ -21,14 +27,18 @@ echo "<body>
                         <th>Sub-total</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
+                    <tbody>";
+cart();
+                /*      <tr>
                         <td>apple</td>
                         <td>$23</td>
                         <td>3</td>
                         <td>2</td>
+                        <td><a href='./cart.php?remove=1'>Remove</a></td>
+                        <td><a href='./cart.php?delete=1'>Delete</a></td>
                       </tr>
-                    </tbody>
+                   */   
+             echo "</tbody>
                   </table>
                 </form>
                 
