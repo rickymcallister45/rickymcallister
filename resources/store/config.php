@@ -3,7 +3,7 @@
 ob_start();
 
 session_start();
-session_destroy();
+//session_destroy();
 
 defined("DB_HOST") ? null : define("DB_HOST", "localhost");
 defined("DB_USER") ? null : define("DB_USER", "newuser");
