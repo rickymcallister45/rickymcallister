@@ -1,5 +1,7 @@
 <?php
 include_once "../../resources/store/config.php";
+include '../../resources/store/functions.php';
+
   if(isset($_GET['add'])) {
     $query - query("SELECT * FROM products WHERE product_id=" . escape_string($_GET['add']) . " ");
     confirm($query);
