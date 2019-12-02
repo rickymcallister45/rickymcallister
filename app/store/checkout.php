@@ -4,10 +4,6 @@ include_once './cart.php';
 include_once 'frontEnd/header.php';
 include_once 'frontEnd/topNav.php';
 
-if(isset($_SESSION['product_1'])) {
-        echo $_SESSION[product_1];
-}
-
 echo "<body>
         <!-- Page Content -->
           <div class='container'>
@@ -42,7 +38,7 @@ cart();
                   </table>
                 </form>
                 
-<!--  ***********CART TOTALS*************-->
+//          CART TOTALS
             
             <div class='col-xs-4 pull-right'>
               <h2>Cart Totals</h2>
@@ -50,7 +46,12 @@ cart();
                   <tbody>
                     <tr class='cart-subtotal'>
                       <th>Items:</th>
-                      <td><span class='amount'>4</span></td>
+                      <td>
+                        <span class='amount'>";
+
+echo isset($_SESSION['item_quantity']) ? $_SESSION['item_quantity'] : $_SESSION['item_quantity'] = "0";                        
+
+                  echo "</span></td>
                     </tr>
                     <tr class='shipping'>
                       <th>Shipping and Handling</th>
@@ -58,7 +59,12 @@ cart();
                     </tr>
                     <tr class='order-total'>
                       <th>Order Total</th>
-                      <td><strong><span class='amount'>$3444</span></strong> </td>
+                      <td><strong>
+                        <span class='amount'>$#36;";
+
+echo isset($_SESSION['item_total']) ? $_SESSION['item_total'] : $_SESSION['item_total'] = "0";
+
+                 echo "</span></strong> </td>
                     </tr>
                   </tbody>
                 </table>
