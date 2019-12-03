@@ -29,7 +29,7 @@ include_once '../../resources/store/functions.php';
   }
   
   if(isset($_GET['delete'])) {
-    $_SESSION['product_' . $_GET['delete']] == '0';
+    $_SESSION['product_' . $_GET['delete']] = '0';
     unset($_SESSION['item_total']);
     unset($_SESSION['item_quantity']);
     redirect('./checkout.php');
