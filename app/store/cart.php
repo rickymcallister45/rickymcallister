@@ -62,7 +62,7 @@ function cart() {
           <td></td>
           </tr>";
         }
-      $_SESSION['item_total'] = $total += $sub;
+      $_SESSION['item_total'] = $totalPrice += $sub;
       $_SESSION['item_quantity'] = $item_quantity;
       }
     }
