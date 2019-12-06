@@ -19,7 +19,13 @@ include_once '../backEnd/header.php';
                </div>
              <!-- /.row -->";
 
-include_once '../backEnd/adminPageContent.php';
+if($_SERVER['REQUEST_URI'] == '/store/admin/' || $_SERVER['REQUEST_URI'] == '/store/admin/index.php') {
+   include '../backEnd/adminPageContent.php';
+}
+
+if(isset($_GET['orders'])) {
+   include('../backEnd/orders.php');
+}
    
    echo "</div>
          <!-- /.container-fluid -->
