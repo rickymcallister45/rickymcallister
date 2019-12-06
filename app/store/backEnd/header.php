@@ -7,10 +7,10 @@ echo "<!DOCTYPE html>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name='description' content=''>
-    <meta name='author' content=''>
+    <meta name='description' content='administration'>
+    <meta name='author' content='Ricky McAllister'>
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>SB Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href='css/bootstrap.min.css' rel='stylesheet'>
@@ -67,6 +67,9 @@ echo "<!DOCTYPE html>
                 <ul class='nav navbar-nav side-nav'>
                     <li class='active'>
                         <a href='index.html'><i class='fa fa-fw fa-dashboard'></i> Dashboard</a>
+                    </li>
+                    <li class=''>
+                        <a href='./orders.php'><i class='fa fa-fw fa-dashboard'></i> Orders</a>
                     </li>
                     <li>
                         <a href='products.html'><i class='fa fa-fw fa-bar-chart-o'></i> View Products</a>
