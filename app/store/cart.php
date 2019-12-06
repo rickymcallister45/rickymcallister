@@ -40,7 +40,7 @@ function cart() {
   $item_quantity = 0;
   $paypal_item_name = 1;
   $paypal_item_number = 1;
-  $paypal_ammount = 1;
+  $paypal_amount = 1;
   $paypal_quantity = 1;
   
   foreach($_SESSION as $name => $value) {
@@ -69,12 +69,12 @@ function cart() {
           </tr>
           <input type='hidden' name='item_name_{$paypal_item_name}' value='{$row['product_title']}'>
           <input type='hidden' name='item_number_{$paypal_item_number}' value='{$row['product_id']}'>
-          <input type='hidden' name='amount_{$paypal_ammount}' value='{$row['product_price']}'>
+          <input type='hidden' name='amount_{$paypal_amount}' value='{$row['product_price']}'>
           <input type='hidden' name='quantity_{$paypal_quantity}' value='{$value}'>";
   
   $paypal_item_name++;
   $paypal_item_number++;
-  $paypal_ammount++;
+  $paypal_amount++;
   $paypal_quantity++;
     
         }
