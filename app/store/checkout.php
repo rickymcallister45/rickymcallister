@@ -17,6 +17,7 @@ display_message();
                 <form action='https://www.sandbox.paypal.com/cgi-bin/webscr' method='post'>
                         <input type='hidden' name='cmd' value='_cart'>
                         <input type='hidden' name='business' value='clintc0rder-facilitator@hotmail.com'>
+                        <input type='hidden' name='currency_code' value='USD'>
                   <table class='table table-striped'>
                     <thead>
                       <tr>
@@ -30,11 +31,11 @@ display_message();
 cart();
                
              echo "</tbody>
-                  </table>
-                        <input type='image' name='upload'
-                                src='https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif'
-                                alt='PayPal - The safer, easier way to pay online'>
-                </form>
+                  </table>";
+
+show_paypal_button();
+
+          echo "</form>
             <div class='col-xs-4 pull-right'>
               <h2>Cart Totals</h2>
                 <table class='table table-bordered' cellspacing='0'>
