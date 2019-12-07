@@ -6,7 +6,7 @@ echo "<!-- Sidebar Menu Items - These collapse to the responsive navigation menu
               <a href='./index.php'><i class='fa fa-fw fa-dashboard'></i> Dashboard</a>
             </li>
             <li class=''>
-              <a href='./orders.php'><i class='fa fa-fw fa-clipboard'></i> Orders</a>
+              <a href='./index.php?orders'><i class='fa fa-fw fa-clipboard'></i> Orders</a>
             </li>
             <li>
               <a href='products.html'><i class='fa fa-fw fa-bar-chart-o'></i> View Products</a>
