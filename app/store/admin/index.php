@@ -18,8 +18,9 @@ include_once '../backEnd/header.php';
                  </div>
                </div>
              <!-- /.row -->";
+echo $_SERVER['REQUEST_URI'];
 
-if($_SERVER['REQUEST_URI'] == '/store/admin/' || $_SERVER['REQUEST_URI'] == '/store/admin/index.php') {
+if($_SERVER['REQUEST_URI'] == 'app/store/admin/' || $_SERVER['REQUEST_URI'] == 'app/store/admin/index.php') {
    include '../backEnd/adminPageContent.php';
 }
 
