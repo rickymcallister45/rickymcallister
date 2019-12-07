@@ -57,6 +57,5 @@ echo "<div class='col-md-12'>
             </div>
           </aside>
           <!--SIDEBAR-->
-        </form>
-      </div>";
+        </form>";
 ?>
