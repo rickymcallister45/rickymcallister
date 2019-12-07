@@ -11,7 +11,7 @@ if(!isset($_SESSION['username'])) {
              
 echo $_SERVER['REQUEST_URI'];
 
-if($_SERVER['REQUEST_URI'] == 'app/store/admin/' || $_SERVER['REQUEST_URI'] == 'app/store/admin/index.php') {
+if($_SERVER['REQUEST_URI'] == '/app/store/admin/' || $_SERVER['REQUEST_URI'] == '/app/store/admin/index.php') {
    include '../backEnd/adminDashboardContent.php';
 }
 
@@ -23,7 +23,7 @@ if(isset($_GET['products'])) {
    include('../backEnd/adminProducts.php');
 }
 
-if(isset($_GET['addProducts'])) {
+if(isset($_GET['addProduct'])) {
    include('../backEnd/adminAddProducts.php');
 }
 
