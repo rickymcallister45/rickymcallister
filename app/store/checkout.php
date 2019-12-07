@@ -2,7 +2,7 @@
 include_once '../../resources/store/test.php';
 include_once './frontEnd/header.php';
 include_once './frontEnd/topNav.php';
-include_once './cart.php';
+include_once './frontEnd/cart.php';
 
 echo "<body>
         <!-- Page Content -->
