@@ -123,6 +123,7 @@ function login_user() {
       
       redirect('./login.php');
     }else{
+      $_SESSION['username'] = $username;
       redirect('./admin/index.php');
     }
   }
