@@ -9,10 +9,10 @@ include_once '../../../resources/store/functions.php';
     while($row = fetch_array($query)) {
       if($row['product_quantity'] != $_SESSION['product_' . $_GET['add']]) {
         $_SESSION['product_' . $_GET['add']] +=1;
-        redirect('./checkout.php');
+        redirect('../checkout.php');
       }else{
         set_message("We only have " . $row['product_quantity'] . " " . $row['product_limit_reached'] . " Available");
-        redirect('./checkout.php');
+        redirect('../checkout.php');
       }
     }
   }
@@ -22,9 +22,9 @@ include_once '../../../resources/store/functions.php';
     if($_SESSION['product_' . $_GET['remove']] < 1) {
       unset($_SESSION['item_total']);
       unset($_SESSION['item_quantity']);
-      redirect('./checkout.php');
+      redirect('../checkout.php');
     }else{
-      redirect('./checkout.php');
+      redirect('../checkout.php');
     }
   }
   
@@ -32,7 +32,7 @@ include_once '../../../resources/store/functions.php';
     $_SESSION['product_' . $_GET['delete']] = '0';
     unset($_SESSION['item_total']);
     unset($_SESSION['item_quantity']);
-    redirect('./checkout.php');
+    redirect('../checkout.php');
   }
 
 function cart() {
