@@ -39,7 +39,7 @@ $query = query("SELECT * FROM products WHERE product_id =" . escape_string($_GET
 
                         <form action=''>
                           <div class='form-group'>
-                            <a href='./cart.php?add={$row['product_id']}' class='btn btn-primary'>ADD TO CART</a>
+                            <a href='./frontEnd/cart.php?add={$row['product_id']}' class='btn btn-primary'>ADD TO CART</a>
                           </div>
                         </form>
                       </div>
