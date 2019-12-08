@@ -7,10 +7,10 @@
             </div>
             <div class='row'>
               <table class='table table-hover'>
-                <thead</th>
-                    <th>Currency</th>
-                    <th>Status Number>
+                <thead>
                   <tr>
+                    <th>Currency</th>
+                    <th>Status Number</th>
                     <th>id</th>
                     <th>Amount</th>
                     <th>Transaction</th>
