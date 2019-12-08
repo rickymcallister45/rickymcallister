@@ -159,4 +159,19 @@ function send_message() {
 
 // BACKEND FUNCTIONS
 
+function displayOrders() {
+  $displayOrdersQuery = query('SELECT * FROM orders');
+  confirm($displayOrdersQuery);
+  
+  while($row = fetch_array($displayOrdersQuery)) {
+    echo "<tr>
+            <td>{$row['order_id']}</td>
+            <td>{$row['order_ammount']}</td>
+            <td>{$row['order_transaction']}</td>
+            <td>{$row['order_currency']}</td>
+            <td>{$row['order_status']}</td>
+          </tr>";
+  }
+}
+
 ?>
