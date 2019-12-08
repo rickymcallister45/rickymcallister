@@ -3,7 +3,7 @@ include_once '../../resources/store/test.php';
 include './frontEnd/cart.php';
 include_once 'frontEnd/header.php';
 
-report();
+processTransactions();
 
 echo "<body>";
         include_once 'frontEnd/topNav.php';
