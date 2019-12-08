@@ -1,6 +1,11 @@
 <?php
 // HELPER FUNCTIONS
 
+function lastOrderId() {
+  global $connection;
+  return mysqli_insert_id($connection);
+}
+
 function set_message($message) {
   if(!empty($message)) {
     $_SESSION['message'] = $message;
