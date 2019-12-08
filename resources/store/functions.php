@@ -170,6 +170,7 @@ function displayOrders() {
             <td>{$row['order_transaction']}</td>
             <td>{$row['order_currency']}</td>
             <td>{$row['order_status']}</td>
+            <td><a class='btn btn-danger' href='../backEnd/deleteOrder.php'><span class-'glyphicon glyphicon-remove'></span></a></td>
           </tr>";
   }
 }
