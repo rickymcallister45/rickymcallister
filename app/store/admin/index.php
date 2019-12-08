@@ -1,12 +1,13 @@
 <?php
 include_once '../../../resources/store/config.php';
-include_once '../backEnd/header.php';
 
 if(!isset($_SESSION['username'])) {
    redirect('../index.php');
 }
 
-   echo "<div id='page-wrapper'>
+include_once '../backEnd/header.php';
+
+echo "<div id='page-wrapper'>
            <div class='container-fluid'>";
              
 echo $_SERVER['REQUEST_URI'];
