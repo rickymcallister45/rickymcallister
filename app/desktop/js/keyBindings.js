@@ -122,7 +122,7 @@ var keybinding = {
     },*/
     {
       "name": "birthChart",
-      "address": "https://astro.cafeastrology.com/graphic.php?type=24&x=1200&y=1600&index=40213439&lang=en",
+      "address": "https://astro.cafeastrology.com/graphic.php?type=24&x=1200&y=1600&index=80303062&lang=en",
       "key": "u",
       "charCode": 117
     },
