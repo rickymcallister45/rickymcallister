@@ -93,7 +93,7 @@ function show_paypal_button() {
   }
 }
 
-function report() {
+function processTransactions() {
     
   if(isset($_GET['tx'])) {
         $ammount =     $_GET['amt'];
