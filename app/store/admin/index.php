@@ -20,7 +20,7 @@ if(isset($_GET['products'])) {
 }
 
 if(isset($_GET['addProduct'])) {
-   include('../../backEnd/adminAddProducts.php');
+   include('../backEnd/adminAddProducts.php');
 }
 
 if(isset($_GET['editProduct'])) {
