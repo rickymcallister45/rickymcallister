@@ -195,7 +195,7 @@ function adminGetProducts() {
               <td>{$row['product_quantity']}</td>
               <td>
                 <a class='btn btn-danger' href='../backEnd/deleteProducts.php?id={$row['product_id']}'>
-                  <span class-'glyphicon glyphicon-remove'></span>
+                  <span class='glyphicon glyphicon-remove'></span>
                 </a>
             </td>
           </tr>";    
