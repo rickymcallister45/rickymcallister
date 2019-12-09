@@ -188,7 +188,7 @@ function adminGetProducts() {
     echo "<tr>
               <td>{$row['product_id']}</td>
               <td>{$row['product_title']}<br>
-                <a href='index.php?editProduct&id={$row['product_id']}'><img src='{$row['product_image']}' alt='{$row['product_title']}'></a>
+                <a href='index.php?editProduct&id={$row['product_id']}'><img  width='100' src='{$row['product_image']}' alt='{$row['product_title']}'></a>
               </td>
               <td>{$category}</td>
               <td>{$row['product_price']}</td>
@@ -198,7 +198,7 @@ function adminGetProducts() {
                   <span class-'glyphicon glyphicon-remove'></span>
                 </a>
             </td>
-            </tr>";    
+          </tr>";    
   }
 }
 
@@ -227,10 +227,10 @@ function adminAddProduct() {
     $productImageLarge       = escape_string($_FILES['file']['name']);
     $productImageLargeTemp   = escape_string($_FILES['file']['tmp_name']);
     
-    move_uploaded_file($productImageTemp, "../uploads/" . $productImage);
+    move_uploaded_file($productImageTemp, "../img/" . $productImage);
     
     $createNewProductQuery = query("INSERT INTO products(product_inventory_code, product_title, product_category_id, product_price, product_quantity, product_limit_reached, product_weight, product_description, product_short_description, product_image, product_image_large) 
-                                                  VALUES('{$productInventoryCode}', '{$productTitle}', '{$productCategoryId}', '{$productPrice}', '{$productQuantity}', '{$productLimitReached}', '{$productWeight}', '{$productDescription}', '{$productShortDescription}', '{$productImage}', '{$productImageLarge}')");
+                                                  VALUES('{$productInventoryCode}', '{$productTitle}', '{$productCategoryId}', '{$productPrice}', '{$productQuantity}', '{$productLimitReached}', '{$productWeight}', '{$productDescription}', '{$productShortDescription}', '../img/{$productImage}', '../img/{$productImageLarge}')");
     confirm($createNewProductQuery);
     set_message("Upload Successful");
     redirect("./index.php?products");
