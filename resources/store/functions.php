@@ -201,4 +201,23 @@ function adminGetProducts() {
   }
 }
 
+function adminAddProduct() {
+  if(isset($_POST['publish'])) {
+    $productInventoryCode    = escape_string($_POST['product_inventory_code']);
+    $productTitle            = escape_string($_POST['product_title']);
+    $productCategoryId       = escape_string($_POST['product_category_id']);
+    $productPrice            = escape_string($_POST['product_price']);
+    $productQuantity         = escape_string($_POST['product_title']);
+    $productLimitReached     = escape_string($_POST['product_limit_reached']);
+    $productWeight           = escape_string($_POST['product_weight']);
+    $productDescription      = escape_string($_POST['product_title']);
+    $productShortDescription = escape_string($_POST['product_title']);
+    $productImage            = escape_string($_FILES['file']['name']);
+    $productImageTemp        = escape_string($_FILES['file']['tmp_name']);
+    $productImageLarge       = escape_string($_FILES['file']['name']);
+    $productImageLargeTemp   = escape_string($_FILES['file']['tmp_name']);
+    
+  }  
+}
+
 ?>
