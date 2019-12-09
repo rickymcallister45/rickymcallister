@@ -179,4 +179,26 @@ function displayOrders() {
   }
 }
 
+function adminGetProducts() {
+  $adminGetProductsQuery = query("SELECT * FROM products");
+  confirm($adminGetProductsQuery);
+  
+  while($row = fetch_array($adminGetProductsQuery)) {
+    echo "<tr>
+              <td>{$row['product_id']}</td>
+              <td>{$row['product_title']}<br>
+                <a href='index.php?editProduct&id={$row['product_id']}'><img src='{$row['product_image']}' alt='{$row['product_title']}'></a>
+              </td>
+              <td>Category</td>
+              <td>{$row['product_price']}</td>
+              <td>{$row['product_quantity']}</td>
+              <td>
+                <a class='btn btn-danger' href='../backEnd/deleteProducts.php?id={$row['product_id']}'>
+                  <span class-'glyphicon glyphicon-remove'></span>
+                </a>
+            </td>
+            </tr>";    
+  }
+}
+
 ?>
