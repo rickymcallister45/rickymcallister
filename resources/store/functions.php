@@ -184,12 +184,13 @@ function adminGetProducts() {
   confirm($adminGetProductsQuery);
   
   while($row = fetch_array($adminGetProductsQuery)) {
+    $category = adminShowProductCategory($row['product_category_id']);
     echo "<tr>
               <td>{$row['product_id']}</td>
               <td>{$row['product_title']}<br>
                 <a href='index.php?editProduct&id={$row['product_id']}'><img src='{$row['product_image']}' alt='{$row['product_title']}'></a>
               </td>
-              <td>Category</td>
+              <td>{$category}</td>
               <td>{$row['product_price']}</td>
               <td>{$row['product_quantity']}</td>
               <td>
@@ -198,6 +199,15 @@ function adminGetProducts() {
                 </a>
             </td>
             </tr>";    
+  }
+}
+
+function adminShowProductCategory($product_category_id) {
+  $showProductCategoryQuery = query("SELECT * FROM categories WHERE category_id = '{$product_category_id}'");
+  confirm($showProductCategoryQuery);
+  
+  while($category_row = fetch_array($showProductCategoryQuery)) {
+    return $category_row['category_title'];
   }
 }
 
