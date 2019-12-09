@@ -239,9 +239,9 @@ function adminAddProduct() {
 
 function adminAddCategory() {
   
-  $adminAddCategoryQuery = query('SELECT * FROM categories');
+  $adminAddCategoryQuery = query("SELECT * FROM categories");
   confirm($adminAddCategoryQuery);
-  while($row = fetch_array($query)) {
+  while($row = fetch_array($adminAddCategoryQuery)) {
     echo "<option value='{$row['category_id']}'>{$row['category_title']}</option>";
   }
 }
