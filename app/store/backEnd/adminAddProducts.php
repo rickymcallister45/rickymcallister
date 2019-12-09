@@ -64,7 +64,7 @@ adminAddCategory();
             <!-- Product Weight-->
             <div class='form-group'>
               <label for='product-weight'>Product Weight</label>
-                <input type='number' class='form-control'>
+                <input type='number' name='product_weight' class='form-control'>
             </div>
             <!-- Product Image -->
             <div class='form-group'>
