@@ -207,16 +207,23 @@ function adminAddProduct() {
     $productTitle            = escape_string($_POST['product_title']);
     $productCategoryId       = escape_string($_POST['product_category_id']);
     $productPrice            = escape_string($_POST['product_price']);
-    $productQuantity         = escape_string($_POST['product_title']);
+    $productQuantity         = escape_string($_POST['product_quantity']);
     $productLimitReached     = escape_string($_POST['product_limit_reached']);
     $productWeight           = escape_string($_POST['product_weight']);
-    $productDescription      = escape_string($_POST['product_title']);
-    $productShortDescription = escape_string($_POST['product_title']);
+    $productDescription      = escape_string($_POST['product_description']);
+    $productShortDescription = escape_string($_POST['product_short_description']);
     $productImage            = escape_string($_FILES['file']['name']);
     $productImageTemp        = escape_string($_FILES['file']['tmp_name']);
     $productImageLarge       = escape_string($_FILES['file']['name']);
     $productImageLargeTemp   = escape_string($_FILES['file']['tmp_name']);
     
+    move_uploaded_file($productImageTemp, "../uploads/" . $productImage);
+    
+    $createNewProductQuery = query("INSERT INTO products(product_inventory_code, product_title, product_category_id, product_price, product_quantity, product_limit_reached, product_weight, product_description, product_short_description, product_image, product_image_large) 
+                                                  VALUES('{$productInventoryCode}', '{$productTitle}', '{$productCategoryId}', '{$productPrice}', '{$productQuantity}', '{$productLimitReached}', '{$productWeight}', '{$productDescription}', '{$productShortDescription}', '{$productImage}', '{$productImageLarge}')");
+    confirm($createNewProductQuery);
+    set_message("Upload Successful");
+    redirect("./index.php?products")
   }  
 }
 
