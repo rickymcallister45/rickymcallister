@@ -56,7 +56,9 @@ function cart() {
     $item_quantity += $value;
         
     echo "<tr>
-          <td>{$row['product_title']}</td>
+          <td>{$row['product_title']}<br>
+            <img width='100' src='{$row['product_image']}'>
+          </td>
           <td>&#36;{$row['product_price']}</td>
           <td>{$value}</td>
           <td>{$subTotal}</td>
