@@ -25,6 +25,10 @@ if(isset($_GET['addProduct'])) {
    include('../backEnd/adminAddProducts.php');
 }
 
+if(isset($_GET['editProduct'])) {
+   include('../backEnd/editProducts.php');
+}
+
 if(isset($_GET['categories'])) {
    include('../backEnd/adminCategories.php');
 }
