@@ -188,7 +188,7 @@ function adminGetProducts() {
     echo "<tr>
               <td>{$row['product_id']}</td>
               <td>{$row['product_title']}<br>
-                <a href='index.php?editProduct&id={$row['product_id']}'><img  width='100' src='{$row['product_image']}' alt='{$row['product_title']}'></a>
+                <a href='index.php?editProduct&id={$row['product_id']}'><img  width='100' src='../{$row['product_image']}' alt='{$row['product_title']}'></a>
               </td>
               <td>{$category}</td>
               <td>{$row['product_price']}</td>
