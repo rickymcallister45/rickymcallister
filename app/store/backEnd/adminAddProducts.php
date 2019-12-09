@@ -2,8 +2,11 @@
 echo "<div class='col-md-12'>
         <div class='row'>
           <h1 class='page-header'>
-            Add Product
-          </h1>
+            Add Product";
+
+adminAddProduct();
+
+    echo "</h1>
         </div>
         <form action='' method='post' enctype='multipart/form-data'>
           <div class='col-md-8'>
