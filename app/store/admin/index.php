@@ -1,10 +1,9 @@
 <?php
-include_once '../../../resources/store/config.php';
-
 if(!isset($_SESSION['username'])) {
    redirect('../index.php');
 }
 
+include_once '../../../resources/store/config.php';
 include_once '../backEnd/header.php';
 
 echo "<div id='page-wrapper'>
