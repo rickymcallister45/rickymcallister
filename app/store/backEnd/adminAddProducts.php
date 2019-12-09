@@ -4,7 +4,7 @@ echo "<div class='col-md-12'>
           <h1 class='page-header'>
             Add Product";
 
-//adminAddProduct();
+adminAddProduct();
 
     echo "<h1>lolol</h1>
     </h1>
