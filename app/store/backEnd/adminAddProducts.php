@@ -6,8 +6,7 @@ echo "<div class='col-md-12'>
 
 adminAddProduct();
 
-    echo "<h1>lolol</h1>
-    </h1>
+    echo "</h1>
         </div>
         <form action='' method='post' enctype='multipart/form-data'>
           <div class='col-md-8'>
