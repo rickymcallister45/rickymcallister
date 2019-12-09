@@ -223,8 +223,17 @@ function adminAddProduct() {
                                                   VALUES('{$productInventoryCode}', '{$productTitle}', '{$productCategoryId}', '{$productPrice}', '{$productQuantity}', '{$productLimitReached}', '{$productWeight}', '{$productDescription}', '{$productShortDescription}', '{$productImage}', '{$productImageLarge}')");
     confirm($createNewProductQuery);
     set_message("Upload Successful");
-    redirect("./index.php?products")
+    redirect("./index.php?products");
   }  
+}
+
+function adminAddCategory() {
+  
+  $adminAddCategoryQuery = query('SELECT * FROM categories');
+  confirm($adminAddCategoryQuery);
+  while($row = fetch_array($query)) {
+    echo "<option value='{$row['category_id']}'>{$row['category_title']}</option>";
+  }
 }
 
 ?>
