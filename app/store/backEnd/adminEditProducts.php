@@ -61,8 +61,14 @@ adminEditProduct();
             <div class='form-group'>
               <label for='product-category'>Select Category</label>
               <select name='product_category_id' id='' class='form-control'>
-                <option value=''>Select Category</option>";
+                <option value='{$product_category_id}'>";
+
+adminShowProductCategory($product_category_id);
+
+          echo "</option>";
+
 adminAddCategory();
+
         echo "</select>
             </div>
             <!-- Product Quantity-->
@@ -85,6 +91,12 @@ adminAddCategory();
               <label for='product-title'>Product Image</label>
               <input type='file' name='file'>
               <img width='200' src='value='{$productImage}'' alt='{$productTitle}'>
+            </div>
+             <!-- Product Image  Large-->
+            <div class='form-group'>
+              <label for='product-title'>Product Image Large</label>
+              <input type='file' name='fileImageLarge'>
+              <img width='200' src='value='{$productImageLarge}'' alt='{$productTitle}'>
             </div>
           </aside>
           <!--SIDEBAR-->
