@@ -246,4 +246,61 @@ function adminAddCategory() {
   }
 }
 
+function adminEditProduct() {
+  if(isset($_POST['update'])) {
+    $productInventoryCode    = escape_string($_POST['product_inventory_code']);
+    $productTitle            = escape_string($_POST['product_title']);
+    $productCategoryId       = escape_string($_POST['product_category_id']);
+    $productPrice            = escape_string($_POST['product_price']);
+    $productQuantity         = escape_string($_POST['product_quantity']);
+    $productLimitReached     = escape_string($_POST['product_limit_reached']);
+    $productWeight           = escape_string($_POST['product_weight']);
+    $productDescription      = escape_string($_POST['product_description']);
+    $productShortDescription = escape_string($_POST['product_short_description']);
+    $productImage            = escape_string($_FILES['file']['name']);
+    $productImageTemp        = escape_string($_FILES['file']['tmp_name']);
+    $productImageLarge       = escape_string($_FILES['file']['name']);
+    $productImageLargeTemp   = escape_string($_FILES['file']['tmp_name']);
+    
+    if(empty($productImage)) {
+      $getImage = query("SELECT product_image FROM products WHERE product_id =" . escape_string($_GET['id']) . " ");
+      confirm($getImage);
+      
+      while($imageReceived = fetch_array($getImage)) {
+       $productImage = $imageReceived['product_image'];
+      }
+    }
+    
+    if(empty($productImageLarge)) {
+      $getImageLarge = query("SELECT product_image_large FROM products WHERE product_id =" . escape_string($_GET['id']) . " ");
+      confirm($getImageLarge);
+      
+      while($imageLargeReceived = fetch_array($getImageLarge)) {
+       $productImageLarge = $imageLargeReceived['product_image'];
+      }
+    }
+    
+    move_uploaded_file($productImageTemp, "../img/" . $productImage);
+    
+    $updateProductQuery = "UPDATE products SET ";
+    $updateProductQuery .= "product_inventory_code     ='{$productInventoryCode}'     , ";
+    $updateProductQuery .= "product_title              ='{$productTitle}'             , ";
+    $updateProductQuery .= "product_category_id        ='{$productCategoryId}'        , ";
+    $updateProductQuery .= "product_price              ='{$productPrice}'             , ";
+    $updateProductQuery .= "product_quantity           ='{$productQuantity}'          , ";
+    $updateProductQuery .= "product_limit_reached      ='{$productLimitReached}'      , ";
+    $updateProductQuery .= "product_weight             ='{$productWeight}'            , "; 
+    $updateProductQuery .= "product_description        ='{$productDescription}'       , ";
+    $updateProductQuery .= "product_short_description  ='{$productShortDescription}'  , ";
+    $updateProductQuery .= "product_image              ='{$productImage}'             , ";
+    $updateProductQuery .= "product_image_large        ='{$productImageLarge}'        , ";
+    $updateProductQuery .= "WHERE product_id=" . escape_string($_GET['id']);
+    
+    $sendUpdateQuery = query($updateProductQuery);
+    confirm($sendUpdateQuery);
+    set_message("Upload Successful");
+    redirect("./index.php?products");
+  }  
+}
+
 ?>
