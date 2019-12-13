@@ -70,6 +70,11 @@ adminAddCategory();
               <label for='product-title'>Product Image</label>
               <input type='file' name='file'>
             </div>
+            <!-- Product Image Large -->
+            <div class='form-group'>
+              <label for='product-title'>Product Image Large</label>
+              <input type='file' name='fileImageLarge'>
+            </div>
           </aside>
           <!--SIDEBAR-->
         </form>";
