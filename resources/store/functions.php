@@ -224,8 +224,8 @@ function adminAddProduct() {
     $productShortDescription = escape_string($_POST['product_short_description']);
     $productImage            = escape_string($_FILES['file']['name']);
     $productImageTemp        = escape_string($_FILES['file']['tmp_name']);
-    $productImageLarge       = escape_string($_FILES['file']['name']);
-    $productImageLargeTemp   = escape_string($_FILES['file']['tmp_name']);
+    $productImageLarge       = escape_string($_FILES['fileImageLarge']['name']);
+    $productImageLargeTemp   = escape_string($_FILES['fileImageLarge']['tmp_name']);
     
     move_uploaded_file($productImageTemp, "../img/" . $productImage);
     
@@ -259,8 +259,8 @@ function adminEditProduct() {
     $productShortDescription = escape_string($_POST['product_short_description']);
     $productImage            = escape_string($_FILES['file']['name']);
     $productImageTemp        = escape_string($_FILES['file']['tmp_name']);
-    $productImageLarge       = escape_string($_FILES['file']['name']);
-    $productImageLargeTemp   = escape_string($_FILES['file']['tmp_name']);
+    $productImageLarge       = escape_string($_FILES['fileImageLarge']['name']);
+    $productImageLargeTemp   = escape_string($_FILES['fileImageLarge']['tmp_name']);
     
     if(empty($productImage)) {
       $getImage = query("SELECT product_image FROM products WHERE product_id =" . escape_string($_GET['id']) . " ");
