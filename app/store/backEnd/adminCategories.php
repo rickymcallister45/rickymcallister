@@ -1,4 +1,6 @@
 <?php
+addCategory();
+
 echo "<h1 class='page-header'>
         Product Categories
       </h1>
@@ -6,10 +8,10 @@ echo "<h1 class='page-header'>
         <form action='' method='post'>
           <div class='form-group'>
             <label for='category-title'>Title</label>
-            <input type='text' class='form-control'>
+            <input name='category_title' type='text' class='form-control'>
           </div>
           <div class='form-group'>
-            <input type='submit' class='btn btn-primary' value='Add Category'>
+            <input  name='add_category' type='submit' class='btn btn-primary' value='Add Category'>
           </div>      
         </form>
       </div>
@@ -21,12 +23,11 @@ echo "<h1 class='page-header'>
               <th>Title</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>20</td>
-              <td>Example Title</td>
-            </tr>
-          </tbody>
+          <tbody>";
+            
+adminShowCategories();
+
+    echo "</tbody>
         </table>
       </div>";
 ?>
