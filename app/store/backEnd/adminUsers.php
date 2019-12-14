@@ -5,7 +5,7 @@ echo "<div class='col-lg-12'>
         </h1>
         <p class='bg-success'>
         </p>
-        <a href='add_user.php' class='btn btn-primary'>Add User</a>
+        <a href='./index.php?adminAddUser.php' class='btn btn-primary'>Add User</a>
         <div class='col-md-12'>
           <table class='table table-hover'>
             <thead>
