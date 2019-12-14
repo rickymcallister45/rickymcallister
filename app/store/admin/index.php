@@ -38,7 +38,11 @@ if(isset($_GET['users'])) {
 }
 
 if(isset($_GET['addUser'])) {
-   include('../backEnd/adminAddUsers.php');
+   include('../backEnd/adminAddUser.php');
+}
+
+if(isset($_GET['editUser'])) {
+   include('../backEnd/adminEditUser.php');
 }
 
    
