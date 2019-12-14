@@ -32,8 +32,8 @@ adminEditProduct();
               <input type='text' name='product_title' class='form-control' value='{$productTitle}'>
             </div>
             <div class='form-group'>
-              <label for='product-title'>Product Description</label>
-              <textarea name='product_description' id='' cols='30' rows='3' class='form-control' value='{$productDescription}'></textarea>
+              <label for='product-description'>Product Description</label>
+              <textarea name='product_description' id='' cols='30' rows='3' class='form-control'>{$productDescription}</textarea>
             </div>
             <div class='form-group row'>
               <div class='col-xs-3'>
@@ -43,11 +43,11 @@ adminEditProduct();
             </div>
             <div class='form-group'>
               <label for='product_short_description'>Product Short Description</label>
-              <textarea name='product_short_description' id='' cols='30' rows='1' class='form-control' value='{$productShortDescription}'></textarea>
+              <textarea name='product_short_description' id='' cols='30' rows='1' class='form-control'>{$productShortDescription}</textarea>
             </div>
             <div class='form-group'>
               <label for='product_limit_reached'>Product Limit Reached</label>
-              <textarea name='product_limit_reached' id='' cols='30' rows='1' class='form-control' value='{$productLimitReached}'></textarea>
+              <textarea name='product_limit_reached' id='' cols='30' rows='1' class='form-control'>{$productLimitReached}</textarea>
             </div>
           </div>
           <!--Main Content-->
@@ -61,9 +61,9 @@ adminEditProduct();
             <div class='form-group'>
               <label for='product-category'>Select Category</label>
               <select name='product_category_id' id='' class='form-control'>
-                <option value='{$product_category_id}'>";
+                <option value=''>";
 
-adminShowProductCategory($product_category_id);
+echo adminShowProductCategory($product_category_id);
 
           echo "</option>";
 
