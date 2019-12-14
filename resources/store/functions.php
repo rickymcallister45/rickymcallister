@@ -328,7 +328,7 @@ function addCategory() {
     $categoryTitle = escape_string($_POST['category_title']);
     $addCategory = query("INSERT INTO categories(category_title) VALUES('{$categoryTitle}')");
     confirm($addCategory);
-    rediect("../admin/index.php?categories");
+    rediect("./index.php?categories");
     
   }
 }
