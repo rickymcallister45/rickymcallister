@@ -354,4 +354,21 @@ function adminShowUsers() {
   }
 }
 
+function adminAddUser() {
+  if(isset($_POST['add_user'])) {
+    $addUsername      = escape_string($_POST['username']);
+    $addEmail         = escape_string($_POST['email']);
+    $addPassword      = escape_string($_POST['password']);
+    $addUserPhoto     = escape_string($_FILES['file']['name']);
+    $addUserPhotoTemp = escape_string($_FILES['file']['tmp']);
+    
+    move_uploaded_file($addUserPhotoTemp, "../img/" . $addUserPhoto);
+    
+    $addUserQuery = query("INSERT INTO users (user_name, user_email, user_password, user_photo) 
+                                      VALUES ('{$addUsername}', '{$addEmail}', '{$addPassword}', '{$addUserPhoto}')");
+    confirm($addUserQuery);
+    redirect("./index.php?users");
+  }
+}
+
 ?>
