@@ -2,3 +2,4 @@ slider = 800x300;
 index = 320x150;
 category = 800x500;
 item = 700x600;
+user = 62x62;
