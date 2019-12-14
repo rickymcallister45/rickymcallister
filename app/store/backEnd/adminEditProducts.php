@@ -90,13 +90,13 @@ adminAddCategory();
             <div class='form-group'>
               <label for='product-title'>Product Image</label>
               <input type='file' name='file'>
-              <img width='200' src='value='.{$productImage}'' alt='{$productTitle}'>
+              <img width='200' src='.{$productImage}' alt='{$productTitle}'>
             </div>
              <!-- Product Image  Large-->
             <div class='form-group'>
               <label for='product-title'>Product Image Large</label>
               <input type='file' name='fileImageLarge'>
-              <img width='200' src='value='.{$productImageLarge}'' alt='{$productTitle}'>
+              <img width='200' src='.{$productImageLarge}' alt='{$productTitle}'>
             </div>
           </aside>
           <!--SIDEBAR-->
