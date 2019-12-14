@@ -1,5 +1,5 @@
 <?php
-
+ adminAddUser();
 echo "<h1 class='page-header'>
       Add User
         <small>Page</small>
