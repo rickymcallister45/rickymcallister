@@ -1,11 +1,27 @@
-<?php
-include_once '../../../resources/store/config.php';
-include_once '../../../resources/store/functions.php';
-if(isset($_GET['id'])) {
-  $deleteUserQuery = query("DELETE FROM users WHERE user_id =" . escape_string($_GET['id']) . "");
-  confirm($deleteUserQuery);
-  redirect("../admin/index.php?users");
-}else{
-  redirect("../admin/index.php?users");
+<?php require_once("../../resources/config.php");
+
+
+if(isset($_GET['delete_user_id'])) {
+
+
+$query = query("DELETE FROM users WHERE user_id = " . escape_string($_GET['delete_user_id']) . " ");
+confirm($query);
+
+
+set_message("Sser Deleted");
+redirect("./index.php?users");
+
+
+} else {
+
+redirect("./index.php?users");
+
+
 }
-?>
+
+
+
+
+
+
+ ?>
