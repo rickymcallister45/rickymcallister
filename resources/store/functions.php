@@ -303,4 +303,35 @@ function adminEditProduct() {
   }  
 }
 
+function adminShowCategories() {
+  $selectAllCategoriesQuery = query("SELECT * FROM categories");
+  confirm($selectAllCategoriesQuery);
+  
+  while($row = fetch_array($selectAllCategoriesQuery)) {
+    $categoryId = $row[category_id];
+    $categoryTitle = $row[category_title];
+    
+    echo "<tr>
+            <td>{$categoryId}</td>
+            <td>{$categoryTitle}</td>
+            <td>
+              <a class='btn btn-danger' href='../backEnd/deleteCategory.php?id={$row['$categoryId']}'>
+                <span class='glyphicon glyphicon-remove'></span>
+              </a>
+            </td>
+          </tr>";
+    }
+  }
+
+funciton addCategory() {
+  if(isset($_POST['add_category'])) {
+    $categoryTitle = escape_string($_POST['category_title']);
+    $addCategory = query("INSERT INTO categories(category_title) VALUES('{$categoryTitle}')");
+    confirm($addCategory);
+    rediect("./index.php?categories");
+    
+  }
+}
+
+
 ?>
