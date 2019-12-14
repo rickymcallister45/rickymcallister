@@ -5,7 +5,7 @@ include_once '../../../resources/store/functions.php';
 
 
 if(isset($_GET['id'])) {
-  $deleteUserQuery = query("DELETE FROM users WHERE user_id = " . escape_string($_GET['id']) . " ");
+  $deleteUserQuery = query("DELETE FROM users WHERE user_id =" . escape_string($_GET['id']) . " ");
   confirm($deleteUserQuery);
   redirect("../admin/index.php?users");
   
