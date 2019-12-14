@@ -61,7 +61,7 @@ adminEditProduct();
             <div class='form-group'>
               <label for='product-category'>Select Category</label>
               <select name='product_category_id' id='' class='form-control'>
-                <option value=''>";
+                <option value='{$product_category_id}'>";
 
 echo adminShowProductCategory($product_category_id);
 
