@@ -315,7 +315,7 @@ function adminShowCategories() {
             <td>{$categoryId}</td>
             <td>{$categoryTitle}</td>
             <td>
-              <a class='btn btn-danger' href='../backEnd/deleteCategory.php?id={$row['$categoryId']}'>
+              <a class='btn btn-danger' href='../backEnd/deleteCategory.php?id={$categoryId}'>
                 <span class='glyphicon glyphicon-remove'></span>
               </a>
             </td>
