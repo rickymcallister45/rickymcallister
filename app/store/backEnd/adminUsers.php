@@ -11,26 +11,16 @@ echo "<div class='col-lg-12'>
             <thead>
               <tr>
                 <th>Id</th>
-                <th>Photo</th>
                 <th>Username</th>
-                <th>First Name</th>
-                <th>Last Name </th>
+                <th>Email</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>2</td>
-                <td>
-                  <img class='admin-user-thumbnail user_image' src='placehold.it/62x62' alt=''></td>
-                <td>Rico
-                  <div class='action_links'>
-                    <a href=''>Delete</a>
-                    <a href=''>Edit</a>
-                  </div>
-                </td>
-                <td>Edwin</td>
-                <td>Diaz</td>
-              </tr>
+              <tr>";
+     
+adminShowUsers(); 
+
+        echo "</tr>
             </tbody>
           </table>
           <!--End of Table-->
