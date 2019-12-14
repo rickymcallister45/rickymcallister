@@ -343,14 +343,16 @@ function adminShowUsers() {
     $userEmail = $row['user_email'];
     $userImage = $row['user_image'];
         
-    echo "<td>{$userId}</td>
+    echo "<tr>
+          <td>{$userId}</td>
           <td>{$userName}</td>
           <td>{$userEmail}</td>
           <td>
             <a class='btn btn-danger' href='../backEnd/deleteUser.php?id={$row['$userId']}'>
               <span class='glyphicon glyphicon-remove'></span>
             </a>
-          </td>";
+          </td>
+          </tr>";
   }
 }
 
