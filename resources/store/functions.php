@@ -348,7 +348,7 @@ function adminShowUsers() {
           <td>{$userName}</td>
           <td>{$userEmail}</td>
           <td>
-            <a class='btn btn-danger' href='../backEnd/deleteUser.php?id={$row['$userId']}'>
+            <a class='btn btn-danger' href='../backEnd/deleteUser.php?id={$userId}'>
               <span class='glyphicon glyphicon-remove'></span>
             </a>
           </td>
