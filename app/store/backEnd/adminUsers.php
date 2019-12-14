@@ -15,13 +15,11 @@ echo "<div class='col-lg-12'>
                 <th>Email</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>";
+            <tbody>";
      
 adminShowUsers(); 
 
-        echo "</tr>
-            </tbody>
+        echo "</tbody>
           </table>
           <!--End of Table-->
         </div>
