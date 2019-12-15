@@ -20,6 +20,9 @@ echo "<!-- Sidebar Menu Items - These collapse to the responsive navigation menu
             <li>
               <a href='index.php?users'><i class='fa fa-fw fa-wrench'></i>Users</a>
             </li>
+            <li>
+              <a href='index.php?slider'><i class='fa fa-fw fa-camera'></i>Slider</a>
+            </li>
           </ul>
         </div>";
 ?>
