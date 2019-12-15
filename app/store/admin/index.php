@@ -37,7 +37,7 @@ if(isset($_GET['users'])) {
    include('../backEnd/adminUsers.php');
 }
 
-if(isset($_GET['slides'])) {
+if(isset($_GET['slider'])) {
    include('../backEnd/slides.php');
 }
 
