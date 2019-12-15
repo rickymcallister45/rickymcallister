@@ -424,13 +424,24 @@ function getSlides() {
   }
 }
 
-/*
+function getActiveSlide() {
+  $getSlideActiveQuery = query("SELECT * FROM slides ORDER BY slide_id DESC LIMIT 1");
+  confirm($getSlideActiveQuery);
+  
+  while($row = fetch_array($getSlideActiveQuery)) {
+    echo "<div class='item active'>
+            <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
+          </div>";
+  }
+}  
 
+/*
+  
 function addSlides() {}
 
 function getCurrentSlide() {}
 
-function getActiveSlide() {}
+
 
 function getSlideThumbnail() {}
 */
