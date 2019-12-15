@@ -10,9 +10,8 @@ echo "<body>";
         echo "<!-- Page Content -->
           <div class='container'>
             <div class='row'>
-              <!-- Side Nav -->";
-                include_once 'frontEnd/sideNav.php';
-         echo "<div class='col-md-9'>
+              <!-- Side Nav -->
+              <div class='col-md-9'>
                  <h1 class='text-center'>THANK YOU!!</h1>
                </div>
           </div>
