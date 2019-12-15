@@ -127,7 +127,7 @@ function processTransactions() {
     $item_quantity += $value;
     
     
-     $insertIntoReport = query("INSERT INTO reports (report_product_id, report_order_id, report_product_title report_product_price, report_product_quantity)
+     $insertIntoReport = query("INSERT INTO reports (report_product_id, report_order_id, report_product_title, report_product_price, report_product_quantity)
                                       VALUES('{$id}', '{$lastOrderId}', '{$product_title}', '{$product_price}', '{$value}')");
         confirm($insertIntoReport);
     
