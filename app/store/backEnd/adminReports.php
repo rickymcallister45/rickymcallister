@@ -7,14 +7,17 @@ echo "<div class='row'>
           <thead>
             <tr>
               <th>Id</th>
-              <th>Title</th>
-              <th>Category</th>
+              <th>Product Id</th>
+              <th>Order Id</th>
+              <th>Product Title</th>
               <th>Price</th>
-              <th>Quantity</th>
+              <th>Product Quantity</th>
             </tr>
           </thead>
           <tbody>";
-adminGetProducts();            
+
+adminGetReports();
+
     echo "</tbody>
         </table>
       </div>";
