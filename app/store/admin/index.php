@@ -10,7 +10,7 @@ echo "<div id='page-wrapper'>
            <div class='container-fluid'>";
              
 if($_SERVER['REQUEST_URI'] == '/app/store/admin/' || $_SERVER['REQUEST_URI'] == '/app/store/admin/index.php') {
-   include '../backEnd/adminDashboardContent.php';
+   include '../backEnd/adminReports.php';
 }
 
 if(isset($_GET['orders'])) {
