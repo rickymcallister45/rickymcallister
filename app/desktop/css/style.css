@@ -189,6 +189,10 @@ div .header {
 	transform: translate(-50%, -50%);
 	list-style: none!important;
 }
+#contacts {
+	background-color: #15131391;
+}
+
 #podcasts, #bookmarks, #bills, #contacts, #events {
 	visibility: hidden;
 }
