@@ -398,19 +398,40 @@ function adminGetReports() {
 function countOrders(){
   $adminCountOrdersQuery = query("SELECT * FROM reports");
   confirm($adminCountOrdersQuery);
-  $orderCount = mysql_num_rows($adminCountOrdersQuery);
+  $orderCount = mysqli_num_rows($adminCountOrdersQuery);
 }
 
 function countProducts() {
   $admincountProductsQuery = query("SELECT * FROM reports");
   confirm($admincountProductsQuery);
-  $productCount = mysql_num_rows($admincountProductsQuery);
+  $productCount = mysqli_num_rows($admincountProductsQuery);
 }
 
 function countCategories() {
   $admincountCategoriesQuery = query("SELECT * FROM reports");
   confirm($admincountCategoriesQuery);
-  $categoryCount = mysql_num_rows($admincountCategoriesQuery);
+  $categoryCount = mysqli_num_rows($admincountCategoriesQuery);
 }
 
+function getSlides() {
+  $getSlidesQuery = query("SELECT * FROM slides");
+  confirm($getSlidesQuery);
+  
+  while($row = fetch_array($getSlidesQuery)) {
+    echo "<div class='item'>
+            <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
+          </div>";
+  }
+}
+
+/*
+
+function addSlides() {}
+
+function getCurrentSlide() {}
+
+function getActiveSlide() {}
+
+function getSlideThumbnail() {}
+*/
 ?>
