@@ -294,7 +294,7 @@ function adminEditProduct() {
     $updateProductQuery .= "product_short_description  ='{$productShortDescription}'  , ";
     $updateProductQuery .= "product_image              ='{$productImage}'             , ";
     $updateProductQuery .= "product_image_large        ='{$productImageLarge}'        , ";
-    $updateProductQuery .= "WHERE product_id=" . escape_string($_GET['id']) . " ";
+    $updateProductQuery .= "WHERE product_id=" . escape_string($_GET['id']);
     
     $sendUpdateQuery = query($updateProductQuery);
     confirm($sendUpdateQuery);
@@ -372,5 +372,29 @@ function adminAddUser() {
     redirect("./index.php?users");
   }
 }
+
+function adminGetReports() {
+  $adminGetReportsQuery = query("SELECT * FROM reports");
+  confirm($adminGetReportsQuery);
+  
+  while($row = fetch_array($adminGetReportsQuery)) {
+    
+    echo "<tr>
+              <td>{$row['report_id']}</td>
+              <td>{$row['report_product_id']}</td>
+              <td>{$row['report_order_id']}</td>
+              <td>{$row['report_product_title']}</td>
+              <td>{$row['report_product_price']}</td>
+              <td>{$row['report_product_quantity']}</td>
+              <td>
+                <a class='btn btn-danger' href='../backEnd/deleteReport.php?id={$row['report_id']}'>
+                  <span class='glyphicon glyphicon-remove'></span>
+                </a>
+            </td>
+          </tr>";    
+  }
+}
+
+
 
 ?>
