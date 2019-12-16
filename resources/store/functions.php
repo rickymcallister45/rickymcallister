@@ -421,7 +421,7 @@ function getSlideIndicator(){
   confirm($getSlideIndicatorQuery);
   for($i = 0; $array[$i] = mysqli_fetch_assoc($getSlideIndicatorQuery); $i++);
    array_pop($array);
-  echo "<li data-target='#carousel-example-generic' data-slide-to='{$array[0]}' class='active'></li>";
+  echo "<li data-target='#carousel-example-generic' data-slide-to='{$array['0']}' class='active'></li>";
   
   for($restOfTheIndicators = 1; $restOfTheIndicators < $array.len -1; $restOfTheIndicators++) {
     echo "<li data-target='#carousel-example-generic' data-slide-to='{$array[$restOfTheIndicators]}'></li>";
