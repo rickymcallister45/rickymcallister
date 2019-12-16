@@ -3,11 +3,18 @@
 echo "<div class='row carousel-holder'>
         <div class='col-md-12'>
           <div id='carousel-example-generic' class='carousel slide' data-ride='carousel'>
-            <ol class='carousel-indicators'>
+            <ol class='carousel-indicators'>";
+            
+ getSlideIndicator();            
+            
+            /*
+            
               <li data-target='#carousel-example-generic' data-slide-to='0' class='active'></li>
               <li data-target='#carousel-example-generic' data-slide-to='1'></li>
               <li data-target='#carousel-example-generic' data-slide-to='2'></li>
-            </ol>
+              
+            */  
+    echo "</ol>
             <div class='carousel-inner'>";
               
 getActiveSlide();
