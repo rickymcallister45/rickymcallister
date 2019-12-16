@@ -172,7 +172,7 @@ function displayOrders() {
             <td>{$row['order_status']}</td>
             <td>
               <a class='btn btn-danger' href='../backEnd/deleteOrders.php?id={$row['order_id']}'>
-                <span class-'glyphicon glyphicon-remove'></span>
+                <span class='glyphicon glyphicon-remove'></span
               </a>
             </td>
           </tr>";
