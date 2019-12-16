@@ -416,6 +416,18 @@ function countCategories() {
   echo $categoryCount;
 }
 
+function getSlideIndicator(){
+  $getSlideIndicatorQuery = query("SELECT * FROM slides");
+  confirm($getSlideIndicatorQuery);
+  for($i = 0; $array[$i] = mysqli_fetch_assoc($getSlideIndicatorQuery); $i++);
+   array_pop($array);
+  echo "<li data-target='#carousel-example-generic' data-slide-to='{$array[0]}' class='active'></li>";
+  
+  for($restOfTheIndicators = 1; $restOfTheIndicators < $array.len -1; $restOfTheIndicators++) {
+    echo "<li data-target='#carousel-example-generic' data-slide-to='{$array[$restOfTheIndicators]}'></li>";
+  }  
+}
+
 function getSlides() {
   $getSlidesQuery = query("SELECT * FROM slides");
   confirm($getSlidesQuery);
