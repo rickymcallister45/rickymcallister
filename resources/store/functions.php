@@ -433,11 +433,11 @@ function getSlides() {
   confirm($getSlidesQuery);
   
   while($row = fetch_array($getSlidesQuery)) {
-    echo "<a href='./category.php?id={$row['slide_category_id']}'
-            <div class='item'>
-              <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
-            </div>
-          </a>";
+    echo "<div class='item'>
+              <a href='./category.php?id={$row['slide_category_id']}'
+                <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
+              </a>
+            </div>";
   }
 }
 
@@ -446,11 +446,11 @@ function getActiveSlide() {
   confirm($getSlideActiveQuery);
   
   while($row = fetch_array($getSlideActiveQuery)) {
-    echo "<a href='./category.php?id={$row['slide_category_id']}'>
-            <div class='item active'>
+    echo "<div class='item active'>
+            <a href='./category.php?id={$row['slide_category_id']}'>
               <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
-            </div>
-          </a>";
+             </a> 
+            </div>";
   }
 }  
   
