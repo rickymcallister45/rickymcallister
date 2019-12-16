@@ -399,21 +399,21 @@ function countOrders(){
   $adminCountOrdersQuery = query("SELECT * FROM reports");
   confirm($adminCountOrdersQuery);
   $orderCount = mysqli_num_rows($adminCountOrdersQuery);
-  echo "$orderCount";
+  echo $orderCount;
 }
 
 function countProducts() {
   $admincountProductsQuery = query("SELECT * FROM reports");
   confirm($admincountProductsQuery);
   $productCount = mysqli_num_rows($admincountProductsQuery);
-  echo "$productCount";
+  echo $productCount;
 }
 
 function countCategories() {
   $admincountCategoriesQuery = query("SELECT * FROM reports");
   confirm($admincountCategoriesQuery);
   $categoryCount = mysqli_num_rows($admincountCategoriesQuery);
-  echo "$categoryCount";
+  echo $categoryCount;
 }
 
 function getSlides() {
