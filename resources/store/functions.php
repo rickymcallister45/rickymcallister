@@ -227,7 +227,7 @@ function adminAddProduct() {
     $productImageLarge       = escape_string($_FILES['fileImageLarge']['name']);
     $productImageLargeTemp   = escape_string($_FILES['fileImageLarge']['tmp_name']);
     
-    move_uploaded_file($productImageTemp, "../img/" . $productImage);
+    move_uploaded_file($productImageTemp, "../../../app/store/img/" . $productImage);
     
     $createNewProductQuery = query("INSERT INTO products(product_inventory_code, product_title, product_category_id, product_price, product_quantity, product_limit_reached, product_weight, product_description, product_short_description, product_image, product_image_large) 
                                                   VALUES('{$productInventoryCode}', '{$productTitle}', '{$productCategoryId}', '{$productPrice}', '{$productQuantity}', '{$productLimitReached}', '{$productWeight}', '{$productDescription}', '{$productShortDescription}', './img/{$productImage}', './img/{$productImageLarge}')");
