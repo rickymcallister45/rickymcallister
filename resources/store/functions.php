@@ -399,18 +399,21 @@ function countOrders(){
   $adminCountOrdersQuery = query("SELECT * FROM reports");
   confirm($adminCountOrdersQuery);
   $orderCount = mysqli_num_rows($adminCountOrdersQuery);
+  echo "$orderCount";
 }
 
 function countProducts() {
   $admincountProductsQuery = query("SELECT * FROM reports");
   confirm($admincountProductsQuery);
   $productCount = mysqli_num_rows($admincountProductsQuery);
+  echo "$productCount";
 }
 
 function countCategories() {
   $admincountCategoriesQuery = query("SELECT * FROM reports");
   confirm($admincountCategoriesQuery);
   $categoryCount = mysqli_num_rows($admincountCategoriesQuery);
+  echo "$categoryCount";
 }
 
 function getSlides() {
@@ -434,10 +437,26 @@ function getActiveSlide() {
           </div>";
   }
 }  
+  
+function addSlides() {
+  if(isset($_POST['add_slide'])) {
+    $slideTitle         = escape_string($_POST['slide_title']);
+    $slideImageTitle    = escape_string($_FILES['file']['name']);
+    $slideImageLocation = escape_string($_FILES['file']['tmp_name']);
+    
+    if(empty($slideTitle) || empty($slideImage)) {
+      echo "<script>alert('Has to all be filled out!')</script>";
+    }else{
+      move_uploaded_file($slideImageLocation, "../../../app/store/img/" . $slideImageTitle);
+      
+      $uploadSlideQuery = query("INSERT INTO slides(slide_title, slide_image) VALUES('{$slideTitle}', './img/{$slideImageTitle}')");
+      confirm($uploadSlideQuery);
+      redirect("./index.php?slides");
+    } 
+  }
+}
 
 /*
-  
-function addSlides() {}
 
 function getCurrentSlide() {}
 
