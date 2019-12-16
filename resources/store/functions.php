@@ -293,7 +293,7 @@ function adminEditProduct() {
     $updateProductQuery .= "product_description        ='{$productDescription}'       , ";
     $updateProductQuery .= "product_short_description  ='{$productShortDescription}'  , ";
     $updateProductQuery .= "product_image              ='{$productImage}'             , ";
-    $updateProductQuery .= "product_image_large        ='{$productImageLarge}'        , ";
+    $updateProductQuery .= "product_image_large        ='{$productImageLarge}'         ";
     $updateProductQuery .= " WHERE product_id=" . escape_string($_GET['id']);
     
     $sendUpdateQuery = query($updateProductQuery);
