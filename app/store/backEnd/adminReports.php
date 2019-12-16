@@ -35,7 +35,7 @@ echo $orderCount;
                 </div>
               </div>
             </div>
-            <a href='../backEnd/adminOrders.php'>
+            <a href='./index.php?orders'>
               <div class='panel-footer'>
                 <span class='pull-left'>View Details</span>
                 <span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>
@@ -61,7 +61,7 @@ echo $productCount;
                 </div>
               </div>
             </div>
-            <a href='../backEnd/adminProducts.php'>
+            <a href='./index.php?products'>
               <div class='panel-footer'>
                 <span class='pull-left'>View Details</span>
                 <span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>
@@ -80,14 +80,14 @@ echo $productCount;
                 <div class='col-xs-9 text-right'>
                   <div class='huge'>";
 
-echo $countCategories();
+echo $categoryCount;
 
             echo "</div>
                   <div>Categories!</div>
                 </div>
               </div>
             </div>
-            <a href='../backEnd/adminCategories.php'>
+            <a href='./index.php?categories'>
               <div class='panel-footer'>
                 <span class='pull-left'>View Details</span>
                 <span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>
