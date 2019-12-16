@@ -16,7 +16,7 @@ echo "<div class='row'>
           </form>
         </div>
         <div class='col-xs-8'>
-          <h3>Delete Later</h3>
+          <img src='http://placehold.it/800x300'>
         </div>
       </div>
       <!-- ROW-->
