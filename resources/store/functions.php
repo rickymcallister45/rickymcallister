@@ -421,20 +421,24 @@ function getSlides() {
   confirm($getSlidesQuery);
   
   while($row = fetch_array($getSlidesQuery)) {
-    echo "<div class='item'>
-            <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
-          </div>";
+    echo "<a href='./category.php?id={$row['slide_category_id']}'
+            <div class='item'>
+              <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
+            </div>
+          </a>";
   }
 }
 
 function getActiveSlide() {
-  $getSlideActiveQuery = query("SELECT * FROM slides ORDER BY slide_id DESC LIMIT 1");
+  $getSlideActiveQuery = query("SELECT * FROM slides ORDER BY slide_category_id ASC LIMIT 1");
   confirm($getSlideActiveQuery);
   
   while($row = fetch_array($getSlideActiveQuery)) {
-    echo "<div class='item active'>
-            <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
-          </div>";
+    echo "<a href='./category.php?id={$row['slide_category_id']}'>
+            <div class='item active'>
+              <img class='slide-image' src='{$row['slide_image']}' alt='{$row['slide_title']}'>
+            </div>
+          </a>";
   }
 }  
   
