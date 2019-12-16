@@ -1,7 +1,4 @@
 <?php
-countOrders();
-countProducts();
-countCategories();
 
 echo "<div class='row'>
         <div class='col-lg-12'>
@@ -28,7 +25,7 @@ echo "<div class='row'>
                 <div class='col-xs-9 text-right'>
                   <div class='huge'>";
 
-echo $orderCount;
+countOrders();
 
             echo "</div>
                   <div>New Orders!</div>
@@ -54,7 +51,7 @@ echo $orderCount;
                 <div class='col-xs-9 text-right'>
                   <div class='huge'>";
 
-echo $productCount;
+countProducts();
 
             echo "</div>
                   <div>Products!</div>
@@ -80,7 +77,7 @@ echo $productCount;
                 <div class='col-xs-9 text-right'>
                   <div class='huge'>";
 
-echo $categoryCount;
+countCategories();
 
             echo "</div>
                   <div>Categories!</div>
