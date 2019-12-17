@@ -232,7 +232,7 @@ function adminAddProduct() {
     $createNewProductQuery = query("INSERT INTO products(product_inventory_code, product_title, product_category_id, product_price, product_quantity, product_limit_reached, product_weight, product_description, product_short_description, product_image, product_image_large) 
                                                   VALUES('{$productInventoryCode}', '{$productTitle}', '{$productCategoryId}', '{$productPrice}', '{$productQuantity}', '{$productLimitReached}', '{$productWeight}', '{$productDescription}', '{$productShortDescription}', './img/{$productImage}', './img/{$productImageLarge}')");
     confirm($createNewProductQuery);
-    set_message("Upload Successful");
+    set_message("Upload Successful     " . $productImageTemp . "      ../../../app/store/img/" . $productImage);
     redirect("./index.php?products");
   }  
 }
