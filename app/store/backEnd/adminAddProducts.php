@@ -1,5 +1,10 @@
 <?php
 echo "<div class='col-md-12'>
+        <h3>";
+        
+display_message();        
+        
+  echo "</h3>
         <div class='row'>
           <h1 class='page-header'>
             Add Product";
