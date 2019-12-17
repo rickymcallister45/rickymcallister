@@ -429,7 +429,7 @@ function getSlideIndicator(){
 }
 
 function getSlides() {
-  $getSlidesQuery = query("SELECT * FROM slides");
+  $getSlidesQuery = query("SELECT * FROM slides LIMIT 4 OFFSET 1");
   confirm($getSlidesQuery);
   
   while($row = fetch_array($getSlidesQuery)) {
