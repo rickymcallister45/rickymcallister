@@ -57,6 +57,7 @@ $query = query("SELECT * FROM products WHERE product_id =" . escape_string($_GET
                       <div role='tabpanel' class='tab-pane active' id='home'>
                         <p>{$row[product_description]}</p>
                       </div>
+                      /*
                       <div role='tabpanel' class='tab-pane' id='profile'>
                         <div class='col-md-6'>
                           <h3>2 Reviews From </h3>
@@ -130,6 +131,8 @@ $query = query("SELECT * FROM products WHERE product_id =" . escape_string($_GET
                           </form>
                         </div>
                       </div>
+                      */
+                      
                     </div>
                   </div>
                 </div>
