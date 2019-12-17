@@ -1,6 +1,6 @@
 # To whom it may concern this is a list of things i have finished and will update my website with next
 
-# December
+# December 2019
 
 started app/service/alterations/measurments.php\
 putting final touches on app/store\
