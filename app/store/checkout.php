@@ -14,10 +14,10 @@ display_message();
 
         echo "</h4>  
               <h1>Checkout</h1>
-                <form action='https://www.sandbox.paypal.com/cgi-bin/webscr' method='post'>
+                <form action='https://www.paypal.com/cgi-bin/webscr' method='post'>
                         <input type='hidden' name='upload' value='1'>
                         <input type='hidden' name='cmd' value='_cart'>
-                        <input type='hidden' name='business' value='clintc0rder-facilitator@hotmail.com'>
+                        <input type='hidden' name='business' value='rickymcallister45@gmail.com'>
                         <input type='hidden' name='currency_code' value='USD'>
                   <table class='table table-striped'>
                     <thead>
