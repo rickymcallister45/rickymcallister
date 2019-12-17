@@ -21,7 +21,7 @@ adminAddProduct();
             <div class='form-group row'>
               <div class='col-xs-3'>
                 <label for='product-price'>Product Price</label>
-                <input type='number' name='product_price' class='form-control' size='60'>
+                <input type='number' name='product_price' class='form-control' size='60' step='.01'>
               </div>
             </div>
             <div class='form-group'>
