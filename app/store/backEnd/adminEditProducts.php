@@ -38,7 +38,7 @@ adminEditProduct();
             <div class='form-group row'>
               <div class='col-xs-3'>
                 <label for='product-price'>Product Price</label>
-                <input type='number' name='product_price' class='form-control' size='60' value='{$productPrice}'>
+                <input type='number' name='product_price' class='form-control' size='60' value='{$productPrice}' step='.01'>
               </div>
             </div>
             <div class='form-group'>
