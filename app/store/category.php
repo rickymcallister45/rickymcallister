@@ -6,7 +6,7 @@ echo "<body>";
 echo "<!-- Page Content -->
        <div class='container'>
 
-        <!-- Jumbotron Header -->
+        <!-- Jumbotron Header -->";
         /*
         <header class='jumbotron hero-spacer'>
             <h1>A Warm Welcome!</h1>
@@ -15,7 +15,7 @@ echo "<!-- Page Content -->
             </p>
         </header>
         */
-        <hr>
+   echo "<hr>
 
         <!-- Title -->
         <div class='row'>
