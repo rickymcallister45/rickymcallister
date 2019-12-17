@@ -16,7 +16,7 @@ $query = query("SELECT * FROM products WHERE product_id =" . escape_string($_GET
         echo "<div class='col-md-9'>
                 <div class='row'>
                   <div class='col-md-7'>
-                    <img class='img-responsive' src='{$row['product_image']}' alt='{$row['product_title']}'>
+                    <img class='img-responsive' src='{$row['product_image_large']}' alt='{$row['product_title']}'>
                   </div>
                   <div class='col-md-5'>
                     <div class='thumbnail'>
