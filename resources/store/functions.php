@@ -396,23 +396,20 @@ function adminGetReports() {
 }
 
 function countOrders(){
-  $adminCountOrdersQuery = query("SELECT * FROM reports");
-  confirm($adminCountOrdersQuery);
-  $orderCount = mysqli_num_rows($adminCountOrdersQuery);
+  $adminCountOrdersQuery = mysqli_num_rows("SELECT * FROM reports");
+   $orderCount = $adminCountOrdersQuery;
   echo $orderCount;
 }
 
 function countProducts() {
-  $admincountProductsQuery = query("SELECT * FROM reports");
-  confirm($admincountProductsQuery);
-  $productCount = mysqli_num_rows($admincountProductsQuery);
+  $admincountProductsQuery = mysqli_num_rows("SELECT * FROM reports");
+  $productCount = $admincountProductsQuery;
   echo $productCount;
 }
 
 function countCategories() {
-  $admincountCategoriesQuery = query("SELECT * FROM reports");
-  confirm($admincountCategoriesQuery);
-  $categoryCount = mysqli_num_rows($admincountCategoriesQuery);
+  $admincountCategoriesQuery = mysqli_num_rows("SELECT * FROM reports");
+  $categoryCount = $admincountCategoriesQuery;
   echo $categoryCount;
 }
 
