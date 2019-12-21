@@ -416,18 +416,27 @@ function countCategories() {
   echo $categoryCount;
 }
 
-function getSlideIndicator(){
-  $getSlideIndicatorQuery = query("SELECT * FROM slides");
-  confirm($getSlideIndicatorQuery);
-  for($i = 0; $array[$i] = mysqli_fetch_assoc($getSlideIndicatorQuery); $i++);
-   array_pop($array);
-  echo "<li data-target='#carousel-example-generic' data-slide-to='{$array['0']}' class='active'></li>";
+function getActiveIndicator() {
+  $getSlideIndicatorActiveQuery = query("SELECT * FROM slides ORDER BY slide_category_id ASC LIMIT 1");
+  confirm($getSlideIndicatorActiveQuery);
   
-  for($restOfTheIndicators = 1; $restOfTheIndicators < $array.len -1; $restOfTheIndicators++) {
-    echo "<li data-target='#carousel-example-generic' data-slide-to='{$array[$restOfTheIndicators]}'></li>";
-  }  
-}
+  while($row = fetch_array($getSlideIndicatorActiveQuery)) {
+    echo "<li data-target='#carousel-example-generic' data-slide-to='0' class='active'></li>";
+  }
+}  
 
+function getSlideIndicator(){
+  $getSlideIndicatorQuery = query("SELECT * FROM slides LIMIT 4 OFFSET 1");
+  confirm($getSlideIndicatorQuery);
+   $indicator = 1;
+  
+   while($row = fetch_array( $getSlideIndicatorQuery)) {
+    
+    echo "<li data-target='#carousel-example-generic' data-slide-to='{$indicator}'></li>";
+     $indicator ++;
+  }
+}
+  
 function getSlides() {
   $getSlidesQuery = query("SELECT * FROM slides LIMIT 4 OFFSET 1");
   confirm($getSlidesQuery);
