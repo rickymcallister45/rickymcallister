@@ -54,7 +54,7 @@ function get_products() {
   while($row = fetch_array($query)) {
     echo "<div class='col-sm-4 col-lg-4 col-md-4'>
             <div class='thumbnail'>
-              <a href='./item.php?id={$row['product_id']}'><img src='{$row['product_image']}' alt='{$row['product_title']}'></a>
+              <a href='./item.php?id={$row['product_id']}'><img style='height: 175px;' src='{$row['product_image']}' alt='{$row['product_title']}'></a>
               <div class='caption'>
                 <h4 class='pull-right'>&#36;{$row['product_price']}</h4>
                 <h4><a width='150' height='350' href='./item.php?id={$row['product_id']}'>{$row['product_title']}</a></h4>
