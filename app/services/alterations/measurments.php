@@ -39,10 +39,7 @@ echo "<div class='col-md-12'>
           
           
           <aside id='admin_sidebar' class='col-md-4'>
-            <div class='form-group'>
-              <input type='submit' name='draft' class='btn btn-warning btn-lg' value='Draft'>
-              <input type='submit' name='publish' class='btn btn-primary btn-lg' value='Publish'>
-            </div>
+            
             
             <div class='form-group'>
               <label for='gender'>Gender</label>
@@ -130,6 +127,11 @@ echo "<div class='col-md-12'>
             <div class='form-group'>
               <label for='image'>Image</label>
               <input type='file' name='file'>
+            </div>
+            
+            <div class='form-group'>
+              <input type='submit' name='draft' class='btn btn-warning btn-lg' value='Draft'>
+              <input type='submit' name='publish' class='btn btn-primary btn-lg' value='Publish'>
             </div>
             
           </aside>
