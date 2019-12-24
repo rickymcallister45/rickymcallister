@@ -1,0 +1,4 @@
+grocery
+taxi
+diapers
+pet supplies
