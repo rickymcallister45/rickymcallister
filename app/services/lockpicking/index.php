@@ -14,6 +14,7 @@ if(isset($_GET['contact'])) {
 }
 
 
+include "../resources/footer.php";
 
 echo "</body>";
 
