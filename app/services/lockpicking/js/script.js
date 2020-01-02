@@ -9,7 +9,7 @@ $(document).ready(function(){
 	var options = {
 		part: 'snippet',
 		key: key,
-		maxResults: 100,
+		maxResults: 50,
 		playlistId: playlistID
 	}
 
