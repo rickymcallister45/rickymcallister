@@ -10,7 +10,7 @@ echo "<nav class='navbar navbar-expand-lg navbar-light fixed-top' id='mainNav'>
           <div class='collapse navbar-collapse' id='navbarResponsive'>
             <ul class='navbar-nav ml-auto'>
               <li class='nav-item'>
-                <a class='nav-link js-scroll-trigger' href='../services/index.php'>Services</a>
+                <a class='nav-link js-scroll-trigger' href='../../services/index.php'>Services</a>
               </li>
               <li class='nav-item'>
                 <a class='nav-link js-scroll-trigger' href='./index.php?contact'>Contact</a>
