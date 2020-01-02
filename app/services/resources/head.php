@@ -9,7 +9,7 @@ echo "<!DOCTYPE html>
             <meta name='author' content='Ricky McAllister'>
 
             <title>rickyMcAllister</title>
-            <link rel='icon' href='../../resources/favicon/favicon.ico' type='image/x-icon'>            
+            <link rel='icon' href='../../../resources/favicon/favicon.ico' type='image/x-icon'>            
 
             <link href='..//css/bootstrap.min.css' rel='stylesheet'>
             <link href='../css/grayscale.min.css' rel='stylesheet'>
