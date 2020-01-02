@@ -29,8 +29,9 @@ echo "<section id='signup' class='signup-section'>
           </div>
         </div>
         
-        <a href='mailto: rickymcallister45@gmail.com'>
         <div class='col-md-4 mb-3 mb-md-0'>
+                <a href='mailto: rickymcallister45@gmail.com'>
+
           <div class='card py-4 h-100'>
             <div class='card-body text-center'>
               <i class='fas fa-envelope text-primary mb-2'></i>
@@ -41,11 +42,13 @@ echo "<section id='signup' class='signup-section'>
               </div>
             </div>
           </div>
+          </a>
         </div>
-        </a>
         
-        <a href='tel:14402655218'>
+        
+       
         <div class='col-md-4 mb-3 mb-md-0'>
+         <a href='tel:14402655218'>
           <div class='card py-4 h-100'>
             <div class='card-body text-center'>
               <i class='fas fa-mobile-alt text-primary mb-2'></i>
@@ -57,8 +60,9 @@ echo "<section id='signup' class='signup-section'>
             </div>
           </div>
         </div>
+        </a>
       </div>
-      </a>
+      
 
       <div class='social d-flex justify-content-center'>
         <a href='https://www.youtube.com/channel/UCHUrEa6E1l5vwzvXMGEPScg' class='mx-2'>
