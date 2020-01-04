@@ -5,4 +5,5 @@ echo "<header class='masthead'>
           </div>
         </div>
       </header>";
+echo basename(dirname(__FILE__));
 ?>
