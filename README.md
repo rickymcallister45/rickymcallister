@@ -39,7 +39,7 @@ added app/groceryList\
 started working on a store template //vue.js development\
 darkend gradient on index to match brothers wall better\
 added fallback color to index after discovering gradiant not working on all devices\
-set app/toDO into deployment\
+set app/toDO into deployment
 
 # October 2019
 
@@ -74,7 +74,7 @@ cleaned up services (not ready for shipment tho)\
 cleaned up root folder\
 added php folder creater\
 fixed broken paths on cs page\
-corrected soundboard mp3 path\
+corrected soundboard mp3 path
   
 # September 2019
 
