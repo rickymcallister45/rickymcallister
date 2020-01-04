@@ -36,10 +36,10 @@ function resultsLoop(data) {
 		var vid = item.snippet.resourceId.videoId;
 		var completePath = youtubePath + vid
 
-		$(".lockpickingVideos").append($("<a>", 
+		$(".lockpickingVideos").append($("<a class='videoStyling'>", 
 			{
    			 href: completePath, 
-    			 html: $("<img class='videoStyling'>", { src: thumb })
+    			 html: $("<img>", { src: thumb })
 			}));
 				
 		
