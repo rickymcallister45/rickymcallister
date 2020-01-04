@@ -1,3 +1,13 @@
 <?php
-echo "Coming Soon";
+include "../resources/head.php";
+include "../resources/nav.php";
+echo "<body>";
+if($_SERVER['REQUEST_URI'] == '/app/services/graphicDesign/index' || $_SERVER['REQUEST_URI'] == '/app/services/graphicDesign/index.php') {
+   include './php/graphicDesign.php';
+}
+if(isset($_GET['contact'])) {
+   include('../resources/contact.php');
+}
+include "../resources/footer.php";
+echo "</body>";
 ?>
