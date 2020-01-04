@@ -2,7 +2,7 @@
 
 # January 2020
 
-continuing to plug away at app/service\
+continuing to plug away at app/service
 
 # December 2019
 
@@ -20,7 +20,7 @@ added app/desktop/js/liveNow.js\
 added app/streaming\
 started working on app/computerScience/development/php/store\
 cleaned up files/js\
-started cleaning up app/computerScience\
+started cleaning up app/computerScience
 
 # November 2019
 
