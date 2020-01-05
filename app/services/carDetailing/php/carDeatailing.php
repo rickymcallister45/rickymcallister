@@ -5,7 +5,4 @@ echo "<header class='masthead'>
           </div>
         </div>
       </header>";
-$folderName = basename(dirname(__FILE__));
-
-echo $folderName;
 ?>
