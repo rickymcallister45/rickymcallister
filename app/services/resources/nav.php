@@ -1,5 +1,9 @@
 <?php
-$folderName = dirname(__FILE__);
+$folderName = $_SERVER['REQUEST_URI'];
+$regexForDirectoryName = "/(\/app\/services\/)(.*)(\/index)/";
+
+preg_match($regexForDirectoryName, $folderName, $matches);
+$navItemName = json_encode($matches['2']);
 
 echo "<nav class='navbar navbar-expand-lg navbar-light fixed-top' id='mainNav'>
         <div class='container'>
@@ -14,7 +18,7 @@ echo "<nav class='navbar navbar-expand-lg navbar-light fixed-top' id='mainNav'>
                 <a class='nav-link js-scroll-trigger' href='../../services/index.php'>Services</a>
               </li>
               <li class='nav-item'>
-                <a class='nav-link js-scroll-trigger' href='./index.php'>{$folderName}</a>
+                <a class='nav-link js-scroll-trigger' href='./index.php'>{$navItemName}</a>
               </li>
               <li class='nav-item'>
                 <a class='nav-link js-scroll-trigger' href='./index.php?contact'>Contact</a>
