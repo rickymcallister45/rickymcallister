@@ -11,7 +11,7 @@ $(document).ready(function(){
 		key: key,
 		maxResults: 50,
 		playlistId: playlistID
-	}
+	};
 
 	
 
@@ -22,7 +22,7 @@ function loadVids() {
 		console.log(data);
 		var id = data.items[0].snippet.resourceId.videoId;
 		resultsLoop(data);
-	})
+	});
 }
 
 function resultsLoop(data) {
@@ -34,16 +34,19 @@ function resultsLoop(data) {
 		var description = item.snippet.description.substring(0,100);
 		var date = item.snippet.publishedAt.substring(0,10);
 		var vid = item.snippet.resourceId.videoId;
-		var completePath = youtubePath + vid
+		var completePath = youtubePath + vid;
 
-		$(".lockpickingVideos").append($("<a class='videoStyling'>", 
-			{
-   			 href: completePath, 
-    			 html: $("<img>", { src: thumb })
-			}));
+		var listOfVideos = $('<a>').attr('href',completePath).addClass('videoStyling').append(
+    				 $('<img>'.attr('src',thumb))
+    				  );
 				
 		
-	});
+		$(".lockpickingVideos").append(listOfVideos);
+   			 
+			}
+				
+		
+	);
 }
 
 
