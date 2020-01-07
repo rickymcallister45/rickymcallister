@@ -35,9 +35,10 @@ function resultsLoop(data) {
 		var date = item.snippet.publishedAt.substring(0,10);
 		var vid = item.snippet.resourceId.videoId;
 		var completePath = youtubePath + vid;
+		var cssClass = 'videoStyling';
 
-		var listOfVideos = $('<a>').attr('href',completePath).addClass('videoStyling').append(
-    				     '<img src=' + thumb + '>');
+		var listOfVideos = $('<a>').attr('href',completePath).append(
+    				     '<img class=' + cssClass + ' src=' + thumb + '>');
     				  
 				
 		
