@@ -37,8 +37,8 @@ function resultsLoop(data) {
 		var completePath = youtubePath + vid;
 
 		var listOfVideos = $('<a>').attr('href',completePath).addClass('videoStyling').append(
-    				 $('<img>'.attr('src',thumb))
-    				  );
+    				     '<img>').attr('src',thumb));
+    				  
 				
 		
 		$(".lockpickingVideos").append(listOfVideos);
