@@ -5,7 +5,7 @@ echo "<header class='masthead'>
           
           <div class=row>
             <h1>Smooties</h1>
-              <div class='col-sm-4 col-lg-4 col-md-4'>
+              <div class='col-sm-4 col-lg-4 col-md-4 bgwhite'>
                 <div class='thumbnail'>
                   <a href='./img/appleBlueberrySmoothie1.jpg'><img style='height: 175px;' src='./img/appleBlueberrySmoothie.jpg' alt='appleBlueberrySmoothie'></a>
                   <div class='caption'>
@@ -15,7 +15,7 @@ echo "<header class='masthead'>
                 </div>  
               </div>
               
-              <div class='col-sm-4 col-lg-4 col-md-4'>
+              <div class='col-sm-4 col-lg-4 col-md-4 bgwhite'>
                 <div class='thumbnail'>
                   <a href='./img/bloodyMary.jpg'><img style='height: 175px;' src='./img/bloodyMary.jpg' alt='bloodyMary'></a>
                   <div class='caption'>
@@ -31,7 +31,7 @@ echo "<header class='masthead'>
             
             <div class=row>
               <h1>Juices</h1>
-              <div class='col-sm-4 col-lg-4 col-md-4'>
+              <div class='col-sm-4 col-lg-4 col-md-4 bgwhite'>
                 <div class='thumbnail'>
                   <a href='./img/carrotJuice.jpg'><img style='height: 175px;' src='./img/carrotJuice.jpg' alt='carrotJuice'></a>
                   <div class='caption'>
@@ -41,7 +41,7 @@ echo "<header class='masthead'>
                 </div>  
               </div>
               
-              <div class='col-sm-4 col-lg-4 col-md-4'>
+              <div class='col-sm-4 col-lg-4 col-md-4 bgwhite'>
                 <div class='thumbnail'>
                   <a href='./img/celeryJuice.jpg'><img style='height: 175px;' src='./img/celeryJuice.jpg' alt='celeryJuice'></a>
                   <div class='caption'>
@@ -51,7 +51,7 @@ echo "<header class='masthead'>
                 </div>  
               </div>
               
-              <div class='col-sm-4 col-lg-4 col-md-4'>
+              <div class='col-sm-4 col-lg-4 col-md-4 bgwhite'>
                 <div class='thumbnail'>
                   <a href='./img/beetJuice.jpg'><img style='height: 175px;' src='./img/beetJuice.jpg' alt='beetJuice'></a>
                   <div class='caption'>
@@ -68,7 +68,7 @@ echo "<header class='masthead'>
             
             <div class=row>
               <h1>Shots</h1>
-              <div class='col-sm-4 col-lg-4 col-md-4'>
+              <div class='col-sm-4 col-lg-4 col-md-4 bgwhite'>
                 <div class='thumbnail'>
                   <a href='./img/gingerShot.jpg'><img style='height: 175px;' src='./img/gingerShot.jpg' alt='gingerShot'></a>
                   <div class='caption'>
