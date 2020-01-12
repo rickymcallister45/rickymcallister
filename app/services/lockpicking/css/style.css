@@ -6,6 +6,13 @@
 .masthead {
   background: url(../img/mainBackground.jpg);
 }
+
+@media (max-width:992px) {
+  .masthead {
+        padding: 6rem 0!important;
+  }
+}
+
 .signup-section {
   background: url(../img/contactBackground.jpg);
 }
