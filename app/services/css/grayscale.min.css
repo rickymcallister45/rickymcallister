@@ -37,17 +37,17 @@
         padding-top: 0;
         padding-bottom: 0;
         border-bottom: none;
-        background-color: transparent;
+        background-color: white;
         transition: background-color .3s ease-in-out
     }
     #mainNav .navbar-brand {
         padding: .5rem 0;
-        color: rgba(255, 255, 255, .5)
+        color: rgba(0, 0, 0)
     }
     #mainNav .nav-link {
         transition: none;
         padding: 2rem 1.5rem;
-        color: rgba(255, 255, 255, .5)
+        color: rgba(0, 0, 0, .5)
     }
     #mainNav .nav-link:hover {
         color: rgba(255, 255, 255, .75)
@@ -88,7 +88,7 @@
     background: linear-gradient(to bottom, rgba(22, 22, 22, .3) 0, rgba(22, 22, 22, .7) 75%, #161616 100%);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover
 }
 
@@ -202,7 +202,7 @@
     background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover
 }
 
