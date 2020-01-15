@@ -13,4 +13,9 @@
   background-color: white;
   width: 350px;
   height: 300px;
+  margin: 10px;
+}
+.cardImage {
+    width: 350px;
+    padding-top: 10px;
 }
