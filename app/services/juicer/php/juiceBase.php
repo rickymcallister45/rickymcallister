@@ -28,7 +28,7 @@ echo "<header class='masthead'></header>
                 <div class='thumbnail'>
                   <a href='/index.php?smoothies'><img class='cardImage' src='./img/selector/smoothies.jpg' alt='Smoothie options'></a>
                   <div class='caption'>
-                    <h4><a width='150' height='350' href='/index.php?smoothies'>Menu</a></h4>
+                    <h4><a width='150' height='350' href='/index.php?smoothies'>Smoothies</a></h4>
                     <p>Blended Smooties</p>
                   </div>
                 </div>  
