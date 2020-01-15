@@ -16,6 +16,7 @@
   margin: 10px;
 }
 .cardImage {
+    height: 175px;
     width: 350px;
     padding-top: 10px;
 }
