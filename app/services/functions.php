@@ -1,6 +1,8 @@
 <?php
 // HELPER FUNCTIONS
 
+$dbTitle = $dataBaseTitle;
+
 function redirect($location) {
   header('LocationL $location');
 }
@@ -24,7 +26,7 @@ function fetch_array($result) {
 // FRONTEND FUNCTIONS
 
 function get_services() {
-  $query = query('SELECT * FROM services');
+  $query = query('SELECT * FROM {$dbTitle}');
   confirm($query);
   while($row = fetch_array($query)) {
     echo " <a href='{$row['link']}'>
