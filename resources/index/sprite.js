@@ -89,11 +89,7 @@ let data = [{
 
 
 for(i=0;i<data.length;i++){
-  var element = "<li class='icons' id='" + data[i].title + "'>
-                   <a href='" + data[i].path + "'>
-                     <img= src='resources/index/img/sprite.jpg'>
-                   </a>
-                 </li>";  
+  var element = "<li class='icons' id='" + data[i].title + "'><a href='" + data[i].path + "'><img= src='resources/index/img/sprite.jpg'></a></li>";  
  
  $("#menu").append(element);
    $('#' + data[i].title).css('background-position', data[i].x + 'px'+ ' ' + data[i].y + 'px');
