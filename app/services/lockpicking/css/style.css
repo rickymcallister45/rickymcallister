@@ -16,10 +16,15 @@
   position: absolute!important;
   top: 110px!important;
   width: 100vw!important;
+  max-width: 100vw;
 }
 
 .videoStyling {
   padding: 5px;
+}
+
+img {
+  margin: 10px;
 }
 
 @media (max-width:992px) {
