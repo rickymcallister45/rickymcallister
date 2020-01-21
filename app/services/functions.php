@@ -26,7 +26,7 @@ function fetch_array($result) {
 // FRONTEND FUNCTIONS
 
 function get_services() {
-  $query = query('SELECT * FROM {$dbTitle}');
+  $query = query('SELECT * FROM services');
   confirm($query);
   while($row = fetch_array($query)) {
     echo " <a href='{$row['link']}'>
