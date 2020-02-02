@@ -1,7 +1,6 @@
 <?php
 
-echo "<meta charset='UTF-8'>
-      <meta name='keywords' content='Ricky McAllister, McAllister'/>
+echo "<meta name='keywords' content='Ricky McAllister, McAllister'/>
       <meta name='description' content='The real Ricky McAllisters personal website'/>
       <meta name='subject' content='Ricky McAllisters personal website'>
       <meta name='copyright'content='Ricky McAllister'>
