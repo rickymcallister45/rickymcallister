@@ -14,7 +14,7 @@ let data = [{
   title:'clock',
   x: -100,
   y: 0,
-  path: 'needsFiguredOut'
+  path: 'app/clock/index.html'
   },
 {
   title:'gmail',
@@ -89,7 +89,7 @@ let data = [{
 
 
 for(i=0;i<data.length;i++){
-  var element = "<li class='icons' id='" + data[i].title + "'><a href='" + data[i].path + "'><img= src='resources/index/img/sprite.jpg'></a></li>";  
+  var element = "<a class='icons' href='" + data[i].path + "'id='" + data[i].title + "'></a>";
  
  $(".menu").append(element);
    $('#' + data[i].title).css('background-position', data[i].x + 'px'+ ' ' + data[i].y + 'px');
