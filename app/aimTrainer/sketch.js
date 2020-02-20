@@ -1,5 +1,10 @@
 console.log('Running');
 
+function preload() {
+  let holo = loadImage('./holo.png');
+}
+
+
 let numberOfBubbles = 75;
 
 let bubbles = [];
@@ -31,7 +36,7 @@ function mouseClicked(){
 function draw(){
   background(0);
   
-  cursor(CROSS);
+  cursor(holo);
   
   for(let i = 0; i < bubbles.length; i++){
     if(bubbles[i].bubbleHovered(mouseX, mouseY)) {
