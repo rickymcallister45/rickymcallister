@@ -1,5 +1,9 @@
 # To whom it may concern this is a list of things i have finished and will update my website with next
 
+# Febuary 2020
+
+created app/aimTrainer\
+
 # January 2020
 
 continuing to plug away at app/service
