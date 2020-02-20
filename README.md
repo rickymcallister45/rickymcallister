@@ -2,7 +2,7 @@
 
 # Febuary 2020
 
-created app/aimTrainer\
+created app/aimTrainer
 
 # January 2020
 
