@@ -4,14 +4,6 @@ let numberOfBubbles = 75;
 
 let bubbles = [];
 let bubble;
-let holo;
-
-function preload() {
-  let holo = loadImage('./holo.png');
-}
-
-
-
 
 function setup(){
   let canvas = createCanvas(windowWidth, windowHeight);
@@ -39,7 +31,7 @@ function mouseClicked(){
 function draw(){
   background(0);
   
-  cursor(holo);
+  cursor(CROSS);
   
   for(let i = 0; i < bubbles.length; i++){
     if(bubbles[i].bubbleHovered(mouseX, mouseY)) {
