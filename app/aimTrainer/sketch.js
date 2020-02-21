@@ -1,14 +1,17 @@
 console.log('Running');
 
+let numberOfBubbles = 75;
+
+let bubbles = [];
+let bubble;
+let holo;
+
 function preload() {
   let holo = loadImage('./holo.png');
 }
 
 
-let numberOfBubbles = 75;
 
-let bubbles = [];
-let bubble;
 
 function setup(){
   let canvas = createCanvas(windowWidth, windowHeight);
