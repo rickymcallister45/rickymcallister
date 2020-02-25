@@ -2,6 +2,7 @@
 
 # Febuary 2020
 
+created app/snake\
 created app/aimTrainer
 
 # January 2020
