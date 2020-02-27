@@ -1,28 +1,42 @@
 let request = new XMLHttpRequest();
 let url = 'https://www.reddit.com/r/';
-let differnetSites = ['roomporn', 'CozyPlaces', 'MostBeautiful', 'pic', 'carporn', 'AbandonedPorn', 'EarthPorn', 'SkyPorn', 'astrophotography', 'spaceporn', 'itookapicture', 'Eyebleach'];
+
+let differnetSites = ['rainbow6','roomporn', 'CozyPlaces', 'MostBeautiful', 'pic', 'carporn', 'AbandonedPorn', 'EarthPorn', 'SkyPorn', 'flowers', 'notitle', 'itookapicture', 'Eyebleach', 'CoolPics', 'ExposurePorn', 'MacroPorn', 'waterporn', 'CityPorn', 'itookapicture', 'AccidentalRenaissance', 'CouldBeArt', 'WhatIsThisPainting', 'MapPorn', 'Art', 'wallpapers', 'WeatherPorn','BotanicalPorn', 'VillagePorn', 'LakePorn', 'BeachPorn', 'wallpaper', 'ImaginaryLandscapes', 'LightGraffiti', 'SeaPorn', 'FirePorn', 'DesertPorn', 'WinterPorn', 'lightpainting', 'AutmnPorn', 'GeologyPorn', 'SpringPorn', 'SummerPorn', 'LavaPorn', 'ArchitecturePorn', 'HousePorn', 'CabinPorn', 'InfrastructurePorn', 'F1Porn', 'BoatPorn', 'DestructionPorn', 'BridgePorn', 'SteamPorn', 'RoadPorn', 'AnimalPorn', 'ArgiculturePorn', 'TeaPorn', 'BonsaiPorn', 'FractalPorn', 'earthview', 'HI_Res'];
+
 let i = Math.floor(Math.random() * 11) + 1;
-let randomNumberToSelectSite = Math.floor(Math.random() * 11);
+let randomNumberToSelectSite = Math.floor(Math.random() * differnetSites.length);
 
 
 function background(){
 let siteTheBackroundImageIsComingFrom = differnetSites[randomNumberToSelectSite];
+
 console.log('siteTheBackroundImageIsComingFrom = ' + url + siteTheBackroundImageIsComingFrom);
 
 
 let backgroundURL;
+  
+    request.onreadystatechange = function(){
+        if (request.status === 301) {
+            console.log("Oh no, it does not exist!");
+            randomNumberToSelectSite++;
+            background();
+          }
+        };
     
     request.open('GET', url + siteTheBackroundImageIsComingFrom + '.json', true);
     request.onload = function() {
           let data = JSON.parse(request.responseText);
           
-          //i = Math.floor(Math.random() * 11) + 1;
-          
           backgroundURL = (data.data.children[i].data.url);
           document.body.style.backgroundImage = "url(" + backgroundURL + ")";
           
       }
+      
+      
+      
       request.send();
+      
+      
 }
 
 background();
@@ -32,7 +46,7 @@ document.onkeydown = function(e) {
         case 37:
             randomNumberToSelectSite--;
             if(randomNumberToSelectSite < 0){
-              randomNumberToSelectSite = 11;
+              randomNumberToSelectSite = differnetSites.length;
             }
             background();
             break;
@@ -45,7 +59,7 @@ document.onkeydown = function(e) {
             break;
         case 39:
             randomNumberToSelectSite++;
-            if(randomNumberToSelectSite > differnetSites.length-1){
+            if(randomNumberToSelectSite > differnetSites.length - 1){
               randomNumberToSelectSite = 0;
             }
             background();
