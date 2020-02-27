@@ -75,7 +75,6 @@ ticker.windowResized = function () {
 
 
  ticker.fox = function(stories) {
-	ticker.id('foxTickerStyle');
 	for (var i = 0; i < stories.articles.length; i++) {
 	foxNews[i] = space + stories.articles[i].title;
 	}}
