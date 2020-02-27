@@ -2,6 +2,7 @@
 
 # Febuary 2020
 
+added arrow commands to app/desktop/vanillaBackground.js\
 created app/snake\
 created app/aimTrainer
 
