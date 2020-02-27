@@ -29,8 +29,11 @@ let apNews = [];
 let ajNews = [];
 
  ticker.build = function(){
-	ticker.background(150);
+	ticker.background(255);
 	ticker.textSize(32);
+	ticker.style('color','white');
+	ticker.style('border-top','5px solid white');
+	ticker.style('border-bottom','5px solid white');	 
 	}
 
  ticker.setup = function() {
