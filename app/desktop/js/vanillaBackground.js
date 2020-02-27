@@ -6,38 +6,24 @@ let differnetSites = ['rainbow6','roomporn', 'CozyPlaces', 'MostBeautiful', 'pic
 let i = Math.floor(Math.random() * 11) + 1;
 let randomNumberToSelectSite = Math.floor(Math.random() * differnetSites.length);
 
-
 function background(){
 let siteTheBackroundImageIsComingFrom = differnetSites[randomNumberToSelectSite];
 
 console.log('siteTheBackroundImageIsComingFrom = ' + url + siteTheBackroundImageIsComingFrom);
 
-
 let backgroundURL;
   
-    request.onreadystatechange = function(){
-        if (request.status === 301) {
-            console.log("Oh no, it does not exist!");
-            randomNumberToSelectSite++;
-            background();
-          }
-        };
-    
     request.open('GET', url + siteTheBackroundImageIsComingFrom + '.json', true);
-    request.onload = function() {
+        request.onload = function() {
           let data = JSON.parse(request.responseText);
           
           backgroundURL = (data.data.children[i].data.url);
           document.body.style.backgroundImage = "url(" + backgroundURL + ")";
           
       }
-      
-      
-      
+
       request.send();
-      
-      
-}
+    }
 
 background();
 
