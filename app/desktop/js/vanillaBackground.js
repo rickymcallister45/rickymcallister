@@ -3,7 +3,7 @@ let url = 'https://www.reddit.com/r/';
 
 let differnetSites = ['rainbow6','roomporn', 'CozyPlaces', 'MostBeautiful', 'pic', 'carporn', 'AbandonedPorn', 'EarthPorn', 'SkyPorn', 'flowers', 'notitle', 'itookapicture', 'Eyebleach', 'CoolPics', 'ExposurePorn', 'MacroPorn', 'waterporn', 'CityPorn', 'itookapicture', 'AccidentalRenaissance', 'CouldBeArt', 'WhatIsThisPainting', 'MapPorn', 'Art', 'wallpapers', 'WeatherPorn','BotanicalPorn', 'VillagePorn', 'LakePorn', 'BeachPorn', 'wallpaper', 'ImaginaryLandscapes', 'LightGraffiti', 'SeaPorn', 'FirePorn', 'DesertPorn', 'WinterPorn', 'lightpainting', 'AutmnPorn', 'GeologyPorn', 'SpringPorn', 'SummerPorn', 'LavaPorn', 'ArchitecturePorn', 'HousePorn', 'CabinPorn', 'InfrastructurePorn', 'F1Porn', 'BoatPorn', 'DestructionPorn', 'BridgePorn', 'SteamPorn', 'RoadPorn', 'AnimalPorn', 'ArgiculturePorn', 'TeaPorn', 'BonsaiPorn', 'FractalPorn', 'earthview', 'HI_Res'];
 
-let i = Math.floor(Math.random() * 11) + 1;
+let t = Math.floor(Math.random() * 11) + 1;
 let randomNumberToSelectSite = Math.floor(Math.random() * differnetSites.length);
 
 function background(){
@@ -17,7 +17,7 @@ let backgroundURL;
         request.onload = function() {
           let data = JSON.parse(request.responseText);
           console.log(data);
-          backgroundURL = (data.data.children[i].data.url);
+          backgroundURL = (data.data.children[t].data.url);
           document.body.style.backgroundImage = "url(" + backgroundURL + ")";
           
       }
@@ -37,9 +37,9 @@ document.onkeydown = function(e) {
             background();
             break;
         case 38:
-            i++;
-            if(i > 24){
-              i = 2;
+            t++;
+            if(t > 24){
+              t = 2;
             }
             background();
             break;
@@ -51,9 +51,9 @@ document.onkeydown = function(e) {
             background();
             break;
         case 40:
-            i--;
-            if(i < 2){
-              i = 24;
+            t--;
+            if(t < 2){
+              t = 24;
             }
             background();
             break;
