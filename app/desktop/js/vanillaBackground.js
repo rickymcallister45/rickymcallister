@@ -16,7 +16,7 @@ let backgroundURL;
     request.open('GET', url + siteTheBackroundImageIsComingFrom + '.json', true);
         request.onload = function() {
           let data = JSON.parse(request.responseText);
-          
+          console.log(data);
           backgroundURL = (data.data.children[i].data.url);
           document.body.style.backgroundImage = "url(" + backgroundURL + ")";
           
