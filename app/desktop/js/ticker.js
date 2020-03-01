@@ -31,9 +31,7 @@ let ajNews = [];
  ticker.build = function(){
 	ticker.background(255);
 	ticker.textSize(32);
-	ticker.style('color','white');
-	ticker.style('border-top','5px solid white');
-	ticker.style('border-bottom','5px solid white');	 
+		 
 	}
 
  ticker.setup = function() {
@@ -41,6 +39,10 @@ let ajNews = [];
     footer.position(0, 850);
     footer.id('pFiveTicker');	 
     footer.style('z-index','3');
+	footer.style('color','white');
+	footer.style('border-top','5px solid white');
+	footer.style('border-bottom','5px solid white');	 
+	 
 	ticker.build();
 	
 	for(i = 0; i < newsApi.length; i++){
