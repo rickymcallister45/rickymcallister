@@ -12,7 +12,7 @@ $(document).ready(function(){
 		$('#radio').removeClass('active').addClass('hide-item');
 		$('#gifs').removeClass('active').addClass('hide-item');
 		$('#entertainmentDropdown').removeClass('entertainmentActive').addClass('entertainmentHide');
-		if('.active' == true){
+		if('.active' === true){
 			removeClass('active')
 		}
 	})
@@ -44,6 +44,9 @@ $(document).ready(function(){
 	//*gifs
 	$('#gifs').click(function(){
 		$('#gifs').toggleClass('hide-item active');
+	})
+	$('#gifs').click(function(){
+		$('#gifs2').toggleClass('hide-item active');
 	})
 })
 
