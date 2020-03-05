@@ -11,6 +11,7 @@ $(document).ready(function(){
 		$('#events').removeClass('active');
 		$('#radio').removeClass('active').addClass('hide-item');
 		$('#gifs').removeClass('active').addClass('hide-item');
+		$('#gifs2').removeClass('active').addClass('hide-item');
 		$('#entertainmentDropdown').removeClass('entertainmentActive').addClass('entertainmentHide');
 		if('.active' === true){
 			removeClass('active')
