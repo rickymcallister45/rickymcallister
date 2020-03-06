@@ -74,18 +74,14 @@
 				<ul><a href="https://www.udemy.com"><i class="fas fa-graduation-cap"></i></a></ul>
 			</div>
 		</div>
-		<div id='liveNow'>
-		  <a href='../entertainment/recent.html'>
-		    <img src='../img/onAir.jpg'>
-		  </a>
-		</div>
+		
 		<div id="left-panel" class="hide-item">
 			<ul><a href="#" id="clock" onclick="gifBackground();"><i class="fa fa-hourglass-start"></i></a></ul>
 			<ul><a href="https://ibx.key.com/ibxolb/olb/index.html#/login" id="bank"><i class="fa fa-university"></i></a></ul>
 			<ul><a href="#" id="bookmark"><i class="fa fa-bookmark"></i></a></ul>
 			<ul><a href="../../app/soundboard/index.php" id="soundboard"><i class="fa fa-volume-off"></i></a></ul>
             <ul><a href="../../app/finance/index.html" id='stocks'><i class="fas fa-chart-line"></i></a></ul>
-            <ul><a id="ticker" onclick="new p5(tickerApi);"><i class="fa fa-th"></i></a></ul>
+            <ul><a id="ticker" onclick="ticker();"><i class="fa fa-th"></i></a></ul>
 		</div>
 		<div id="center">
 			<ul id="podcasts">
@@ -146,18 +142,18 @@
 	<div id="gcpDot">
 		<iframe src="http://global-mind.org/gcpdot/gcp.html" height="48" width="48" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
 	</div>
-</body>
-<footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min/.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom/.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ 	
 	
-	<script src="js/coinflip.js"></script>
 	<script src="js/searchBar.js"></script>
+	<script src="js/coinflip.js"></script>
+	
 	<script src="js/dropdown.js"></script>
 	<script src="js/powerButton.js"></script>
 	<script src="js/gifBackground.js"></script>
-	<script src="js/ticker.js"></script>
+	<script src="js/tickerRebuild.js"></script>
 	<script src="js/hue.js"></script>
 	
 	
@@ -165,6 +161,7 @@
 	
 	<script src="js/keyBindings.js"></script>
 	<script src="js/hotKeys.js"></script>
+	<script src="js/keyTernary.js"></script>
 	<script src="js/weatherOutlook.js"></script>
-</footer>
+</body>
 </html>
