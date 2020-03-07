@@ -1,8 +1,5 @@
 var canvas, currentDay, currentMonth, currentDayWord;
 
-
-
-
 function setup() {
 	canvas = createCanvas(windowWidth * .8 , windowHeight);
 	canvas.position(0, 0);
@@ -11,15 +8,13 @@ function setup() {
 	angleMode(DEGREES);
 
 	dateBox();
-	
-	
 }
 
 function dateBox() {
 	let weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 	let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-	currentDay = 18//day();
+	currentDay = day();
 		function pad2(currentDay) {
    	    	return (currentDay < 10 ? '0' : '') + currentDay
    		}
