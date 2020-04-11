@@ -6,17 +6,17 @@ function createYoutubeBackground() {
   var youtubeBackgroundElementTwo = "<div id='exitYoutubeVidHolder'><i class='far fa-times-circle'id='exitYoutubeVidButton'></i></div>";
   
   var youtubeBackgroundContainerRemake = "<div id='youtubeBackgroundContainer'></div>";
-  
+  $('body').append(youtubeBackgroundContainerRemake);
   $("#youtubeBackgroundContainer").append(youtubeBackgroundElement);
   $("#youtubeVideoDiv").append(youtubeBackgroundElementTwo);
-  
+  $('#power').css('color','black');
   //on button click remove container
 
 $("#exitYoutubeVidButton").click(function(){
   
   
   $("#youtubeBackgroundContainer").remove();
-  $('body').append(youtubeBackgroundContainerRemake);
+  $('#power').css('color','white');
 });
 }
 
