@@ -352,3 +352,35 @@ i:hover {
   top: 1%;
   visibility: hidden;
 }
+
+
+
+#youtubeVideoDiv {
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+  }
+  #youtubeVideoDiv iframe {
+    width: 100%;
+    height:100%;
+    z-index: 3;
+  }
+  
+   #exitYoutubeVidHolder {
+    width:100vw;
+    height:100vh;
+    z-index: 6;
+    color: red;
+    text-align: center;
+    position: absolute;
+    top:0;
+  }
+  
+  #exitYoutubeVidButton {
+    position:absolute;
+    font-size:125px;
+    top: 50px;
+    left: 45%;
+    
+  }
