@@ -1,5 +1,11 @@
 # To whom it may concern this is a list of things i have finished and will update my website with next
 
+# April 2020
+
+started cleaning up app/finance\
+fixed app/desktop/js/searchbar.js\
+added app/desktop/js/youtubeviewer.js\
+
 # Febuary 2020
 
 added some styling to app/desktop/ticker.js\
