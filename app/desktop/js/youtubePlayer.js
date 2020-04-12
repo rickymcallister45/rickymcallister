@@ -9,7 +9,7 @@ function createYoutubeBackground() {
   $('body').append(youtubeBackgroundContainerRemake);
   $("#youtubeBackgroundContainer").append(youtubeBackgroundElement);
   $("#youtubeVideoDiv").append(youtubeBackgroundElementTwo);
-  $('#power').css('color','black');
+  $('#power').css('color','#ffffff00');
   //on button click remove container
 
 $("#exitYoutubeVidButton").click(function(){
