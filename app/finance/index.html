@@ -1,18 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>rickyMcAllister</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
 </head>
 <body>
   
-<div id='stockContainer'></div>
+  <nav>
+    <ul id='navBill'>Bills</ul>
+    <ul><a href='https://drive.google.com/drive/folders/1kMjMOS2ASQrvei1MwQ9VlZ8EbEyr_6OE'>Sheets</a></ul>
+    <ul><a href='https://my.adp.com/static/redbox/login.html?route=dashboard'>ADP</a></ul>
+    <ul id='navTrading'>Trading</ul>
+    <ul id='navCards'>Cards</ul>
+    <ul>Stocks</ul>
+    <ul id='navCredit'>Credit</ul>
+  </nav>
+  
+  <div id='dashboard'>
+    
+    <div id='clocks'>
+      <ul>
+        
+      </ul>
+      <ul></ul>
+      <ul></ul>
+      <ul></ul>
+    </div>
+    
+    <div id='ticker'>
+      
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Indices</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "light",
+  "dateRange": "12m",
+  "showChart": false,
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "width": "270",
+  "height": "100%",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "FOREXCOM:DJI",
+          "d": "Dow 30"
+        }
+      ],
+      "originalTitle": "Indices"
+    }
+  ]
+}
+  </script>
+</div>
+
+    </div>
+    
+  </div>
+  
+  <div id='viewport'>
+    
+    <div class='viewportItems' id='backgroundImage'></div>
+    
+    <div class='viewportItems' id='trading'>
+      <ul><a href='https://robinhood.com/'>Robinhood</a></ul>
+      <ul><a href='https://www.webull.com/'>Webull</a></ul>
+    </div>
+    
+    <div class='viewportItems' id= 'stockHolder'></div>
+    
+    <div class='viewportItems' id='bills'>
+      <ul><a href='https://myprofile.dpandl.com/Profile/Login?ReturnUrl=%2FAccount%2FAccountSummary'>DP&L</a></ul>
+      <ul><a href='https://www.bridgecrest.com/'>Bridgecrest</a></ul>
+      <ul><a href='https://www.planetfitness.com/'>Planet Fitness</a></ul>
+      <ul><a href='https://www.spectrum.net/login/?ReferringPartner=TWC'>Spectrum</a></ul>
+      <ul><a href='https://ting.com/'>Ting</a></ul>
+    </div>
+    
+    <div class='viewportItems' id='cards'>
+      <ul><a href='https://verified.capitalone.com/auth/signin?Product=ENTERPRISE#/accountSummary'>Captial One</a></ul>
+      <ul><a href='https://portal.discover.com/customersvcs/universalLogin/ac_main?ICMPGN=PUB_HDR_CASH_PS_LOGIN_BTN'>Discover It</a></ul>
+      <ul><a href='https://online.citi.com/US/JSO/loginpage/retarget.action?deepdrop=true&checkAuth=Y&intc=1~7~51~3~191101~8~LegacyHPMobile~LoginLink'>Citi Secured</a></ul>
+      <ul><a href='https://secure01b.chase.com/web/auth/dashboard'>Chase Freedom</a></ul>
+      <ul><a href='https://www.bankofamerica.com/credit-cards/manage-your-credit-card-account/'>Bank of America</a></ul>
+    </div>
+    
+    <div class='viewportItems' id='credit'>
+      <ul><a href='https://usa.experian.com/login/index?refUrl=%2Foverview'>Experian</a></ul>
+      <ul><a href='https://creditwise.capitalone.com/authenticated?platform=easeweb'>CreditWise</a></ul>
+      <ul><a href='https://membership.tui.transunion.com/tucm/login.page?'>Transunion</a></ul>
+      <ul><a href='https://www.econsumer.equifax.com/otc/login.ehtml'>Equifax</a></ul>
+    </div>
+    
+    
+    
+  </div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src='./js/script.js'></script>
+  <script type="text/javascript" src="js/stockAPI.js"></script>
 
 </body>
-<footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/stockAPI.js"></script>
-</footer>
 </html>
