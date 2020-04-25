@@ -1,5 +1,5 @@
 
-
+function stockCall(){
 
 let metalSymbols = ['GOLD,','SLV,','COPX,','PPLT'];
 let energySymbols = ['USO,','UBG,','UGA,','UHN'];
@@ -14,7 +14,7 @@ let carSymbols = ['TSLA','GM','F','TM'];
 
 
 const stockKey = '&api_token=DG21YPaNS0g0rG5LWjkalVLpJdL4MC6HMvgoSU9tH8BAXrxzOOnpgezeS88L';
-const urlStock = 'https://www.worldtradingdata.com/api/v1/stock?symbol='; 
+const urlStock = 'https://www.worldtradingdata.com/api/v1/stock?symbol=';
 let symbols = [metalSymbols,energySymbols,grainSymbols,meatSymbols,softSymbols,techSymbols,socialSymbols,robotSymbols,carSymbols];
 
 for(i=0;i<symbols.length;i++){
@@ -32,30 +32,45 @@ for(i=0;i<symbols.length;i++){
 		var price = targetStock[j].price;
 		var yesterdayPrice = targetStock[j].close_yesterday;
 			
-			$("#stockContainer").append('<div class="stockSymbol"><p>' + targetStock[j].symbol + ':' + '</br></br>' +
+			$("#stockHolder").append('<div class="stockSymbol" id="' + targetStock[j].symbol + '"><p>' + targetStock[j].symbol + '</br></br>' +
 				targetStock[j].price +
 
 			 '</p></div>');
-		if(price >= yesterdayPrice){
+		if(this.price >= this.yesterdayPrice){
 			$("p").css("color", "green" );
 			
 		}else{
 			$("p").css("color", "red");
 			
 		}
-	}
+		
+		}}
+		
+);
+	
 
-    
+		  
 
 
 
+   // console.log(Data);
+}
 
-
-
-    console.log(Data);
-});
 
 }
+
+stockCall();
+
+		
+    
+$(this).click(function(){
+  var myId = $("#stockHolder").attr("id");
+		  var name = $("'#"+ myid + "'").text();
+		  console.log(myId);
+  window.open('https://www.google.com/search?q=' + name);
+     zLimit++;
+
+});
 
 /*
 
@@ -66,7 +81,7 @@ data[""0""].symbol
 data[""0""].price
 
 
-if price is higher or equal be green else make red 
+if price is higher or equal be green else make red
 	close_yesterday  vs   price
 
 */
